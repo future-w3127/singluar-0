@@ -1,3 +1,7 @@
+_assets_sound("metal_bash_heavy", nil, "vwp")
+_assets_sound("voice/clickhero/level_up", "lv", "v3d")
+_assets_sound("voice/action/打鼓", "drum", "v3d")
+_assets_sound("bgm/dnf/Dungeon and Fighter - GBL女神殿 - goddess temple", "gbl", "bgm")
 
 -- 绵羊
 _assets_model(":units\\critters\\Sheep\\Sheep", "Sheep", {
