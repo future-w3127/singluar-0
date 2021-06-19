@@ -139,4 +139,8 @@ _assets_model("buff_ApaceGrowth")
 _assets_model("slash_Red_swing")
 _assets_model("buff_Echo")
 
-_assets_ui("main_elf", "main")
+_assets_ui("singluar_echo")
+_assets_ui("singluar_chat")
+_assets_ui("singluar_minimap")
+_assets_ui("singluar_controller")
+
