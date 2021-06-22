@@ -141,6 +141,7 @@ _assets_model("buff_Echo")
 
 _assets_ui("singluar_echo")
 _assets_ui("singluar_chat")
+_assets_ui("singluar_menu")
 _assets_ui("singluar_minimap")
 _assets_ui("singluar_controller")
 
