@@ -1,7 +1,20 @@
+_assets_selection("Common")
+_assets_font("字魂59号-创粗黑")
+
 _assets_sound("metal_bash_heavy", nil, "vwp")
 _assets_sound("voice/clickhero/level_up", "lv", "v3d")
 _assets_sound("voice/action/打鼓", "drum", "v3d")
 _assets_sound("bgm/dnf/Dungeon and Fighter - GBL女神殿 - goddess temple", "gbl", "bgm")
+
+_assets_model("buff_ApaceGrowth")
+_assets_model("slash_Red_swing")
+_assets_model("buff_Echo")
+
+_assets_ui("singluar_echo")
+_assets_ui("singluar_chat")
+_assets_ui("singluar_menu")
+_assets_ui("singluar_minimap")
+_assets_ui("singluar_controller")
 
 -- 绵羊
 _assets_model(":units\\critters\\Sheep\\Sheep", "Sheep", {

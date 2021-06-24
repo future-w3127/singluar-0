@@ -13,7 +13,7 @@ function __SINGLUAR__()
                               .hp(600).hpRec(5)
                               .mp(100).mpRec(-5)
                               .move(522)
-                              .attack(100).attackRange(2000).attackSpeed(100)
+                              .attack(100).attackRange(3000).attackSpeed(100)
                               .missileAlias("M暗影刀").missileHoming(true).missileHeight(50).missileSpeed(300)
                               .knocking(100).knockingOdds(25)
                               .hpSuck(10)
@@ -36,7 +36,7 @@ function __SINGLUAR__()
 
     for _ = 1, 1 do
         local u2 = Player(2).unit(HeroBladeMaster, 400, 400, 66.6)
-                            .move(150)
+                            .move(250)
                             .hp(10000000)
                             .mpRec("+10")
                             .attack(10992430)
@@ -44,9 +44,5 @@ function __SINGLUAR__()
                             .avoid(75)
                             .primary("agi")
     end
-
-    time.setTimeout(5, function()
-        u1.lightning(LIGHTING_TYPE.thunderRed)
-    end)
 
 end
