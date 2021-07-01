@@ -15,6 +15,10 @@ _assets_ui("singluar_chat")
 _assets_ui("singluar_menu")
 _assets_ui("singluar_minimap")
 _assets_ui("singluar_controller")
+_assets_ui("singluar_buff")
+--_assets_ui("singluar_item")
+
+_assets_icon("ability\\red\\DeathKnightSpellDeflection", "AB1")
 
 -- 绵羊
 _assets_model(":units\\critters\\Sheep\\Sheep", "Sheep", {

@@ -53,42 +53,42 @@ _assets_model(":Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl", "Avenge
 _assets_model(":Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl", "LordofFlameMissile") --火焰巨魔
 _assets_model(":Abilities\\Weapons\\BrewmasterMissile\\BrewmasterMissile.mdl", "BrewmasterMissile") --酒仙炼金酒瓶
 
-_assets_model(":units\\human\\HeroPaladin\\HeroPaladin", "HeroPaladin") --圣骑士
-_assets_model(":units\\human\\HeroArchMage\\HeroArchMage", "HeroArchMage") --大魔法师
-_assets_model(":units\\ther\\HeroArchMageGhost\\HeroArchMageGhost", "HeroArchMageGhost") --大魔法师(魂)
-_assets_model(":units\\human\\HeroMountainKing\\HeroMountainKing", "HeroMountainKing")--山丘之王
-_assets_model(":units\\human\\HeroBloodElf\\HeroBloodElf", "HeroBloodElf") --血魔法师
-_assets_model(":units\\human\\Arthas\\Arthas", "Arthas") --阿尔塞斯
-_assets_model(":units\\human\\ArthaswithSword\\ArthaswithSword", "ArthaswithSword") --阿尔塞斯(剑)
+_assets_model(":units\\human\\HeroPaladin\\HeroPaladin", "HeroPaladin", { Art = "unit\\hero\\HeroPaladin" }) --圣骑士
+_assets_model(":units\\human\\HeroArchMage\\HeroArchMage", "HeroArchMage", { Art = "unit\\hero\\HeroArchMage" }) --大魔法师
+_assets_model(":units\\ther\\HeroArchMageGhost\\HeroArchMageGhost", "HeroArchMageGhost", { Art = "unit\\hero\\GhostMage" }) --大魔法师(魂)
+_assets_model(":units\\human\\HeroMountainKing\\HeroMountainKing", "HeroMountainKing", { Art = "unit\\hero\\HeroMountainKing" }) --山丘之王
+_assets_model(":units\\human\\HeroBloodElf\\HeroBloodElf", "HeroBloodElf", { Art = "unit\\hero\\HeroBloodElfPrince" }) --血魔法师
+_assets_model(":units\\human\\Arthas\\Arthas", "Arthas", { Art = "unit\\hero\\Arthas" }) --阿尔塞斯
+_assets_model(":units\\human\\ArthaswithSword\\ArthaswithSword", "ArthaswithSword", { Art = "unit\\hero\\Arthas" }) --阿尔塞斯(剑)
 _assets_model(":units\\other\\Proudmoore\\Proudmoore", "Proudmoore", { Art = "unit\\hero\\Captain" })--海军上将普洛德摩尔
-_assets_model(":units\\human\\Jaina\\Jaina", "Jaina") --吉安娜
-_assets_model(":units\\creeps\\LordGarithos\\LordGarithos", "LordGarithos") --加理瑟斯
-_assets_model(":units\\creeps\\SylvanusWindrunner\\SylvanusWindrunner", "SylvanusWindrunner") --追风之西尔瓦娜斯
-_assets_model(":units\\orc\\HeroBladeMaster\\HeroBladeMaster", "HeroBladeMaster") --剑圣绿
-_assets_model(":units\\demon\\HeroChaosBladeMaster\\HeroChaosBladeMaster", "HeroChaosBladeMaster") --剑圣红
-_assets_model(":units\\orc\\Hellscream\\Hellscream", "Hellscream") --地狱咆哮
-_assets_model(":units\\demon\\ChaosHellscream\\ChaosHellscream", "ChaosHellscream") --地狱咆哮红
-_assets_model(":units\\orc\\HeroFarSeer\\HeroFarSeer", "HeroFarSeer") --先知
-_assets_model(":units\\orc\\Thrall\\Thrall", "Thrall") --萨尔
-_assets_model(":units\\orc\\HeroTaurenChieftain\\HeroTaurenChieftain", "HeroTaurenChieftain") --牛头人酋长
-_assets_model(":units\\orc\\HeroShadowHunter\\HeroShadowHunter", "HeroShadowHunter") --暗影猎手
-_assets_model(":Units\\Other\\Rexxar\\Rexxar", "Rexxar") --兽王
-_assets_model(":units\\undead\\HeroDeathKnight\\HeroDeathKnight", "HeroDeathKnight") --死骑
-_assets_model(":units\\undead\\HeroLich\\HeroLich", "HeroLich") --巫妖
-_assets_model(":units\\undead\\HeroDreadLord\\HeroDreadLord", "HeroDreadLord") --恐惧魔王
-_assets_model(":units\\undead\\HeroCryptLord\\HeroCryptLord", "HeroCryptLord") --地穴领主
-_assets_model(":units\\undead\\Kelthuzad\\Kelthuzad", "Kelthuzad") --克尔苏加德
-_assets_model(":units\\undead\\KelThuzadGhost\\KelThuzadGhost", "KelThuzadGhost") --克尔苏加德 (幽灵)
-_assets_model(":units\\demon\\HeroPitLord\\HeroPitLord", "HeroPitLord") --深渊魔王
-_assets_model(":units\\demon\\Warlock\\Warlock", "Warlock") --阿克蒙德
-_assets_model(":units\\demon\\Kiljaeden\\Kiljaeden", "Kiljaeden") --基尔加丹
-_assets_model(":Units\\Creeps\\BansheeRanger\\BansheeRanger", "BansheeRanger") --黑暗游侠
-_assets_model(":Units\\Creeps\\HeroFlameLord\\HeroFlameLord", "HeroFlameLord") --火焰巨魔
-_assets_model(":Units\\Creeps\\HeroGoblinAlchemist\\HeroGoblinAlchemist", "HeroGoblinAlchemist") --炼金术士
-_assets_model(":Units\\Creeps\\HeroTinker\\HeroTinker", "HeroTinker") --修补匠
-_assets_model(":units\\naga\\HeroNagaSeawitch\\HeroNagaSeawitch", "HeroNagaSeawitch") --美杜莎
-_assets_model(":units\\other\\DranaiAkama\\DranaiAkama", "DranaiAkama") --阿卡玛
-_assets_model(":Units\\Creeps\\PandarenBrewmaster\\PandarenBrewmaster", "PandarenBrewmaster") --熊猫酒仙
-_assets_model(":Units\\Creeps\\EarthPandarenBrewmaster\\EarthPandarenBrewmaster", "EarthPandarenBrewmaster") --熊猫大地
-_assets_model(":Units\\Creeps\\StormPandarenBrewmaster\\StormPandarenBrewmaster", "StormPandarenBrewmaster") --熊猫雷暴
-_assets_model(":Units\\Creeps\\FirePandarenBrewmaster\\FirePandarenBrewmaster", "FirePandarenBrewmaster") --熊猫烈焰
+_assets_model(":units\\human\\Jaina\\Jaina", "Jaina", { Art = "unit\\hero\\Jaina" }) --吉安娜
+_assets_model(":units\\creeps\\LordGarithos\\LordGarithos", "LordGarithos", { Art = "unit\\hero\\Garithos" }) --加理瑟斯
+_assets_model(":units\\creeps\\SylvanusWindrunner\\SylvanusWindrunner", "SylvanusWindrunner", { Art = "unit\\hero\\SylvanusWindrunner" }) --追风之西尔瓦娜斯
+_assets_model(":units\\orc\\HeroBladeMaster\\HeroBladeMaster", "HeroBladeMaster", { Art = "unit\\hero\\HeroBladeMaster" }) --剑圣绿
+_assets_model(":units\\demon\\HeroChaosBladeMaster\\HeroChaosBladeMaster", "HeroChaosBladeMaster", { Art = "unit\\hero\\ChaosBlademaster" }) --剑圣红
+_assets_model(":units\\orc\\Hellscream\\Hellscream", "Hellscream", { Art = "unit\\hero\\HellScream" }) --地狱咆哮
+_assets_model(":units\\demon\\ChaosHellscream\\ChaosHellscream", "ChaosHellscream", { Art = "unit\\hero\\ChaosGrom" }) --地狱咆哮红
+_assets_model(":units\\orc\\HeroFarSeer\\HeroFarSeer", "HeroFarSeer", { Art = "unit\\hero\\HeroFarSeer" }) --先知
+_assets_model(":units\\orc\\Thrall\\Thrall", "Thrall", { Art = "unit\\hero\\Thrall" }) --萨尔
+_assets_model(":units\\orc\\HeroTaurenChieftain\\HeroTaurenChieftain", "HeroTaurenChieftain", { Art = "unit\\hero\\HeroTaurenChieftain" }) --牛头人酋长
+_assets_model(":units\\orc\\HeroShadowHunter\\HeroShadowHunter", "HeroShadowHunter", { Art = "unit\\hero\\ShadowHunter" }) --暗影猎手
+_assets_model(":Units\\Other\\Rexxar\\Rexxar", "Rexxar", { Art = "unit\\hero\\BeastMaster" }) --兽王
+_assets_model(":units\\undead\\HeroDeathKnight\\HeroDeathKnight", "HeroDeathKnight", { Art = "unit\\hero\\HeroDeathKnight" }) --死骑
+_assets_model(":units\\undead\\HeroLich\\HeroLich", "HeroLich", { Art = "unit\\hero\\HeroLich" }) --巫妖
+_assets_model(":units\\undead\\HeroDreadLord\\HeroDreadLord", "HeroDreadLord", { Art = "unit\\hero\\HeroDreadLord" }) --恐惧魔王
+_assets_model(":units\\undead\\HeroCryptLord\\HeroCryptLord", "HeroCryptLord", { Art = "unit\\hero\\HeroCryptLord" }) --地穴领主
+_assets_model(":units\\undead\\Kelthuzad\\Kelthuzad", "Kelthuzad", { Art = "unit\\hero\\Kelthuzad" }) --克尔苏加德
+_assets_model(":units\\undead\\KelThuzadGhost\\KelThuzadGhost", "KelThuzadGhost", { Art = "unit\\hero\\GhostOfKelThuzad" }) --克尔苏加德 (幽灵)
+_assets_model(":units\\demon\\HeroPitLord\\HeroPitLord", "HeroPitLord", { Art = "unit\\hero\\PitLord" }) --深渊魔王
+_assets_model(":units\\demon\\Warlock\\Warlock", "Warlock", { Art = "unit\\hero\\Archimonde" }) --阿克蒙德
+_assets_model(":units\\demon\\Kiljaeden\\Kiljaeden", "Kiljaeden", { Art = "unit\\hero\\Kiljaedin" }) --基尔加丹
+_assets_model(":Units\\Creeps\\BansheeRanger\\BansheeRanger", "BansheeRanger", { Art = "unit\\hero\\BansheeRanger" }) --黑暗游侠
+_assets_model(":Units\\Creeps\\HeroFlameLord\\HeroFlameLord", "HeroFlameLord", { Art = "unit\\hero\\HeroAvatarOfFlame" }) --火焰巨魔
+_assets_model(":Units\\Creeps\\HeroGoblinAlchemist\\HeroGoblinAlchemist", "HeroGoblinAlchemist", { Art = "unit\\hero\\HeroAlchemist" }) --炼金术士
+_assets_model(":Units\\Creeps\\HeroTinker\\HeroTinker", "HeroTinker", { Art = "unit\\hero\\HeroTinker" }) --修补匠
+_assets_model(":units\\naga\\HeroNagaSeawitch\\HeroNagaSeawitch", "HeroNagaSeawitch", { Art = "unit\\hero\\NagaSeaWitch" }) --美杜莎
+_assets_model(":units\\other\\DranaiAkama\\DranaiAkama", "DranaiAkama", { Art = "unit\\hero\\DranaiAkama" }) --阿卡玛
+_assets_model(":Units\\Creeps\\PandarenBrewmaster\\PandarenBrewmaster", "PandarenBrewmaster", { Art = "unit\\hero\\PandaBrewmaster" }) --熊猫酒仙
+_assets_model(":Units\\Creeps\\EarthPandarenBrewmaster\\EarthPandarenBrewmaster", "EarthPandarenBrewmaster", { Art = "unit\\hero\\PandaEarthBrewMaster" }) --熊猫大地
+_assets_model(":Units\\Creeps\\StormPandarenBrewmaster\\StormPandarenBrewmaster", "StormPandarenBrewmaster", { Art = "unit\\hero\\PandaStorm" }) --熊猫雷暴
+_assets_model(":Units\\Creeps\\FirePandarenBrewmaster\\FirePandarenBrewmaster", "FirePandarenBrewmaster", { Art = "unit\\hero\\PandaFireBrewMaster" }) --熊猫烈焰
