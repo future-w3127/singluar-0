@@ -16,9 +16,14 @@ _assets_ui("singluar_menu")
 _assets_ui("singluar_minimap")
 _assets_ui("singluar_controller")
 _assets_ui("singluar_buff")
+_assets_ui("singluar_ability")
 --_assets_ui("singluar_item")
 
 _assets_icon("ability\\red\\DeathKnightSpellDeflection", "AB1")
+_assets_icon("ability\\blue\\AbsorbMagic", "AB2")
+_assets_icon("ability\\blue\\ArcaneArcaneResilience", "AB3")
+_assets_icon("ability\\green\\Banish", "AB4")
+_assets_icon("ability\\yellow\\Aftershock2", "AB5")
 
 -- 绵羊
 _assets_model(":units\\critters\\Sheep\\Sheep", "Sheep", {
