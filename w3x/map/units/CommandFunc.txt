@@ -4,11 +4,11 @@ Buttonpos=0,-11
 
 [CmdAttack]
 Art=CommandAttack
-Buttonpos=0,-11
+Buttonpos=0,0
 
 [CmdAttackGround]
 Art=CommandAttackGround
-Buttonpos=0,-11
+Buttonpos=0,0
 
 [CmdBuild]
 Art=CommandBasicStruct
@@ -48,7 +48,7 @@ ButtonPos=3,2
 
 [CmdHoldPos]
 Art=CommandHoldPosition
-Buttonpos=0,-11
+Buttonpos=0,0
 
 [CmdPatrol]
 Art=CommandPatrol
@@ -69,7 +69,7 @@ Buttonpos=3,1
 
 [CmdStop]
 Art=CommandStop
-Buttonpos=0,-11
+Buttonpos=0,0
 
 //[CmdUnivAgi]
 //Art=
