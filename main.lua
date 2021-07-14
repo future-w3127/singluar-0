@@ -12,7 +12,8 @@ function __SINGLUAR__()
                        .mp(100).mpRec(-5)
                        .move(522)
                        .level(1)
-                       .attack(100).attackRange(600).attackSpeed(300)
+                       .attack(91).attackRange(600).attackSpeed(300)
+                       .attackRipple(30)
                        .missileAlias("DragonHawkMissile").missileHoming(true)
                        .missileHeight(300).missileSpeed(700).missileShake("random")
                        .missileScatter(10)
@@ -42,5 +43,12 @@ function __SINGLUAR__()
 
     u1.abilityPush(TPL_ABILITY.AB1)
     u1.abilityPush(TPL_ABILITY.AB2)
+
+    time.setTimeout(3, function()
+        u1.ability()[1].ban(true)
+        time.setTimeout(10, function()
+            u1.ability()[1].ban(false)
+        end)
+    end)
 
 end

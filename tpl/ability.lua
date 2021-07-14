@@ -2,12 +2,13 @@ TPL_ABILITY = {
 
     AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_UL_600)
         .icon("AB1").coolDown(4).hpCast(1).mpCast(1)
-        .preCast(3)
+        .chantCast(1)
         .keepCast(10)
+        .levelMax(99)
         .description(
         {
             "基础消耗：" .. colour.purple("{this|mpCast|1}"),
-            "对目标造成{bind|attack|10}伤害：" .. colour.gold("{bind|attack|10}") .. "(10倍攻击)"
+            "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
         })
         .onSpell(function(evtData)
         evtData.triggerUnit.effect("slash/Red_swing")
@@ -20,6 +21,7 @@ TPL_ABILITY = {
                 return
             end
             i = i + ftp
+            evtData.triggerAbility.exp("+33")
             evtData.triggerUnit.effect("slash/Red_swing")
         end)
     end),
