@@ -24,9 +24,14 @@ function __SINGLUAR__()
                        .enchantWeapon("poison", "+1;60")
                        .punish(2000)
                        .weight("+10;60")
+                       .abilityPoint(100)
 
     u1.onDamage(function(evtData)
         u1.exp("+10")
+    end)
+
+    time.setInterval(3, function()
+        u1.attack("+10;2")
     end)
 
     for _ = 1, 2 do
@@ -42,13 +47,6 @@ function __SINGLUAR__()
     end
 
     u1.abilityPush(TPL_ABILITY.AB1)
-    u1.abilityPush(TPL_ABILITY.AB2)
-
-    time.setTimeout(3, function()
-        u1.ability()[1].ban(true)
-        time.setTimeout(10, function()
-            u1.ability()[1].ban(false)
-        end)
-    end)
+    u1.abilityPush(TPL_ABILITY.AB2, 4)
 
 end
