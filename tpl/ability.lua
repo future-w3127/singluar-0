@@ -2,7 +2,7 @@ TPL_ABILITY = {
 
     AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_UL_600)
         .icon("AB1")
-        .coolDown(6).hpCast(1).mpCast(1).chantCast(2).keepCast(10)
+        .coolDownBase(0.5).hpCastBase(1).mpCastBase(1).chantCastBase(2).keepCastBase(10)
         .coolDownVary(-0.05).hpCastVary(3).mpCastVary(7).chantCastVary(-0.1).keepCastVary(0.5)
         .levelMax(9)
         .description(
@@ -12,17 +12,14 @@ TPL_ABILITY = {
         })
         .onSpell(function(evtData)
         evtData.triggerUnit.effect("slash/Red_swing")
-        local i = 0
-        local ftp = 0.5
+        local ftp = 1
         time.setInterval(ftp, function(curTimer)
             if (not evtData.triggerUnit.abilityKeepCasting()) then
                 curTimer.destroy()
-                print("i=", i)
                 return
             end
-            i = i + ftp
-            evtData.triggerAbility.exp("+3")
             evtData.triggerUnit.effect("slash/Red_swing")
+            evtData.triggerUnit.abilityPoint("+1")
         end)
     end),
 
@@ -30,8 +27,8 @@ TPL_ABILITY = {
         .icon("AB2")
         .description({ "强击单人特效: +{this|level|100}攻击" })
         .levelMax(5)
-        .onGain(
-        function(evtData) evtData.triggerUnit.attack("+" .. 100 * evtData.triggerAbility.level()) end)
+        .levelUpNeedPoint(101)
+        .onGain(function(evtData) evtData.triggerUnit.attack("+" .. 100 * evtData.triggerAbility.level()) end)
         .onLose(function(evtData) evtData.triggerUnit.attack("-" .. 100 * evtData.triggerAbility.level()) end)
         .onLevelChange(
         function(evtData)

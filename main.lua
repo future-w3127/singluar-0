@@ -24,7 +24,6 @@ function __SINGLUAR__()
                        .enchantWeapon("poison", "+1;60")
                        .punish(2000)
                        .weight("+10;60")
-                       .abilityPoint(100)
 
     u1.onDamage(function(evtData)
         u1.exp("+10")
