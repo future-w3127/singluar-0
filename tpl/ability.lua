@@ -19,7 +19,7 @@ TPL_ABILITY = {
                 return
             end
             evtData.triggerUnit.effect("slash/Red_swing")
-            evtData.triggerUnit.abilityPoint("+1")
+            evtData.triggerUnit.abilityPoint("+=1")
         end)
     end),
 
@@ -28,14 +28,14 @@ TPL_ABILITY = {
         .description({ "强击单人特效: +{this|level|100}攻击" })
         .levelMax(5)
         .levelUpNeedPoint(101)
-        .onGain(function(evtData) evtData.triggerUnit.attack("+" .. 100 * evtData.triggerAbility.level()) end)
-        .onLose(function(evtData) evtData.triggerUnit.attack("-" .. 100 * evtData.triggerAbility.level()) end)
+        .onGet(function(evtData) evtData.triggerUnit.attack("+=" .. 100 * evtData.triggerAbility.level()) end)
+        .onLose(function(evtData) evtData.triggerUnit.attack("-=" .. 100 * evtData.triggerAbility.level()) end)
         .onLevelChange(
         function(evtData)
             if (evtData.value > 0) then
-                evtData.triggerUnit.attack("+" .. 100 * evtData.value)
+                evtData.triggerUnit.attack("+=" .. 100 * evtData.value)
             elseif (evtData.value < 0) then
-                evtData.triggerUnit.attack("-" .. 100 * math.abs(evtData.value))
+                evtData.triggerUnit.attack("-=" .. 100 * math.abs(evtData.value))
             end
         end),
 }
