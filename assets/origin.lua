@@ -1,3 +1,21 @@
+--- 物品模型
+_assets_model(":Objects\\InventoryItems\\TreasureChest\\treasurechest.mdl", "TreasureChest") --物品宝箱
+_assets_model(":Objects\\InventoryItems\\runicobject\\runicobject.mdl", "RunicObject") --物品灵魂神符（紫色符文）
+_assets_model(":Objects\\InventoryItems\\Glyph\\Glyph.mdl", "Glyph") --物品防御浮雕（橙色符文）
+_assets_model(":Objects\\InventoryItems\\PotofGold\\PotofGold.mdl", "PotOfGold") --物品金币
+_assets_model(":Objects\\InventoryItems\\BundleofLumber\\BundleofLumber.mdl", "BundleOfLumber") --物品木材
+_assets_model(":Objects\\InventoryItems\\tome\\tome.mdl", "Tome") --物品书(生命之书)
+_assets_model(":Objects\\InventoryItems\\tomeBrown\\tomeBrown.mdl", "TomeBrown") --物品书：褐色(经验之书)
+_assets_model(":Objects\\InventoryItems\\tomeRed\\tomeRed.mdl", "TomeRed") --物品书：红色(力量之书)
+_assets_model(":Objects\\InventoryItems\\tomeBlue\\tomeBlue.mdl", "TomeBlue") --物品书：蓝色(智力之书)
+_assets_model(":Objects\\InventoryItems\\tomeGreen\\tomeGreen.mdl", "TomeGreen") --物品书：绿色(敏捷之书)
+_assets_model(":Objects\\InventoryItems\\Shimmerweed\\Shimmerweed.mdl", "ShimmerWeed") --物品荧光草
+_assets_model(":Objects\\InventoryItems\\CrystalShard\\CrystalShard.mdl", "CrystalShard") --物品影子之球
+_assets_model(":Objects\\InventoryItems\\QuestionMark\\QuestionMark.mdl", "QuestionMark") --物品问号
+_assets_model(":Units\\Human\\Phoenix\\PhoenixEgg.mdl", "PhoenixEgg") --物品凤凰蛋
+_assets_model(":Objects\\InventoryItems\\ThunderLizardEgg\\ThunderLizardEgg.mdl", "ThunderLizardEgg") --物品蜥蜴蛋
+
+--- 箭矢模型
 _assets_model(":Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl", "FireBallMissile") --大法火球
 _assets_model(":Abilities\\Weapons\\BloodElfMissile\\BloodElfMissile.mdl", "BloodElfMissile") --血法火球
 _assets_model(":Abilities\\Weapons\\Mortar\\MortarMissile.mdl", "MortarMissile") --迫击炮小队
@@ -53,6 +71,7 @@ _assets_model(":Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl", "Avenge
 _assets_model(":Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl", "LordofFlameMissile") --火焰巨魔
 _assets_model(":Abilities\\Weapons\\BrewmasterMissile\\BrewmasterMissile.mdl", "BrewmasterMissile") --酒仙炼金酒瓶
 
+--- 英雄模型
 _assets_model(":units\\human\\HeroPaladin\\HeroPaladin", "HeroPaladin", { Art = "unit\\hero\\HeroPaladin" }) --圣骑士
 _assets_model(":units\\human\\HeroArchMage\\HeroArchMage", "HeroArchMage", { Art = "unit\\hero\\HeroArchMage" }) --大魔法师
 _assets_model(":units\\ther\\HeroArchMageGhost\\HeroArchMageGhost", "HeroArchMageGhost", { Art = "unit\\hero\\GhostMage" }) --大魔法师(魂)

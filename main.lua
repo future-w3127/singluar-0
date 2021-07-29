@@ -1,5 +1,6 @@
 require("scripts.setup") -- setup 游戏准备
 require("tpl.ability") -- 技能模版
+require("tpl.item") -- 物品模版
 require("tpl.unit") -- 单位模版
 
 -- The game starts here 游戏从 __SINGLUAR__ 函数开始运行
@@ -48,5 +49,8 @@ function __SINGLUAR__()
     u1.abilityPush(TPL_ABILITY.AB1)
     u1.abilityPush(TPL_ABILITY.AB2, 4)
 
+    u1.itemPush(TPL_ITEM.IT1)
+    u1.itemPush(TPL_ITEM.IT1)
+    u1.itemPush(TPL_ITEM.IT1)
 
 end
