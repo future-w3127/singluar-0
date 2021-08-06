@@ -2,10 +2,118 @@ SETUP = function()
 
     SINGLUAR_MAP_NAME = "特异图-0"
 
-    -- 设定玩家支持的默认命令
-    cmd.conf({ "-gg", "-apm", "-d" }, { 1 })
-
     -- 调试自动去除迷雾
-    env.setFogStatus(not DEBUGGING, not DEBUGGING)
+    Game().fog(not DEBUGGING).mark(not DEBUGGING)
+
+    -- 命令
+    --- -gg 投降
+    Game().command("^-gg$", function()
+        evtData.triggerPlayer.quit("GG")
+    end)
+    --- -apm 查看玩家分钟操作数
+    Game().command("^-apm$", function(evtData)
+        echo("您的apm为:" .. evtData.triggerPlayer.apm(), evtData.triggerPlayer.__HANDLE__)
+    end)
+    --- -d [+|-|=][NUMBER]减少/增加/设置视距
+    Game().command("^-d [-+=]%d+$", function(evtData)
+        local cds = string.explode(" ", string.lower(evtData.chatString))
+        local first = string.sub(cds[2], 1, 1)
+        if (first == "+" or first == "-" or first == "=") then
+            --视距
+            local v = string.sub(cds[2], 2, string.len(cds[2]))
+            v = math.abs(tonumber(v))
+            if (v > 0) then
+                local val = math.abs(v)
+                if (first == "+") then
+                    evtData.triggerPlayer.cameraDistance("+=" .. val)
+                elseif (first == "-") then
+                    evtData.triggerPlayer.cameraDistance("-=" .. val)
+                elseif (first == "=") then
+                    evtData.triggerPlayer.cameraDistance(val)
+                end
+            end
+        end
+    end)
+    if (DEBUGGING) then
+        Game().command("^-debug$", function()
+            handleDisplay()
+        end)
+    end
+
+    --- 任务
+    Quest("主动投降", "right")
+        .icon("ReplaceableTextures\\CommandButtons\\BTNTomeOfRetraining.blp")
+        .description("-gg 投降并退出")
+    Quest("查看你的APM数值", "right")
+        .icon("ReplaceableTextures\\CommandButtons\\BTNTomeOfRetraining.blp")
+        .description("-apm 查看你的APM数值")
+    Quest("调整你的视距", "right")
+        .icon("ReplaceableTextures\\CommandButtons\\BTNTomeOfRetraining.blp")
+        .description({
+        "-d +[number] 增加视距",
+        "-d -[number] 减少视距",
+        "-d =[number] 设置视距",
+    })
+
+    --- 事件反应
+    local function _z(z, offset)
+        return z + 130 + offset
+    end
+
+    ---@param evtData onKnockingData
+    event.reaction(EVENT.knocking, function(evtData)
+        evtData.targetUnit.effect("Singluar\\crit.mdl")
+        ttg.mdx("Singluar\\ttg\\evt\\knocking.mdl", 1.2, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24))
+    end)
+    ---@param evtData onAvoidData
+    event.reaction(EVENT.avoid, function(evtData)
+        ttg.mdx("Singluar\\ttg\\evt\\avoid.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44))
+    end)
+    ---@param evtData onImmuneInvincibleData
+    event.reaction(EVENT.immuneInvincible, function(evtData)
+        evtData.triggerUnit.attach("Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "origin", 1)
+        ttg.mdx("Singluar\\ttg\\evt\\immuneInvincible.mdl", 1.4, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 8)
+    end)
+    ---@param evtData onImmuneDefendData
+    event.reaction(EVENT.immuneDefend, function(evtData)
+        ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 8)
+    end)
+    ---@param evtData onImmuneReductionData
+    event.reaction(EVENT.immuneReduction, function(evtData)
+        ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 8)
+    end)
+    ---@param evtData onImmuneDecreaseData
+    event.reaction(EVENT.immuneDecrease, function(evtData)
+        ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 8)
+    end)
+    ---@param evtData onHPSuckData
+    event.reaction(EVENT.HPSuck, function(evtData)
+        evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 1)
+    end)
+    ---@param evtData onHPSuckCastData
+    event.reaction(EVENT.HPSuckCast, function(evtData)
+        evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 1.5)
+    end)
+    ---@param evtData onMPSuckData
+    event.reaction(EVENT.MPSuck, function(evtData)
+        evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 1)
+    end)
+    ---@param evtData onMPSuckCastData
+    event.reaction(EVENT.MPSuckCast, function(evtData)
+        evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 1)
+    end)
+    ---@param evtData onPunishData
+    event.reaction(EVENT.punish, function(evtData)
+        evtData.triggerUnit.rgba(140, 140, 140, 255, evtData.duration)
+        evtData.triggerUnit.attach("Singluar\\ttg\\evt\\punish.mdl", "head", 4.9, 0.2)
+    end)
+    ---@param evtData onHurtData
+    event.reaction(EVENT.hurt, function(evtData)
+        ttg.char(math.floor(evtData.damage), 11, 0.26, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), 0))
+    end)
+    ---@param evtData onEnchantData
+    event.reaction(EVENT.enchant, function(evtData)
+        ttg.mdx("Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl", 0.8, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24), 8)
+    end)
 
 end

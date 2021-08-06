@@ -2,14 +2,13 @@ TPL_ABILITY = {
 
     AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_UL_600)
         .icon("AB1")
-        .coolDownBase(0.5).hpCastBase(1).mpCastBase(1).chantCastBase(2).keepCastBase(10)
-        .coolDownVary(-0.05).hpCastVary(3).mpCastVary(7).chantCastVary(-0.1).keepCastVary(0.5)
+        .coolDownBase(0.5).hpCostBase(10).mpCostBase(1).chantCastBase(2).keepCastBase(10)
+        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).chantCastVary(-0.1).keepCastVary(0.5)
         .levelMax(9)
-        .description(
-        {
-            "基础消耗：" .. colour.purple("{this|mpCast|1}"),
-            "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
-        })
+        .description({
+        "基础消耗：" .. colour.purple("{this|mpCost|1}"),
+        "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
+    })
         .onSpell(function(evtData)
         evtData.triggerUnit.effect("slash/Red_swing")
         local ftp = 1
