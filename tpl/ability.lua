@@ -2,7 +2,7 @@ TPL_ABILITY = {
 
     AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_UL_600)
         .icon("AB1")
-        .coolDownBase(0.5).hpCostBase(10).mpCostBase(1).chantCastBase(2).keepCastBase(10)
+        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).chantCastBase(2).keepCastBase(10)
         .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).chantCastVary(-0.1).keepCastVary(0.5)
         .levelMax(9)
         .description({
@@ -27,14 +27,14 @@ TPL_ABILITY = {
         .description({ "强击单人特效: +{this|level|100}攻击" })
         .levelMax(5)
         .levelUpNeedPoint(101)
-        .onGet(function(evtData) evtData.triggerUnit.attack("+=" .. 100 * evtData.triggerAbility.level()) end)
-        .onLose(function(evtData) evtData.triggerUnit.attack("-=" .. 100 * evtData.triggerAbility.level()) end)
+        .onGet(function(evtData) evtData.triggerUnit.attr().attack("+=" .. 100 * evtData.triggerAbility.level()) end)
+        .onLose(function(evtData) evtData.triggerUnit.attr().attack("-=" .. 100 * evtData.triggerAbility.level()) end)
         .onLevelChange(
         function(evtData)
             if (evtData.value > 0) then
-                evtData.triggerUnit.attack("+=" .. 100 * evtData.value)
+                evtData.triggerUnitt.attr().attack("+=" .. 100 * evtData.value)
             elseif (evtData.value < 0) then
-                evtData.triggerUnit.attack("-=" .. 100 * math.abs(evtData.value))
+                evtData.triggerUnitt.attr().attack("-=" .. 100 * math.abs(evtData.value))
             end
         end),
 }

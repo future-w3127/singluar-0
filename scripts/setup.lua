@@ -5,6 +5,11 @@ SETUP = function()
     -- 调试自动去除迷雾
     Game().fog(not DEBUGGING).mark(not DEBUGGING)
 
+    -- 资源转化
+    Game().convert("gold", "lumber", 1000000) -- 1木 = 1000000金
+    Game().convert("silver", "gold", 100) -- 1金 = 100银
+    Game().convert("copper", "silver", 100) -- 1银 = 100铜
+
     -- 命令
     --- -gg 投降
     Game().command("^-gg$", function()
@@ -60,10 +65,10 @@ SETUP = function()
         return z + 130 + offset
     end
 
-    ---@param evtData onKnockingData
-    event.reaction(EVENT.knocking, function(evtData)
+    ---@param evtData onCritData
+    event.reaction(EVENT.crit, function(evtData)
         evtData.targetUnit.effect("Singluar\\crit.mdl")
-        ttg.mdx("Singluar\\ttg\\evt\\knocking.mdl", 1.2, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24))
+        ttg.mdx("Singluar\\ttg\\evt\\crit.mdl", 1.2, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24))
     end)
     ---@param evtData onAvoidData
     event.reaction(EVENT.avoid, function(evtData)
@@ -90,16 +95,16 @@ SETUP = function()
     event.reaction(EVENT.HPSuck, function(evtData)
         evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 1)
     end)
-    ---@param evtData onHPSuckCastData
-    event.reaction(EVENT.HPSuckCast, function(evtData)
+    ---@param evtData onHPSuckSpellData
+    event.reaction(EVENT.HPSuckSpell, function(evtData)
         evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 1.5)
     end)
     ---@param evtData onMPSuckData
     event.reaction(EVENT.MPSuck, function(evtData)
         evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 1)
     end)
-    ---@param evtData onMPSuckCastData
-    event.reaction(EVENT.MPSuckCast, function(evtData)
+    ---@param evtData onMPSuckSpellData
+    event.reaction(EVENT.MPSuckSpell, function(evtData)
         evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 1)
     end)
     ---@param evtData onPunishData

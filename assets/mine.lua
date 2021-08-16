@@ -16,7 +16,7 @@ _assets_ui("singluar_menu")
 _assets_ui("singluar_buff")
 _assets_ui("singluar_controller")
 _assets_ui("singluar_ability")
---_assets_ui("singluar_item")
+_assets_ui("singluar_item")
 --_assets_ui("singluar_warehouse")
 
 _assets_icon("ability\\red\\DeathKnightSpellDeflection", "AB1")
