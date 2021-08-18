@@ -15,9 +15,12 @@ function __SINGLUAR__()
       .move(522)
       .attack(91).attackRange(1000).attackSpeed(300)
       .attackRipple(30)
-      .missileAdd("DragonHawkMissile").missileHoming(true)
-      .missileHeight(300).missileSpeed(700).missileShake("random")
-      .missileScatter(10)
+      .missileAdd({
+        priority = 1,
+        model = "DragonHawkMissile",
+        homing = true, height = 300, speed = 700, shake = 'random',
+        reflex = 3,
+    })
       .crit(10).odds("crit", 10)
       .hpSuck("+=10")
       .mpSuck("+=10")
@@ -25,6 +28,18 @@ function __SINGLUAR__()
       .enchantWeapon("poison", "+=1;60")
       .punish(2000)
       .weight("+=10;60")
+
+    u1.attr().missileAdd({ model = "PhoenixMissile", priority = 10, height = 500, speed = 500, shake = 'random', scatter = 3 })
+    u1.attr().missileAdd({ model = "SentinelMissile", speed = 900, gatlin = 5 })
+    time.setTimeout(5, function()
+        u1.attr().missileDel("PhoenixMissile", 10)
+        time.setTimeout(5, function()
+            u1.attr().missileDel("DragonHawkMissile", 1)
+        end)
+    end)
+
+    J.ShowUnit(false)
+    J.ShowUnit(true)
 
     u1.onDamage(function(evtData)
         u1.exp("+=10")
@@ -38,12 +53,13 @@ function __SINGLUAR__()
         local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -1000, 500, 66.6).period(1000)
         u2.attr()
           .primary("agi")
-          .move(200)
+          .move(100)
           .hp(1000000)
           .mpRegen("+=10")
-          .attack(10992430)
+          .attack(109).attackRange(300)
           .punish(1000)
           .avoid(35)
+          .lightningAdd({ lightingType = LIGHTING_TYPE.thunderRed, focus = 2 })
     end
 
     u1.abilityPush(TPL_ABILITY.AB1)
