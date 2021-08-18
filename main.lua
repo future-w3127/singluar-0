@@ -1,12 +1,10 @@
-require("scripts.setup") -- setup 游戏准备
-require("tpl.ability") -- 技能模版
-require("tpl.item") -- 物品模版
-require("tpl.unit") -- 单位模版
-
 -- The game starts here 游戏从 __SINGLUAR__ 函数开始运行
 function __SINGLUAR__()
 
-    SETUP()
+    require("scripts.setup") -- setup 游戏准备
+    require("tpl.ability") -- 技能模版
+    require("tpl.item") -- 物品模版
+    require("tpl.unit") -- 单位模版
 
     local u1 = TPL_UNIT.TheBansheeQueen.create(Player(1), 0, 0, 66.6).level(1)
     u1.attr()
@@ -31,15 +29,12 @@ function __SINGLUAR__()
 
     u1.attr().missileAdd({ model = "PhoenixMissile", priority = 10, height = 500, speed = 500, shake = 'random', scatter = 3 })
     u1.attr().missileAdd({ model = "SentinelMissile", speed = 900, gatlin = 5 })
-    time.setTimeout(5, function()
+    time.setTimeout(10, function()
         u1.attr().missileDel("PhoenixMissile", 10)
-        time.setTimeout(5, function()
+        time.setTimeout(10, function()
             u1.attr().missileDel("DragonHawkMissile", 1)
         end)
     end)
-
-    J.ShowUnit(false)
-    J.ShowUnit(true)
 
     u1.onDamage(function(evtData)
         u1.exp("+=10")
@@ -65,8 +60,15 @@ function __SINGLUAR__()
     u1.abilityPush(TPL_ABILITY.AB1)
     u1.abilityPush(TPL_ABILITY.AB2, 4)
 
-    u1.itemPush(TPL_ITEM.IT1)
-    u1.itemPush(TPL_ITEM.IT1)
-    u1.itemPush(TPL_ITEM.IT1)
+    u1.itemPush(TPL_ITEM.IT1, 2) -- 物品A
+    u1.itemPush(TPL_ITEM.IT2, 3) -- 物品B
+
+    time.setTimeout(3, function()
+        u1.itemPush(u1.item()[2], 3)
+        u1.itemPush(u1.item()[2], 6)
+        time.setTimeout(1, function()
+            u1.itemRemove(6)
+        end)
+    end)
 
 end

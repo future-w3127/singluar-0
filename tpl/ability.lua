@@ -9,18 +9,19 @@ TPL_ABILITY = {
         "基础消耗：" .. colour.purple("{this|mpCost|1}"),
         "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
     })
-        .onSpell(function(evtData)
-        evtData.triggerUnit.effect("slash/Red_swing")
-        local ftp = 1
-        time.setInterval(ftp, function(curTimer)
-            if (not evtData.triggerUnit.abilityKeepCasting()) then
-                curTimer.destroy()
-                return
-            end
+        .onEffect(
+        function(evtData)
             evtData.triggerUnit.effect("slash/Red_swing")
-            evtData.triggerUnit.abilityPoint("+=1")
-        end)
-    end),
+            local ftp = 1
+            time.setInterval(ftp, function(curTimer)
+                if (not evtData.triggerUnit.abilityKeepCasting()) then
+                    curTimer.destroy()
+                    return
+                end
+                evtData.triggerUnit.effect("slash/Red_swing")
+                evtData.triggerUnit.abilityPoint("+=1")
+            end)
+        end),
 
     AB2 = AbilityTpl("唯我独尊", ABILITY_TARGET_TYPE.E)
         .icon("AB2")
