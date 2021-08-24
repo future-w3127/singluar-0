@@ -1,6 +1,6 @@
 TPL_ABILITY = {
 
-    AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_UL_600)
+    AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_U)
         .icon("AB1")
         .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).chantCastBase(2).keepCastBase(10)
         .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).chantCastVary(-0.1).keepCastVary(0.5)
@@ -23,7 +23,30 @@ TPL_ABILITY = {
             end)
         end),
 
-    AB2 = AbilityTpl("唯我独尊", ABILITY_TARGET_TYPE.E)
+    AB2 = AbilityTpl("技能2", ABILITY_TARGET_TYPE.TAG_L)
+        .icon("AB1")
+        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).chantCastBase(2).keepCastBase(10)
+        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).chantCastVary(-0.1).keepCastVary(0.5)
+        .levelMax(9)
+        .description({
+        "基础消耗：" .. colour.purple("{this|mpCost|1}"),
+        "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
+    })
+        .onEffect(
+        function(evtData)
+            evtData.triggerUnit.effect("slash/Red_swing")
+            local ftp = 1
+            time.setInterval(ftp, function(curTimer)
+                if (not evtData.triggerUnit.abilityKeepCasting()) then
+                    curTimer.destroy()
+                    return
+                end
+                evtData.triggerUnit.effect("slash/Red_swing")
+                evtData.triggerUnit.abilityPoint("+=1")
+            end)
+        end),
+
+    AB3 = AbilityTpl("唯我独尊", ABILITY_TARGET_TYPE.PAS)
         .icon("AB2")
         .description({ "强击单人特效: +{this|level|100}攻击" })
         .levelMax(5)

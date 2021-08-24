@@ -9,7 +9,7 @@ function __SINGLUAR__()
     local u1 = TPL_UNIT.TheBansheeQueen.create(Player(1), 0, 0, 66.6).level(1)
     u1.attr()
       .hp(600).hpRegen(5)
-      .mp(100).mpRegen(-5)
+      .mp(100).mpRegen(-1)
       .move(522)
       .attack(91).attackRange(1000).attackSpeed(300)
       .attackRipple(30)
@@ -58,7 +58,8 @@ function __SINGLUAR__()
     end
 
     u1.abilityPush(TPL_ABILITY.AB1)
-    u1.abilityPush(TPL_ABILITY.AB2, 4)
+    u1.abilityPush(TPL_ABILITY.AB2)
+    u1.abilityPush(TPL_ABILITY.AB3, 4)
 
     u1.itemPush(TPL_ITEM.IT1, 2) -- 物品A
     u1.itemPush(TPL_ITEM.IT2, 3) -- 物品B
