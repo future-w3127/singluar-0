@@ -6,7 +6,7 @@ function __SINGLUAR__()
     require("tpl.item") -- 物品模版
     require("tpl.unit") -- 单位模版
 
-    local u1 = TPL_UNIT.TheBansheeQueen.create(Player(1), 0, 0, 66.6).level(1)
+    local u1 = TPL_UNIT.U1.create(Player(1), 0, 0, 66.6).level(1)
     u1.attr()
       .hp(600).hpRegen(5)
       .mp(100).mpRegen(-1)
@@ -30,10 +30,20 @@ function __SINGLUAR__()
     u1.attr().missileAdd({ model = "PhoenixMissile", priority = 10, height = 500, speed = 500, shake = 'random', scatter = 3 })
     u1.attr().missileAdd({ model = "SentinelMissile", speed = 900, gatlin = 5 })
     time.setTimeout(10, function()
+        u1.modelAlias("TheBansheeQueen")
         u1.attr().missileDel("PhoenixMissile", 10)
         time.setTimeout(10, function()
+            u1.modelAlias("DranaiAkama")
             u1.attr().missileDel("DragonHawkMissile", 1)
         end)
+    end)
+
+    time.setInterval(2, function()
+        if (u1.superposition("attack") > 0) then
+            u1.superposition("attack", "-=1")
+        else
+            u1.superposition("attack", "+=1")
+        end
     end)
 
     u1.onDamage(function(evtData)

@@ -2,9 +2,12 @@ TPL_ABILITY = {
 
     AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_U)
         .icon("AB1")
-        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).chantCastBase(2).keepCastBase(10)
-        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).chantCastVary(-0.1).keepCastVary(0.5)
+        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).castChantBase(2).castKeepBase(10)
+        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).castChantVary(-0.1).castKeepVary(0.5)
         .levelMax(9)
+        .castTargetAllow(function(evtData)
+        return evtData.targetUnit ~= nil and evtData.targetUnit.isAlive() and evtData.targetUnit.isEnemy(evtData.triggerPlayer)
+    end)
         .description({
         "基础消耗：" .. colour.purple("{this|mpCost|1}"),
         "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
@@ -25,8 +28,8 @@ TPL_ABILITY = {
 
     AB2 = AbilityTpl("技能2", ABILITY_TARGET_TYPE.TAG_L)
         .icon("AB1")
-        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).chantCastBase(2).keepCastBase(10)
-        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).chantCastVary(-0.1).keepCastVary(0.5)
+        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).castChantBase(2).castKeepBase(10)
+        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).castChantVary(-0.1).castKeepVary(0.5)
         .levelMax(9)
         .description({
         "基础消耗：" .. colour.purple("{this|mpCost|1}"),
