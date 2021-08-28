@@ -17,7 +17,7 @@ TPL_ABILITY = {
             evtData.triggerUnit.effect("slash/Red_swing")
             local ftp = 1
             time.setInterval(ftp, function(curTimer)
-                if (not evtData.triggerUnit.abilityKeepCasting()) then
+                if (not evtData.triggerUnit.isAbilityKeepCasting()) then
                     curTimer.destroy()
                     return
                 end
@@ -40,7 +40,7 @@ TPL_ABILITY = {
             evtData.triggerUnit.effect("slash/Red_swing")
             local ftp = 1
             time.setInterval(ftp, function(curTimer)
-                if (not evtData.triggerUnit.abilityKeepCasting()) then
+                if (not evtData.triggerUnit.isAbilityKeepCasting()) then
                     curTimer.destroy()
                     return
                 end

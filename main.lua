@@ -11,7 +11,7 @@ function __SINGLUAR__()
       .hp(600).hpRegen(5)
       .mp(100).mpRegen(-1)
       .move(522)
-      .attack(91).attackRange(1000).attackSpeed(300)
+      .attack(91).attackRange(800).attackSpeed(300)
       .attackRipple(30)
       .missileAdd({
         priority = 1,
@@ -27,38 +27,22 @@ function __SINGLUAR__()
       .punish(2000)
       .weight("+=10;60")
 
-    u1.attr().missileAdd({ model = "PhoenixMissile", priority = 10, height = 500, speed = 500, shake = 'random', scatter = 3 })
-    u1.attr().missileAdd({ model = "SentinelMissile", speed = 900, gatlin = 5 })
-    time.setTimeout(10, function()
-        u1.modelAlias("TheBansheeQueen")
-        u1.attr().missileDel("PhoenixMissile", 10)
-        time.setTimeout(10, function()
-            u1.modelAlias("DranaiAkama")
-            u1.attr().missileDel("DragonHawkMissile", 1)
-        end)
-    end)
-
-    time.setInterval(2, function()
-        if (u1.superposition("attack") > 0) then
-            u1.superposition("attack", "-=1")
-        else
-            u1.superposition("attack", "+=1")
-        end
-    end)
-
     u1.onDamage(function(evtData)
         u1.exp("+=10")
     end)
 
-    time.setInterval(3, function()
-        u1.attr().attack("+=10;2")
-    end)
+    --time.setInterval(3, function()
+    --    u1.attr().attack("+=10;2")
+    --end)
+    --time.setInterval(3, function()
+    --    Player(1).alert(string.random(10))
+    --end)
 
-    for _ = 1, 2 do
+    for _ = 1, 1 do
         local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -1000, 500, 66.6).period(1000)
         u2.attr()
           .primary("agi")
-          .move(100)
+          .move(0)
           .hp(1000000)
           .mpRegen("+=10")
           .attack(109).attackRange(300)
