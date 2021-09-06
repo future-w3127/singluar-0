@@ -110,6 +110,18 @@ event.reaction(EVENT.punish, function(evtData)
     evtData.triggerUnit.rgba(140, 140, 140, 255, evtData.duration)
     evtData.triggerUnit.attach("Singluar\\ttg\\evt\\punish.mdl", "head", 4.9, 0.2)
 end)
+---@param evtData onBeStunData
+event.reaction(EVENT.beStun, function(evtData)
+    evtData.triggerUnit.attach("Abilities\\Spells\\Human\\Thunderclap\\ThunderclapTarget.mdl", "overhead", evtData.duration)
+end)
+---@param evtData onBeSplitData
+event.reaction(EVENT.split, function(evtData)
+    evtData.triggerUnit.effect("Abilities\\Spells\\Human\\Feedback\\SpellBreakerAttack.mdl", 0)
+end)
+---@param evtData onBeSplitSpreadData
+event.reaction(EVENT.split, function(evtData)
+    evtData.triggerUnit.effect("Abilities\\Spells\\Other\\Cleave\\CleaveDamageTarget.mdl", 0)
+end)
 ---@param evtData onHurtData
 event.reaction(EVENT.hurt, function(evtData)
     ttg.char(math.floor(evtData.damage), 11, 0.26, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), 0))

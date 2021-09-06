@@ -26,7 +26,7 @@ TPL_ABILITY = {
             end)
         end),
 
-    AB2 = AbilityTpl("技能2", ABILITY_TARGET_TYPE.TAG_L)
+    AB2 = AbilityTpl("主动技能测试", ABILITY_TARGET_TYPE.TAG_L)
         .icon("AB1")
         .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).castChantBase(2).castKeepBase(10)
         .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).castChantVary(-0.1).castKeepVary(0.5)
@@ -37,16 +37,7 @@ TPL_ABILITY = {
     })
         .onEffect(
         function(evtData)
-            evtData.triggerUnit.effect("slash/Red_swing")
-            local ftp = 1
-            time.setInterval(ftp, function(curTimer)
-                if (not evtData.triggerUnit.isAbilityKeepCasting()) then
-                    curTimer.destroy()
-                    return
-                end
-                evtData.triggerUnit.effect("slash/Red_swing")
-                evtData.triggerUnit.abilityPoint("+=1")
-            end)
+            ability.stun(evtData.targetUnit, evtData.triggerUnit, 3)
         end),
 
     AB3 = AbilityTpl("唯我独尊", ABILITY_TARGET_TYPE.PAS)

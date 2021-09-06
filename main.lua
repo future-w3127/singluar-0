@@ -42,7 +42,7 @@ function __SINGLUAR__()
         local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -1000, 500, 66.6).period(1000)
         u2.attr()
           .primary("agi")
-          .move(0)
+          .move(100)
           .hp(1000000)
           .mpRegen("+=10")
           .attack(109).attackRange(300)
@@ -57,13 +57,5 @@ function __SINGLUAR__()
 
     u1.itemPush(TPL_ITEM.IT1, 2) -- 物品A
     u1.itemPush(TPL_ITEM.IT2, 3) -- 物品B
-
-    time.setTimeout(3, function()
-        u1.itemPush(u1.item()[2], 3)
-        u1.itemPush(u1.item()[2], 6)
-        time.setTimeout(1, function()
-            u1.itemRemove(6)
-        end)
-    end)
 
 end
