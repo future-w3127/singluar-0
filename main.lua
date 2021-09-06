@@ -38,11 +38,12 @@ function __SINGLUAR__()
     --    Player(1).alert(string.random(10))
     --end)
 
-    for _ = 1, 1 do
+    for _ = 1, 3 do
         local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -1000, 500, 66.6).period(1000)
         u2.attr()
+        --.superposition("attack", 0)
           .primary("agi")
-          .move(100)
+          .move(50)
           .hp(1000000)
           .mpRegen("+=10")
           .attack(109).attackRange(300)

@@ -28,8 +28,8 @@ TPL_ABILITY = {
 
     AB2 = AbilityTpl("主动技能测试", ABILITY_TARGET_TYPE.TAG_L)
         .icon("AB1")
-        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).castChantBase(2).castKeepBase(10)
-        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).castChantVary(-0.1).castKeepVary(0.5)
+        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1)
+        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7)
         .levelMax(9)
         .description({
         "基础消耗：" .. colour.purple("{this|mpCost|1}"),
@@ -37,7 +37,8 @@ TPL_ABILITY = {
     })
         .onEffect(
         function(evtData)
-            ability.stun(evtData.targetUnit, evtData.triggerUnit, 3)
+            ability.unArm(evtData.targetUnit, 3, "Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "weapon")
+            ability.silent(evtData.targetUnit, 3, "Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "overhead")
         end),
 
     AB3 = AbilityTpl("唯我独尊", ABILITY_TARGET_TYPE.PAS)

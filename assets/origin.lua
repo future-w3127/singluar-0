@@ -57,6 +57,9 @@ _assets_model(":Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl", "Avenge
 _assets_model(":Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl", "LordofFlameMissile") --火焰巨魔
 _assets_model(":Abilities\\Weapons\\BrewmasterMissile\\BrewmasterMissile.mdl", "BrewmasterMissile") --酒仙炼金酒瓶
 
+--- 技能特效
+_assets_model(":Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "SilenceTarget") --沉默叹号
+
 --- 英雄模型
 _assets_unit(":units\\human\\HeroPaladin\\HeroPaladin", "HeroPaladin", { Art = "unit\\hero\\HeroPaladin" }) --圣骑士
 _assets_unit(":units\\human\\HeroArchMage\\HeroArchMage", "HeroArchMage", { Art = "unit\\hero\\HeroArchMage" }) --大魔法师

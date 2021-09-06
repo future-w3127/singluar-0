@@ -115,11 +115,11 @@ event.reaction(EVENT.beStun, function(evtData)
     evtData.triggerUnit.attach("Abilities\\Spells\\Human\\Thunderclap\\ThunderclapTarget.mdl", "overhead", evtData.duration)
 end)
 ---@param evtData onBeSplitData
-event.reaction(EVENT.split, function(evtData)
+event.reaction(EVENT.beSplit, function(evtData)
     evtData.triggerUnit.effect("Abilities\\Spells\\Human\\Feedback\\SpellBreakerAttack.mdl", 0)
 end)
 ---@param evtData onBeSplitSpreadData
-event.reaction(EVENT.split, function(evtData)
+event.reaction(EVENT.beSplitSpread, function(evtData)
     evtData.triggerUnit.effect("Abilities\\Spells\\Other\\Cleave\\CleaveDamageTarget.mdl", 0)
 end)
 ---@param evtData onHurtData
