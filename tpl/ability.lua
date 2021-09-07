@@ -5,8 +5,8 @@ TPL_ABILITY = {
         .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).castChantBase(2).castKeepBase(10)
         .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).castChantVary(-0.1).castKeepVary(0.5)
         .levelMax(9)
-        .castTargetAllow(function(evtData)
-        return evtData.targetUnit ~= nil and evtData.targetUnit.isAlive() and evtData.targetUnit.isEnemy(evtData.triggerPlayer)
+        .castTargetAllow(function(this, targetUnit)
+        return targetUnit ~= nil and targetUnit.isAlive() and targetUnit.isEnemy(this.bindUnit().Owner())
     end)
         .description({
         "基础消耗：" .. colour.purple("{this|mpCost|1}"),
@@ -37,8 +37,8 @@ TPL_ABILITY = {
     })
         .onEffect(
         function(evtData)
-            ability.unArm(evtData.targetUnit, 3, "Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "weapon")
-            ability.silent(evtData.targetUnit, 3, "Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "overhead")
+            --ability.unArm(evtData.targetUnit, 3, "SilenceTarget", "weapon")
+            ability.silent(evtData.targetUnit, 3, "SilenceTarget", "overhead")
         end),
 
     AB3 = AbilityTpl("唯我独尊", ABILITY_TARGET_TYPE.PAS)
