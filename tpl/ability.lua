@@ -1,36 +1,41 @@
 TPL_ABILITY = {
 
-    AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_U)
+    AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_R)
         .icon("AB1")
-        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1).castChantBase(2).castKeepBase(10)
-        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7).castChantVary(-0.1).castKeepVary(0.5)
+        .coolDownAdv(2.5, -0.05)
+        .hpCostAdv(10, 5)
+        .mpCostAdv(1, 7)
+        .castChantAdv(2, -0.1)
+        .castKeepAdv(10, 0.5)
+        .castRadiusAdv(500, 50)
         .levelMax(9)
-        .castTargetAllow(function(this, targetUnit)
-        return targetUnit ~= nil and targetUnit.isAlive() and targetUnit.isEnemy(this.bindUnit().Owner())
-    end)
         .description({
         "基础消耗：" .. colour.purple("{this|mpCost|1}"),
         "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
     })
         .onEffect(
         function(evtData)
-            evtData.triggerUnit.effect("slash/Red_swing")
+            evtData.triggerUnit.effect("slash/Red_swing", 0)
             local ftp = 1
             time.setInterval(ftp, function(curTimer)
                 if (not evtData.triggerUnit.isAbilityKeepCasting()) then
                     curTimer.destroy()
                     return
                 end
-                evtData.triggerUnit.effect("slash/Red_swing")
                 evtData.triggerUnit.abilityPoint("+=1")
+                effect.xy("slash/Red_swing", evtData.targetX, evtData.targetY, 0)
             end)
         end),
 
-    AB2 = AbilityTpl("主动技能测试", ABILITY_TARGET_TYPE.TAG_L)
+    AB2 = AbilityTpl("主动技能测试", ABILITY_TARGET_TYPE.TAG_U)
         .icon("AB1")
-        .coolDownBase(2.5).hpCostBase(10).mpCostBase(1)
-        .coolDownVary(-0.05).hpCostVary(5).mpCostVary(7)
+        .coolDownAdv(2.5, -0.05)
+        .hpCostAdv(10, 5)
+        .mpCostAdv(1, 7)
         .levelMax(9)
+        .castTargetAllow(function(this, targetUnit)
+        return targetUnit ~= nil and targetUnit.isAlive() and targetUnit.isEnemy(this.bindUnit().Owner())
+    end)
         .description({
         "基础消耗：" .. colour.purple("{this|mpCost|1}"),
         "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"

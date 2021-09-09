@@ -10,6 +10,8 @@ _assets_model("buff/ApaceGrowth")
 _assets_model("slash/Red_swing")
 _assets_model("buff/Echo")
 
+_assets_ui("singluar_dz")
+_assets_ui("singluar_debug")
 _assets_ui("singluar_echo")
 _assets_ui("singluar_chat")
 _assets_ui("singluar_menu")
@@ -19,7 +21,6 @@ _assets_ui("singluar_controller")
 _assets_ui("singluar_ability")
 _assets_ui("singluar_item")
 _assets_ui("singluar_warehouse")
-_assets_ui("singluar_dz")
 _assets_ui("singluar_cursor") --指针滞后
 
 _assets_icon("ability\\red\\DeathKnightSpellDeflection", "AB1")

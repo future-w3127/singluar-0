@@ -37,11 +37,6 @@ Game().command("^-d [-+=]%d+$", function(evtData)
         end
     end
 end)
-if (DEBUGGING) then
-    Game().command("^-debug$", function()
-        handleDisplay()
-    end)
-end
 
 --- 任务
 Quest("主动投降", "right")
@@ -75,19 +70,19 @@ end)
 ---@param evtData onImmuneInvincibleData
 event.reaction(EVENT.immuneInvincible, function(evtData)
     evtData.triggerUnit.attach("Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "origin", 1)
-    ttg.mdx("Singluar\\ttg\\evt\\immuneInvincible.mdl", 1.4, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 8)
+    ttg.mdx("Singluar\\ttg\\evt\\immuneInvincible.mdl", 1.4, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 5)
 end)
 ---@param evtData onImmuneDefendData
 event.reaction(EVENT.immuneDefend, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 8)
+    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 5)
 end)
 ---@param evtData onImmuneReductionData
 event.reaction(EVENT.immuneReduction, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 8)
+    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 5)
 end)
 ---@param evtData onImmuneDecreaseData
 event.reaction(EVENT.immuneDecrease, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 8)
+    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 5)
 end)
 ---@param evtData onHPSuckData
 event.reaction(EVENT.HPSuck, function(evtData)
@@ -128,6 +123,6 @@ event.reaction(EVENT.hurt, function(evtData)
 end)
 ---@param evtData onEnchantData
 event.reaction(EVENT.enchant, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl", 0.8, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24), 8)
+    ttg.mdx("Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl", 0.8, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24), 4)
 end)
 
