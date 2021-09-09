@@ -65,7 +65,7 @@ event.reaction(EVENT.crit, function(evtData)
 end)
 ---@param evtData onAvoidData
 event.reaction(EVENT.avoid, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\avoid.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44))
+    evtData.triggerUnit.attach("Singluar\\ttg\\evt\\avoid.mdl", "overhead", 2, 0.2)
 end)
 ---@param evtData onImmuneInvincibleData
 event.reaction(EVENT.immuneInvincible, function(evtData)
@@ -123,6 +123,6 @@ event.reaction(EVENT.hurt, function(evtData)
 end)
 ---@param evtData onEnchantData
 event.reaction(EVENT.enchant, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl", 0.8, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24), 4)
+    ttg.mdx("Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl", 0.8, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24), 2)
 end)
 

@@ -18,8 +18,7 @@ function __SINGLUAR__()
         priority = 1,
         model = "DragonHawkMissile",
         homing = true, height = 300, speed = 700, shake = 'random',
-        gatlin = 3,
-        reflex = 5,
+        scatter = 10,
     })
       .crit(10).odds("crit", 10)
       .hpSuck("+=10")
