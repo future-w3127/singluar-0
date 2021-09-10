@@ -23,10 +23,10 @@ function __SINGLUAR__()
       .crit(10).odds("crit", 10)
       .hpSuck("+=10")
       .mpSuck("+=10")
-      .enchantWeapon("grass", "+=1;60")
-      .enchantWeapon("poison", "+=1;60")
+      .enchantWeapon("grass", "+=1")
+      .enchantWeapon("poison", "+=1")
       .punish(2000)
-      .weight("+=10;60")
+      .weight("+=10")
 
     u1.onDamage(function(evtData)
         u1.exp("+=10")
@@ -39,7 +39,7 @@ function __SINGLUAR__()
     --    Player(1).alert(string.random(10))
     --end)
 
-    for _ = 1, 20 do
+    for _ = 1, 5 do
         local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -400, 400, 66.6).period(1000)
         u2.attr()
           .primary("agi")

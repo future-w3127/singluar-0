@@ -61,44 +61,44 @@ end
 ---@param evtData onCritData
 event.reaction(EVENT.crit, function(evtData)
     evtData.targetUnit.effect("Singluar\\crit.mdl")
-    ttg.mdx("Singluar\\ttg\\evt\\crit.mdl", 1.2, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24))
+    ttg.mdx("Singluar\\ttg\\evt\\crit.mdl", 1.2, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24), 5)
 end)
 ---@param evtData onAvoidData
 event.reaction(EVENT.avoid, function(evtData)
-    evtData.triggerUnit.attach("Singluar\\ttg\\evt\\avoid.mdl", "overhead", 2, 0.2)
+    evtData.triggerUnit.attach("Singluar\\ttg\\evt\\avoid.mdl", "overhead", 0.3, 0.2)
 end)
 ---@param evtData onImmuneInvincibleData
 event.reaction(EVENT.immuneInvincible, function(evtData)
     evtData.triggerUnit.attach("Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "origin", 1)
-    ttg.mdx("Singluar\\ttg\\evt\\immuneInvincible.mdl", 1.4, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 5)
+    ttg.mdx("Singluar\\ttg\\evt\\immuneInvincible.mdl", 1.4, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 1)
 end)
 ---@param evtData onImmuneDefendData
 event.reaction(EVENT.immuneDefend, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 5)
+    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 1)
 end)
 ---@param evtData onImmuneReductionData
 event.reaction(EVENT.immuneReduction, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 5)
+    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 1)
 end)
 ---@param evtData onImmuneDecreaseData
 event.reaction(EVENT.immuneDecrease, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 5)
+    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 1)
 end)
 ---@param evtData onHPSuckData
 event.reaction(EVENT.HPSuck, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 1)
+    evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 0.5)
 end)
 ---@param evtData onHPSuckSpellData
 event.reaction(EVENT.HPSuckSpell, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 1.5)
+    evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 0.5)
 end)
 ---@param evtData onMPSuckData
 event.reaction(EVENT.MPSuck, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 1)
+    evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 0.5)
 end)
 ---@param evtData onMPSuckSpellData
 event.reaction(EVENT.MPSuckSpell, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 1)
+    evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 0.5)
 end)
 ---@param evtData onPunishData
 event.reaction(EVENT.punish, function(evtData)
@@ -119,7 +119,14 @@ event.reaction(EVENT.beSplitSpread, function(evtData)
 end)
 ---@param evtData onHurtData
 event.reaction(EVENT.hurt, function(evtData)
-    ttg.char(math.floor(evtData.damage), 11, 0.26, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), 0))
+    ttg.char({
+        int = math.floor(evtData.damage), 11, 0.26,
+        x = evtData.triggerUnit.x(),
+        y = evtData.triggerUnit.y(),
+        z = _z(evtData.triggerUnit.z(), 0),
+        height = 150,
+        duration = 0.3,
+    })
 end)
 ---@param evtData onEnchantData
 event.reaction(EVENT.enchant, function(evtData)
