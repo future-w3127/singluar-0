@@ -61,7 +61,15 @@ end
 ---@param evtData onCritData
 event.reaction(EVENT.crit, function(evtData)
     evtData.targetUnit.effect("Singluar\\crit.mdl")
-    ttg.mdx("Singluar\\ttg\\evt\\crit.mdl", 1.2, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24), 5)
+    ttg.mdx({
+        model = "Singluar\\ttg\\evt\\crit.mdl",
+        scale = 1.2,
+        x = evtData.targetUnit.x(),
+        y = evtData.targetUnit.y(),
+        z = _z(evtData.targetUnit.z(), -24),
+        height = 200,
+        duration = 0.3,
+    })
 end)
 ---@param evtData onAvoidData
 event.reaction(EVENT.avoid, function(evtData)
@@ -70,19 +78,51 @@ end)
 ---@param evtData onImmuneInvincibleData
 event.reaction(EVENT.immuneInvincible, function(evtData)
     evtData.triggerUnit.attach("Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "origin", 1)
-    ttg.mdx("Singluar\\ttg\\evt\\immuneInvincible.mdl", 1.4, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 1)
+    ttg.mdx({
+        model = "Singluar\\ttg\\evt\\immuneInvincible.mdl",
+        scale = 1.4,
+        x = evtData.targetUnit.x(),
+        y = evtData.targetUnit.y(),
+        z = _z(evtData.targetUnit.z(), -44),
+        height = 100,
+        duration = 1,
+    })
 end)
 ---@param evtData onImmuneDefendData
 event.reaction(EVENT.immuneDefend, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 1)
+    ttg.mdx({
+        model = "Singluar\\ttg\\evt\\immune.mdl",
+        scale = 1.2,
+        x = evtData.targetUnit.x(),
+        y = evtData.targetUnit.y(),
+        z = _z(evtData.targetUnit.z(), -44),
+        height = 100,
+        duration = 1,
+    })
 end)
 ---@param evtData onImmuneReductionData
 event.reaction(EVENT.immuneReduction, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 1)
+    ttg.mdx({
+        model = "Singluar\\ttg\\evt\\immune.mdl",
+        scale = 1.2,
+        x = evtData.targetUnit.x(),
+        y = evtData.targetUnit.y(),
+        z = _z(evtData.targetUnit.z(), -44),
+        height = 100,
+        duration = 1,
+    })
 end)
 ---@param evtData onImmuneDecreaseData
 event.reaction(EVENT.immuneDecrease, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\immune.mdl", 1.2, evtData.triggerUnit.x(), evtData.triggerUnit.y(), _z(evtData.triggerUnit.z(), -44), 1)
+    ttg.mdx({
+        model = "Singluar\\ttg\\evt\\immune.mdl",
+        scale = 1.2,
+        x = evtData.targetUnit.x(),
+        y = evtData.targetUnit.y(),
+        z = _z(evtData.targetUnit.z(), -44),
+        height = 100,
+        duration = 1,
+    })
 end)
 ---@param evtData onHPSuckData
 event.reaction(EVENT.HPSuck, function(evtData)
@@ -130,6 +170,14 @@ event.reaction(EVENT.hurt, function(evtData)
 end)
 ---@param evtData onEnchantData
 event.reaction(EVENT.enchant, function(evtData)
-    ttg.mdx("Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl", 0.8, evtData.targetUnit.x(), evtData.targetUnit.y(), _z(evtData.targetUnit.z(), -24), 2)
+    ttg.mdx({
+        model = "Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl",
+        scale = 0.8,
+        x = evtData.targetUnit.x(),
+        y = evtData.targetUnit.y(),
+        z = _z(evtData.targetUnit.z(), -24),
+        height = 800,
+        duration = 1.5,
+    })
 end)
 
