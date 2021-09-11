@@ -15,16 +15,19 @@ TPL_ABILITY = {
     })
         .onEffect(
         function(evtData)
-            evtData.triggerUnit.effect("slash/Red_swing", 0)
-            local ftp = 1
-            time.setInterval(ftp, function(curTimer)
-                if (not evtData.triggerUnit.isAbilityKeepCasting()) then
-                    curTimer.destroy()
-                    return
-                end
-                evtData.triggerUnit.abilityPoint("+=1")
-                effect.xy("slash/Red_swing", evtData.targetX, evtData.targetY, 0)
-            end)
+            print_r(evtData)
+            print_r(evtData.triggerUnit)
+            print_r(evtData.triggerAbility)
+            --evtData.triggerUnit.effect("slash/Red_swing", 0)
+            --local ftp = 1
+            --time.setInterval(ftp, function(curTimer)
+            --    if (not evtData.triggerUnit.isAbilityKeepCasting()) then
+            --        curTimer.destroy()
+            --        return
+            --    end
+            --    evtData.triggerUnit.abilityPoint("+=1")
+            --    effect.xy("slash/Red_swing", evtData.targetX, evtData.targetY, 0)
+            --end)
         end),
 
     AB2 = AbilityTpl("主动技能测试", ABILITY_TARGET_TYPE.TAG_U)
