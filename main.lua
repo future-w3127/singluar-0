@@ -17,7 +17,7 @@ function __SINGLUAR__()
       .missileAdd({
         priority = 1,
         model = "DragonHawkMissile",
-        homing = true, height = 300, speed = 700, shake = 'random',
+        homing = true, height = 300, speed = 700, shake = 'rand',
         scatter = 10,
     })
       .crit(10).odds("crit", 10)
@@ -57,7 +57,7 @@ function __SINGLUAR__()
     u1.abilityPush(TPL_ABILITY.AB3, 4)
 
     time.setInterval(5, function()
-        u1.ability()[1].castRadiusAdv(math.random(50, 1200), nil)
+        u1.ability()[1].castRadiusAdv(math.rand(50, 1200), nil)
     end)
 
     u1.itemPush(TPL_ITEM.IT1, 2) -- 物品A

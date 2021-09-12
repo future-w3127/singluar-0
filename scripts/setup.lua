@@ -1,5 +1,3 @@
-SINGLUAR_MAP_NAME = "特异图-0"
-
 -- 调试自动去除迷雾
 Game().fog(not DEBUGGING).mark(not DEBUGGING)
 

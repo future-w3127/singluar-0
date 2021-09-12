@@ -13,8 +13,17 @@ TPL_ABILITY = {
         "基础消耗：" .. colour.purple("{this|mpCost|1}"),
         "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
     })
+        .castTargetAllow(function(this, targetUnit)
+        return targetUnit ~= nil and targetUnit.isEnemy(this.bindUnit().Owner())
+    end)
         .onEffect(
         function(evtData)
+
+            local coolDownTimer = evtData.triggerAbility.coolDownTimer()
+            if (instanceof(coolDownTimer, "Timer")) then
+                coolDownTimer.remainTime(-1)
+            end
+
             print_r(evtData)
             print_r(evtData.triggerUnit)
             print_r(evtData.triggerAbility)
