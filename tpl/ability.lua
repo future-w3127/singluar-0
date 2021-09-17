@@ -10,8 +10,8 @@ TPL_ABILITY = {
         .castRadiusAdv(500, 50)
         .levelMax(9)
         .description({
-        "基础消耗：" .. colour.purple("{this|mpCost|1}"),
-        "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
+        "基础消耗：" .. colour.purple("{this.mpCost()}"),
+        "对目标造成伤害：" .. colour.gold("{math.floor(this.bindUnit().attr().attack()*100)}") .. "(攻击x100)"
     })
         .castTargetAllow(function(this, targetUnit)
         return targetUnit ~= nil and targetUnit.isEnemy(this.bindUnit().Owner())
@@ -23,7 +23,6 @@ TPL_ABILITY = {
             if (instanceof(coolDownTimer, "Timer")) then
                 coolDownTimer.remainTime(-1)
             end
-
             print_r(evtData)
             print_r(evtData.triggerUnit)
             print_r(evtData.triggerAbility)
@@ -48,10 +47,6 @@ TPL_ABILITY = {
         .castTargetAllow(function(this, targetUnit)
         return targetUnit ~= nil and targetUnit.isAlive() and targetUnit.isEnemy(this.bindUnit().Owner())
     end)
-        .description({
-        "基础消耗：" .. colour.purple("{this|mpCost|1}"),
-        "对目标造成伤害：" .. colour.gold("{this|level|100}") .. "(技能等级x100)"
-    })
         .onEffect(
         function(evtData)
             --ability.unArm(evtData.targetUnit, 3, "SilenceTarget", "weapon")
@@ -60,7 +55,7 @@ TPL_ABILITY = {
 
     AB3 = AbilityTpl("唯我独尊", ABILITY_TARGET_TYPE.PAS)
         .icon("AB2")
-        .description({ "强击单人特效: +{this|level|100}攻击" })
+        .description({ "强击单人特效: +{50+this.level()*100}攻击" })
         .levelMax(5)
         .levelUpNeedPoint(101)
         .onGet(function(evtData) evtData.triggerUnit.attr().attack("+=" .. 100 * evtData.triggerAbility.level()) end)

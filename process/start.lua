@@ -180,7 +180,7 @@ process.onSetup(function(this)
             x = evtData.triggerUnit.x(),
             y = evtData.triggerUnit.y(),
             z = _z(evtData.triggerUnit.z(), 0),
-            height = 1150,
+            height = 150,
             duration = 0.5,
         })
     end)

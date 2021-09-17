@@ -37,10 +37,9 @@ process.onSetup(function(this)
     --end)
 
     local u2s = {}
-    for _ = 1, 7 do
-        local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -400, 400, 66.6).period(1000)
+    for _ = 1, 20 do
+        local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -400, 400, 66.6).period(1000).primary("agi")
         u2.attr()
-          .primary("agi")
           .move(50)
           .hp(1000000)
           .mpRegen("+=10")
