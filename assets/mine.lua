@@ -29,7 +29,7 @@ _assets_ui("hunzsig_alert")
 _assets_ui("hunzsig_buff")
 _assets_ui("hunzsig_controller")
 _assets_ui("hunzsig_ability")
---_assets_ui("hunzsig_item")
+_assets_ui("hunzsig_item")
 _assets_ui("hunzsig_warehouse")
 _assets_ui("hunzsig_cursor") --指针置顶
 

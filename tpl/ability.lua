@@ -14,7 +14,7 @@ TPL_ABILITY = {
         "对目标造成伤害：" .. colour.gold("{math.floor(this.bindUnit().attr().attack()*100)}") .. "(攻击x100)"
     })
         .castTargetAllow(function(this, targetUnit)
-        return targetUnit ~= nil and targetUnit.isEnemy(this.bindUnit().Owner())
+        return targetUnit ~= nil and targetUnit.isEnemy(this.bindUnit().owner())
     end)
         .onEffect(
         function(evtData)
@@ -23,9 +23,9 @@ TPL_ABILITY = {
             if (instanceof(coolDownTimer, "Timer")) then
                 coolDownTimer.remainTime(-1)
             end
-            print_r(evtData)
-            print_r(evtData.triggerUnit)
-            print_r(evtData.triggerAbility)
+            --print_r(evtData)
+            --print_r(evtData.triggerUnit)
+            --print_r(evtData.triggerAbility)
             --evtData.triggerUnit.effect("slash/Red_swing", 0)
             --local ftp = 1
             --time.setInterval(ftp, function(curTimer)
@@ -45,7 +45,7 @@ TPL_ABILITY = {
         .mpCostAdv(1, 7)
         .levelMax(9)
         .castTargetAllow(function(this, targetUnit)
-        return targetUnit ~= nil and targetUnit.isAlive() and targetUnit.isEnemy(this.bindUnit().Owner())
+        return targetUnit ~= nil and targetUnit.isAlive() and targetUnit.isEnemy(this.bindUnit().owner())
     end)
         .onEffect(
         function(evtData)
@@ -58,7 +58,9 @@ TPL_ABILITY = {
         .description({ "强击单人特效: +{50+this.level()*100}攻击" })
         .levelMax(5)
         .levelUpNeedPoint(101)
-        .onGet(function(evtData) evtData.triggerUnit.attr().attack("+=" .. 100 * evtData.triggerAbility.level()) end)
+        .onGet(function(evtData)
+        evtData.triggerUnit.attr().attack("+=" .. 100 * evtData.triggerAbility.level())
+    end)
         .onLose(function(evtData) evtData.triggerUnit.attr().attack("-=" .. 100 * evtData.triggerAbility.level()) end)
         .onLevelChange(
         function(evtData)
