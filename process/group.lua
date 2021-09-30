@@ -8,10 +8,11 @@ process.onSetup(function(this)
     end
     local jassGroup = J.CreateGroup()
     local myGroup = {}
-    for _ = 1, 1000 do
-        local u = J.CreateUnit(J.Player(0), c2i("nfro"), 0, 0, 270)
+    for _ = 1, 100 do
+        local id = c2i("nfro")
+        local u = J.CreateUnit(J.Player(0), id, 0, 0, 270)
         J.GroupAddUnit(jassGroup, u)
-        table.insert(myGroup, u)
+        table.insert(myGroup, id)
     end
 
     local t1 = os.clock()
@@ -21,7 +22,8 @@ process.onSetup(function(this)
     local t2 = os.clock()
     print("jass time: " .. printTimeWeight(t2, t1))
     for _, u in ipairs(myGroup) do
-        J.GetUnitName(u)
+        slk.i2v(u, "slk", "Name")
+        --J.GetUnitName(u)
     end
     local t3 = os.clock()
     print("my time: " .. printTimeWeight(t3, t2))

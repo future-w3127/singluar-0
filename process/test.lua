@@ -37,21 +37,22 @@ process.onSetup(function(this)
     --end)
 
     local u2s = {}
-    --for _ = 1, 1 do
-    --    local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -400, 400, 66.6).period(1000).primary("agi")
-    --    u2.attr()
-    --      .move(50)
-    --      .hp(1000000)
-    --      .mpRegen("+=10")
-    --      .attack(109).attackRange(300)
-    --      .punish(1000)
-    --      .avoid(35)
-    --      .lightningAdd({ lightingType = LIGHTING_TYPE.thunderRed, focus = 2 })
-    --    table.insert(u2s, u2)
-    --end
+    for _ = 1, 1 do
+        local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -400, 400, 66.6).period(1000).primary("agi")
+        u2.attr()
+          .move(50)
+          .hp(1000000)
+          .mpRegen("+=10")
+          .attack(109).attackRange(300)
+          .punish(1000)
+          .avoid(35)
+          .lightningAdd({ lightingType = LIGHTING_TYPE.thunderRed, focus = 2 })
+        table.insert(u2s, u2)
+    end
     this.stage("u2s", u2s)
 
-    u1.abilitySlot().push(TPL_ABILITY.AB1)
+    local a = u1.abilitySlot()
+    a.push(TPL_ABILITY.AB1)
     u1.abilitySlot().push(TPL_ABILITY.AB2)
     u1.abilitySlot().push(TPL_ABILITY.AB3, 6)
 
