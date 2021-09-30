@@ -1,4 +1,4 @@
-local process = Process("start")
+local process = Process("__init__")
 
 process.onSetup(function(this)
 
