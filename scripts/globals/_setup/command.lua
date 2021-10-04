@@ -28,7 +28,7 @@ Game().command("^-d [-+=]%d+$", function(evtData)
     end
 end)
 if (DEBUGGING) then
-    --- -apm 查看玩家分钟操作数
+    --- 流程掌控
     Game().command("^-proc [a-zA-Z0-9_]+$", function(evtData)
         local p = string.trim(evtData.matchedString)
         p = string.sub(p, 7, string.len(p))
