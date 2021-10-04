@@ -3,6 +3,11 @@ local process = Process("__init__")
 process.onSetup(function(this)
 
     if (this.stage("init") == nil) then
+
+        -- 配置游戏技能热键
+        -- A S H 被默认命令占用建议不使用
+        Game().abilityHotkey({ "Q", "W", "E", "R", "D", "F", "C", "V" })
+        
         -- 资源转化
         Game().convert("gold", "lumber", 1000000) -- 1木 = 1000000金
         Game().convert("silver", "gold", 100) -- 1金 = 100银

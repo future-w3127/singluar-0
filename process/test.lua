@@ -5,7 +5,7 @@ process.onSetup(function(this)
     local u1 = TPL_UNIT.U1.create(Player(1), 0, 0, 66.6).level(1)
     u1.attr()
       .reborn(0.5)
-      .hp(1000).hpRegen(5)
+      .hp(1500).hpRegen(10)
       .mp(100)--.mpRegen(-1)
       .move(522)
       .attack(91).attackRange(1000).attackSpeed(100)
@@ -37,7 +37,7 @@ process.onSetup(function(this)
     --end)
 
     local u2s = {}
-    for _ = 1, 1 do
+    for _ = 1, 10 do
         local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -400, 400, 66.6).period(1000).primary("agi")
         u2.attr()
           .move(50)
