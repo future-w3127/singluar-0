@@ -57,7 +57,7 @@ process.onSetup(function(this)
     u1.abilitySlot().push(TPL_ABILITY.AB3, 6)
 
     local its = {}
-    for _ = 1, 50 do
+    for _ = 1, 5 do
         local it = TPL_ITEM.IT1.create(0, 0)
         table.insert(its, it)
     end
