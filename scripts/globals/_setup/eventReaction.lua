@@ -1,4 +1,4 @@
---- 事件反应
+-- 事件反应
 local function _z(z, offset)
     return z + 130 + offset
 end

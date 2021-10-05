@@ -51,10 +51,10 @@ process.onSetup(function(this)
     end
     this.stage("u2s", u2s)
 
-    local a = u1.abilitySlot()
-    a.push(TPL_ABILITY.AB1)
-    u1.abilitySlot().push(TPL_ABILITY.AB2)
-    u1.abilitySlot().push(TPL_ABILITY.AB3, 6)
+    local as = u1.abilitySlot()
+    as.push(TPL_ABILITY.AB1)
+    as.push(TPL_ABILITY.AB2)
+    as.push(TPL_ABILITY.AB3, 6)
 
     local its = {}
     for _ = 1, 5 do
