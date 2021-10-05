@@ -4,7 +4,7 @@ _assets_font("字魂59号-创粗黑")
 _assets_sound("metal_bash_heavy", nil, "vwp")
 _assets_sound("voice/clickhero/level_up", "lv", "v3d")
 _assets_sound("voice/action/打鼓", "drum", "v3d")
-_assets_sound("bgm/dnf/Dungeon and Fighter - GBL女神殿 - goddess temple", "gbl", "bgm")
+_assets_sound("bgm/Dungeon and Fighter - GBL女神殿 - goddess temple", "gbl", "bgm")
 
 _assets_model("buff/ApaceGrowth")
 _assets_model("slash/Red_swing")
