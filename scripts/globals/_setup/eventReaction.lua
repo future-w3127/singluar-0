@@ -110,7 +110,7 @@ event.reaction(EVENT.hurt, function(evtData)
         y = evtData.triggerUnit.y(),
         z = _z(evtData.triggerUnit.z(), 0),
         height = 150,
-        duration = 0.5,
+        duration = 0.3,
     })
 end)
 ---@param evtData onEnchantData

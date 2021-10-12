@@ -29,6 +29,8 @@ process.onSetup(function(this)
     end)
     this.stage("u1", u1)
 
+    u1.attach("word/Rank_BaHuangLeiDong_AoShiQunXiong", "head", -1)
+
     --time.setInterval(3, function()
     --    u1.attr().attack("+=10;2")
     --end)
@@ -37,7 +39,7 @@ process.onSetup(function(this)
     --end)
 
     local u2s = {}
-    for _ = 1, 10 do
+    for _ = 1, 1 do
         local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -400, 400, 66.6).period(1000).primary("agi")
         u2.attr()
           .move(50)
@@ -56,12 +58,16 @@ process.onSetup(function(this)
     as.push(TPL_ABILITY.AB2)
     as.push(TPL_ABILITY.AB3, 6)
 
+    local x1 = os.clock()
     local its = {}
-    for _ = 1, 5 do
+    for _ = 1, 20 do
         local it = TPL_ITEM.IT1.create(0, 0)
         table.insert(its, it)
     end
     this.stage("its", its)
+
+    local x2 = os.clock()
+    print(string.format("run time: %.2f\n", x2 - x1))
 
     u1.itemPick(its[25])
 
