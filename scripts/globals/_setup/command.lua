@@ -18,12 +18,13 @@ Game().command("^-d [-+=]%d+$", function(evtData)
         if (v > 0) then
             local val = math.abs(v)
             if (first == "+") then
-                evtData.triggerPlayer.cameraDistance("+=" .. val)
+                evtData.triggerPlayer.camera().distance("+=" .. val)
             elseif (first == "-") then
-                evtData.triggerPlayer.cameraDistance("-=" .. val)
+                evtData.triggerPlayer.camera().distance("-=" .. val)
             elseif (first == "=") then
-                evtData.triggerPlayer.cameraDistance(val)
+                evtData.triggerPlayer.camera().distance(val)
             end
+            echo("视距已设置为：" .. evtData.triggerPlayer.camera().distance())
         end
     end
 end)

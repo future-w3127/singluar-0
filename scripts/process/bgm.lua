@@ -2,8 +2,11 @@ local process = Process("bgm")
 
 process.onSetup(function(this)
 
-    bgm.stop()
-    bgm.play("gbl", Player(1))
+    Bgm().stop()
+
+    Bgm().musicAlias("gbl").play()
+
+    Player(3).bgm().musicAlias("gbl").play()
 
 end)
 
