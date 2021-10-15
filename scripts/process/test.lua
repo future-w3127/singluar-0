@@ -2,6 +2,8 @@ local process = Process("test")
 
 process.onSetup(function(this)
 
+    --J.EnablePreSelect(false, false)
+
     local u1 = TPL_UNIT.U1.create(Player(1), 0, 0, 66.6).level(1)
     u1.attr()
       .reborn(0.5)
@@ -28,8 +30,6 @@ process.onSetup(function(this)
         u1.exp("+=10")
     end)
     this.stage("u1", u1)
-
-    u1.attach("word/Rank_BaHuangLeiDong_AoShiQunXiong", "head", -1)
 
     --time.setInterval(3, function()
     --    u1.attr().attack("+=10;2")
