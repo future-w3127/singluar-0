@@ -10,13 +10,12 @@ process.onSetup(function(this)
       .hp(1500).hpRegen(10)
       .mp(100)--.mpRegen(-1)
       .move(522)
+      .attackSpaceBase(0.1)
       .attack(91).attackRange(1000).attackSpeed(100)
-      .attackRipple(30)
       .missileAdd({
         priority = 1,
-        model = "DragonHawkMissile",
-        homing = true, height = 300, speed = 700, shake = 'rand',
-        scatter = 100, radius = 10000,
+        model = "PriestMissile",
+        homing = true, height = 300, speed = 500,
     })
       .crit(10).odds("crit", 10)
       .hpSuck("+=10")
@@ -40,13 +39,13 @@ process.onSetup(function(this)
 
     local u2s = {}
     for _ = 1, 1 do
-        local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -400, 400, 66.6).period(1000).primary("agi")
+        local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -768, 500, 66.6).period(1000).primary("agi").flyHeight(300)
         u2.attr()
-          .move(50)
+          .move(300)
           .hp(1000000)
           .mpRegen("+=10")
           .attack(109).attackRange(300)
-          .punish(1000)
+          .punish(10000)
           .avoid(35)
           .lightningAdd({ lightingType = LIGHTING_TYPE.thunderRed, focus = 2 })
         table.insert(u2s, u2)
@@ -70,7 +69,6 @@ process.onSetup(function(this)
     print(string.format("run time: %.2f\n", x2 - x1))
 
     u1.itemPick(its[25])
-
 end)
 
 process.onDestroy(function(this)

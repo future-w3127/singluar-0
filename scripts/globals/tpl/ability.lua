@@ -30,7 +30,7 @@ TPL_ABILITY = {
                 end
                 evtData.triggerAbility.exp("+=10")
                 evtData.triggerUnit.abilityPoint("+=1")
-                effect.xy("slash/Red_swing", evtData.targetX, evtData.targetY, 0)
+                effect.xy("slash/Red_swing", evtData.targetX, evtData.targetY, evtData.targetZ, 0)
             end)
         end),
 

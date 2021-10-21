@@ -2,11 +2,9 @@ local process = Process("bgm")
 
 process.onSetup(function(this)
 
-    Bgm().stop()
-
-    Bgm().musicAlias("gbl").play()
-
-    Player(3).bgm().musicAlias("gbl").play()
+    Game().async(Player(1), function()
+        Bgm().play("gbl")
+    end)
 
 end)
 

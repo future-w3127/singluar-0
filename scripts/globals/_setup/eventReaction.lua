@@ -1,17 +1,18 @@
 -- 事件反应
-local function _z(z, offset)
-    return z + 130 + offset
+---@param u Unit
+local function _z(u, offset)
+    return u.z() + u.flyHeight() + 130 + offset
 end
 
 ---@param evtData onCritData
 event.reaction(EVENT.crit, function(evtData)
-    evtData.targetUnit.effect("Singluar\\crit.mdl")
+    evtData.targetUnit.attach("Singluar\\crit.mdl", "origin", 0.5, 1)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\crit.mdl",
         scale = 1.2,
         x = evtData.targetUnit.x(),
         y = evtData.targetUnit.y(),
-        z = _z(evtData.targetUnit.z(), -24),
+        z = _z(evtData.targetUnit, -24),
         height = 250,
         duration = 0.3,
     })
@@ -28,7 +29,7 @@ event.reaction(EVENT.immuneInvincible, function(evtData)
         scale = 1.4,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
-        z = _z(evtData.triggerUnit.z(), -44),
+        z = _z(evtData.triggerUnit, -44),
         height = 100,
         duration = 1,
     })
@@ -40,7 +41,7 @@ event.reaction(EVENT.immuneDefend, function(evtData)
         scale = 1.2,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
-        z = _z(evtData.triggerUnit.z(), -44),
+        z = _z(evtData.triggerUnit, -44),
         height = 100,
         duration = 1,
     })
@@ -52,7 +53,7 @@ event.reaction(EVENT.immuneReduction, function(evtData)
         scale = 1.2,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
-        z = _z(evtData.triggerUnit.z(), -44),
+        z = _z(evtData.triggerUnit, -44),
         height = 100,
         duration = 1,
     })
@@ -64,7 +65,7 @@ event.reaction(EVENT.immuneDecrease, function(evtData)
         scale = 1.2,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
-        z = _z(evtData.triggerUnit.z(), -44),
+        z = _z(evtData.triggerUnit, -44),
         height = 100,
         duration = 1,
     })
@@ -108,7 +109,7 @@ event.reaction(EVENT.hurt, function(evtData)
         int = math.floor(evtData.damage), 11, 0.26,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
-        z = _z(evtData.triggerUnit.z(), 0),
+        z = _z(evtData.triggerUnit, 0),
         height = 150,
         duration = 0.3,
     })
@@ -120,7 +121,7 @@ event.reaction(EVENT.enchant, function(evtData)
         scale = 0.8,
         x = evtData.targetUnit.x(),
         y = evtData.targetUnit.y(),
-        z = _z(evtData.targetUnit.z(), -24),
+        z = _z(evtData.targetUnit, -24),
         height = math.rand(700, 1200),
         duration = 2,
     })
