@@ -13,6 +13,10 @@ process.onSetup(function(this)
             .text(t1.remain() .. '/' .. t1.period())
         if (t1.remain() == 110) then
             t1.remain(-55)
+            t1.pause()
+            time.setTimeout(3, function()
+                t1.resume()
+            end)
         end
         if (t1.remain() == 95) then
             t1.remain(20)
