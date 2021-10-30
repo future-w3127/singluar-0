@@ -7,7 +7,7 @@ process.onSetup(function(this)
     end)
     this.stage("t1", t1)
 
-    local t2 = time.setInterval(1, function()
+    local t2 = time.setInterval(1, function(curTimer)
         FrameText("timer-test", FrameGameUI, TEXT_ALIGN_CENTER, 10)
             .relation(FRAME_ALIGN_CENTER, FrameGameUI, FRAME_ALIGN_CENTER, 0, 0)
             .text(t1.remain() .. '/' .. t1.period())

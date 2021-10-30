@@ -56,6 +56,9 @@ process.onSetup(function(this)
     as.push(TPL_ABILITY.AB1)
     as.push(TPL_ABILITY.AB2)
     as.push(TPL_ABILITY.AB3, 6)
+    time.setInterval(3, function()
+        as.storage()[1].castRadiusAdv(math.rand(300, 1000), nil)
+    end)
 
     local x1 = os.clock()
     local its = {}
