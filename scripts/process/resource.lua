@@ -12,7 +12,9 @@ process.onSetup(function(this)
         Player(1).copper("+=166")
     end)
 
-
+    print('Compare1 ', Game().resourceCompare({ silver = 1, gold = 1 }, { silver = 98, copper = 22 }))
+    print('Compare2 ', Game().resourceCompare({ silver = 10, copper = 1000 }, { copper = 2000 }))
+    print('Compare3 ', Game().resourceCompare({ gold = 2 }, { copper = 1001, silver = 190 }))
 
 end)
 
