@@ -33,7 +33,12 @@ if (DEBUGGING) then
     Game().command("^-proc [a-zA-Z0-9_]+$", function(evtData)
         local p = string.trim(evtData.matchedString)
         p = string.sub(p, 7, string.len(p))
-        local proc = Processes.get(p)
+        local proc
+        if (p == "this") then
+            proc = ProcessCurrent
+        else
+            proc = Processes.get(p)
+        end
         if (instanceof(proc, "Process")) then
             print_mb(p .. "流程已重置")
             proc.start()

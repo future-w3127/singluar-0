@@ -3,9 +3,8 @@ local process = Process("frame")
 process.onSetup(function(this)
 
     local frame1 = FrameTextarea("pf1", FrameGameUI, TEXT_ALIGN_LEFT, 10)
-    print(frame1)
     frame1
-        .relation(FRAME_ALIGN_CENTER, FrameGameUI, FRAME_ALIGN_CENTER, 0, 0)
+        .relation(FRAME_ALIGN_RIGHT, FrameGameUI, FRAME_ALIGN_RIGHT, -0.002, 0)
         .size(0.2, 0.2)
         .text(string.implode('|n', {
         "4图1794日好9负那9放1nfu913fn9u31fnun1",
