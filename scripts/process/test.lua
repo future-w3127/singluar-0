@@ -10,8 +10,7 @@ process.onSetup(function(this)
       .hp(1500).hpRegen(10)
       .mp(100)--.mpRegen(-1)
       .move(522)
-      .attackSpaceBase(0.1)
-      .attack(91).attackRange(1000).attackSpeed(100)
+      .attackSpaceBase(1).attack(91).attackRange(1000).attackSpeed(100)
       .missileAdd({
         priority = 1,
         model = "PriestMissile",
@@ -21,7 +20,7 @@ process.onSetup(function(this)
       .hpSuck("+=10")
       .mpSuck("+=10")
       .enchantWeapon("grass", "+=1")
-      .enchantWeapon("poison", "+=1")
+      .enchantWeapon("fire", "+=1")
       .punish(2000)
       .weight("+=10")
 
@@ -39,12 +38,17 @@ process.onSetup(function(this)
 
     local u2s = {}
     for _ = 1, 1 do
-        local u2 = Player(2).unit(TPL_UNIT.CenariusNightmare, -768, 500, 66.6).period(1000).primary("agi").flyHeight(300)
+        local u2 = Player(2)
+            .unit(TPL_UNIT.CenariusNightmare, -768, 500, 66.6)
+            .period(1000)
+            .primary(UNIT_PRIMARY.agi)
+            .flyHeight(300)
         u2.attr()
           .move(300)
           .hp(1000000)
           .mpRegen("+=10")
-          .attack(109).attackRange(300)
+          .attack(109)
+          .attackRange(300)
           .punish(1000)
           .avoid(35)
           .lightningAdd({ lightingType = LIGHTING_TYPE.thunderRed, focus = 2 })
