@@ -14,7 +14,7 @@ DAMAGE_TYPE.poison = nil
 attribute.enchant("fire", "火", {
     strengthen = 0,
     resistance = 0,
-    attach = {
+    append = {
         { attach = 'origin', effect = 'Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl' },
         { attach = 'left hand', effect = 'Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl' },
         { attach = 'right hand', effect = 'Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl' },
