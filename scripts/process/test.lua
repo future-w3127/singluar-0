@@ -63,27 +63,11 @@ process.onSetup(function(this)
     time.setInterval(3, function()
         as.storage()[1].castRadiusAdv(math.rand(300, 1000), nil)
     end)
-
-    local x1 = os.clock()
-    local its = {}
-    for _ = 1, 20 do
-        local it = TPL_ITEM.IT1.create(0, 0)
-        table.insert(its, it)
-    end
-    this.stage("its", its)
-
-    local x2 = os.clock()
-    print(string.format("run time: %.2f\n", x2 - x1))
-
-    u1.itemPick(its[25])
 end)
 
 process.onDestroy(function(this)
     this.stage("u1").destroy()
     for _, u in ipairs(this.stage("u2s")) do
         u.destroy()
-    end
-    for _, it in ipairs(this.stage("its")) do
-        it.destroy()
     end
 end)
