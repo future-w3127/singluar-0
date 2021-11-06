@@ -1,6 +1,8 @@
 TPL_ABILITY = {
 
-    AB1 = AbilityTpl("技能1", ABILITY_TARGET_TYPE.TAG_R)
+    AB1 = AbilityTpl()
+        .name("技能1")
+        .targetType(ABILITY_TARGET_TYPE.TAG_R)
         .icon("AB1")
         .coolDownAdv(2.5, -0.05)
         .hpCostAdv(10, 5)
@@ -11,7 +13,7 @@ TPL_ABILITY = {
         .levelMax(9)
         .description({
         "基础消耗：" .. colour.purple("{this.mpCost()}"),
-        "对目标造成伤害：" .. colour.gold("{math.floor(this.bindUnit().attr().attack()*100)}") .. "(攻击x100)"
+        "对目标造成伤害：" .. colour.gold("{math.floor(this.bindUnit().attack()*100)}") .. "(攻击x100)"
     })
         .castTargetAllow(function(this, targetUnit)
         return targetUnit ~= nil and targetUnit.isEnemy(this.bindUnit().owner())
@@ -34,7 +36,9 @@ TPL_ABILITY = {
             end)
         end),
 
-    AB2 = AbilityTpl("主动技能测试", ABILITY_TARGET_TYPE.TAG_U)
+    AB2 = AbilityTpl()
+        .name("主动技能测试")
+        .targetType(ABILITY_TARGET_TYPE.TAG_U)
         .icon("AB1")
         .coolDownAdv(2.5, -0.05)
         .hpCostAdv(10, 5)
@@ -49,21 +53,23 @@ TPL_ABILITY = {
             ability.silent(evtData.targetUnit, 3, "SilenceTarget", "overhead")
         end),
 
-    AB3 = AbilityTpl("唯我独尊", ABILITY_TARGET_TYPE.PAS)
+    AB3 = AbilityTpl()
+        .name("唯我独尊")
+        .targetType(ABILITY_TARGET_TYPE.PAS)
         .icon("AB2")
         .description({ "强击单人特效: +{50+this.level()*100}攻击" })
         .levelMax(5)
         .levelUpNeedPoint(101)
         .onGet(function(evtData)
-        evtData.triggerUnit.attr().attack("+=" .. 100 * evtData.triggerAbility.level())
+        evtData.triggerUnit.attack("+=" .. 100 * evtData.triggerAbility.level())
     end)
-        .onLose(function(evtData) evtData.triggerUnit.attr().attack("-=" .. 100 * evtData.triggerAbility.level()) end)
+        .onLose(function(evtData) evtData.triggerUnit.attack("-=" .. 100 * evtData.triggerAbility.level()) end)
         .onLevelChange(
         function(evtData)
             if (evtData.value > 0) then
-                evtData.triggerUnitt.attr().attack("+=" .. 100 * evtData.value)
+                evtData.triggerUnitt.attack("+=" .. 100 * evtData.value)
             elseif (evtData.value < 0) then
-                evtData.triggerUnitt.attr().attack("-=" .. 100 * math.abs(evtData.value))
+                evtData.triggerUnitt.attack("-=" .. 100 * math.abs(evtData.value))
             end
         end),
 }

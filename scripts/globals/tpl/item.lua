@@ -6,7 +6,10 @@ TPL_ITEM = {
         .levelMax(9)
         .gold(10)
         .silver(5)
-        .copper(3),
+        .copper(3)
+        .onGet(function(evtData)
+
+    end),
 
     IT2 = ItemTpl("TreasureChest")
         .ability(Ability(TPL_ABILITY.AB2))

@@ -22,7 +22,7 @@ attribute.enchant("fire", "火", {
     },
     reaction = {
         grass = attribute.enchantReaction(function(evtData)
-            evtData.triggerUnit.attr().hpRegen("-=200;5")
+            evtData.triggerUnit.hpRegen("-=200;5")
         end)
     },
 })
