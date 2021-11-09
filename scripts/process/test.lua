@@ -28,9 +28,6 @@ process.onSetup(function(this)
     time.setInterval(3, function()
         u1.attack("+=10;2")
     end)
-    time.setInterval(3, function()
-        Player(1).alert(string.rand(10))
-    end)
 
     --local u2s = {}
     --for _ = 1, 1 do

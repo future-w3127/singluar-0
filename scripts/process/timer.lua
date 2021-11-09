@@ -8,8 +8,10 @@ process.onSetup(function(this)
     this.stage("t1", t1)
 
     local t2 = time.setInterval(1, function(curTimer)
-        FrameText("timer-test", FrameGameUI, TEXT_ALIGN_CENTER, 10)
+        FrameText("timer-test", FrameGameUI)
             .relation(FRAME_ALIGN_CENTER, FrameGameUI, FRAME_ALIGN_CENTER, 0, 0)
+            .textAlign(TEXT_ALIGN_CENTER)
+            .fontSize(10)
             .text(t1.remain() .. '/' .. t1.period())
         if (t1.remain() == 110) then
             t1.remain(-55)

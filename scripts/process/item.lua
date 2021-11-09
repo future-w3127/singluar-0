@@ -36,6 +36,10 @@ process.onSetup(function(this)
     print(string.format("run time: %.2f\n", x2 - x1))
 
     u1.itemPick(its[25])
+
+    time.setInterval(3, function()
+        Player(1).alert(string.rand(10))
+    end)
 end)
 
 process.onDestroy(function(this)
