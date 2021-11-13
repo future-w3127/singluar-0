@@ -6,7 +6,7 @@ process.onSetup(function(this)
         .nameSync(true)
         .colorSync(true)
         .members({ 2, 3, 4, 5, 6 })
-        .color(PLAYER_COLOR_BLUE)
+        .color(2)
 
     this.stage("t1", t1)
 

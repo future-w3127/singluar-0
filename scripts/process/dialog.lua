@@ -22,6 +22,6 @@ process.onSetup(function(this)
             end
             echo("选择了：" .. btnData.label .. "等级：" .. btnData.value)
         end
-    ).showFirst()
+    ).show()
 
 end)
