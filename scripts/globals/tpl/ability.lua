@@ -37,10 +37,10 @@ TPL_ABILITY = {
         end),
 
     AB2 = AbilityTpl()
-        .name("主动技能测试")
+        .name("沉默一波")
         .targetType(ABILITY_TARGET_TYPE.TAG_U)
         .icon("AB1")
-        .coolDownAdv(2.5, -0.05)
+        .coolDownAdv(1, 0)
         .hpCostAdv(10, 5)
         .mpCostAdv(1, 7)
         .levelMax(9)
@@ -49,7 +49,6 @@ TPL_ABILITY = {
     end)
         .onEffect(
         function(evtData)
-            --ability.unArm(evtData.targetUnit, 3, "SilenceTarget", "weapon")
             ability.silent(evtData.targetUnit, 3, "SilenceTarget", "overhead")
         end),
 
