@@ -13,16 +13,7 @@ _assets_model("word/Rank_BaHuangLeiDong_AoShiQunXiong")
 _assets_model("word/Rank_AoShiTianXia")
 
 _assets_ui("singluar_debug")
-_assets_ui("singluar_echo")
-_assets_ui("singluar_chat")
-_assets_ui("singluar_dz")
-_assets_ui("singluar_menu")
-_assets_ui("singluar_alert")
-_assets_ui("singluar_buff")
-_assets_ui("singluar_controller")
-_assets_ui("singluar_ability")
-_assets_ui("singluar_item")
-_assets_ui("singluar_warehouse")
+_assets_ui("singluar_set")
 _assets_ui("singluar_cursor") --指针置顶
 
 _assets_icon("ability\\red\\DeathKnightSpellDeflection", "AB1")
