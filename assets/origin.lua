@@ -416,6 +416,49 @@ _assets_model(":units\\creeps\\MurlocNightcrawler\\MurlocNightcrawler", "MurlocN
 --小鱼人(蓝紫)
 _assets_model(":Units\\Creeps\\MurgulShadowCaster\\MurgulShadowCaster", "MurlocShadow", "unit", { Art = "unit\\water\\MurgulShadowCaster" })
 
+--蓝幼龙
+_assets_model(":units\\creeps\\AzureDragonWelp\\AzureDragonWelp", "AzureDragonWelp", "unit", { Art = "unit\\ancient\\AzureDragon" })
+--蓝龙
+_assets_model(":units\\creeps\\AzureDragon\\AzureDragon", "AzureDragon", "unit", { Art = "unit\\ancient\\AzureDragon" })
+--红幼龙
+_assets_model(":units\\creeps\\RedDragonWelp\\RedDragonWelp", "RedDragonWelp", "unit", { Art = "unit\\ancient\\RedDragon" })
+--红龙
+_assets_model(":units\\creeps\\RedDragon\\RedDragon", "RedDragon", "unit", { Art = "unit\\ancient\\RedDragon" })
+--黑幼龙
+_assets_model(":units\\creeps\\BlackDragonWelp\\BlackDragonWelp", "BlackDragonWelp", "unit", { Art = "unit\\ancient\\BlackDragon" })
+--黑龙
+_assets_model(":units\\creeps\\BlackDragon\\BlackDragon", "BlackDragon", "unit", { Art = "unit\\ancient\\BlackDragon" })
+--褐幼龙
+_assets_model(":units\\creeps\\BronzeDragonWelp\\BronzeDragonWelp", "BronzeDragonWelp", "unit", { Art = "unit\\ancient\\BronzeDragon" })
+--褐龙
+_assets_model(":units\\creeps\\BronzeDragon\\BronzeDragon", "BronzeDragon", "unit", { Art = "unit\\ancient\\BronzeDragon" })
+--绿幼龙
+_assets_model(":units\\creeps\\GreenDragonWelp\\GreenDragonWelp", "GreenDragonWelp", "unit", { Art = "unit\\ancient\\GreenDragon" })
+--绿龙
+_assets_model(":units\\creeps\\GreenDragon\\GreenDragon", "GreenDragon", "unit", { Art = "unit\\ancient\\GreenDragon" })
+--耐瑟龙
+_assets_model(":units\\creeps\\NetherDragon\\NetherDragon", "NetherDragon", "unit", { Art = "unit\\ancient\\NetherDragon" })
+--九头蛇怪
+_assets_model(":Units\\Creeps\\Hydra\\Hydra", "Hydra", "unit", { Art = "unit\\ancient\\GreenHydra" })
+
+--鹰女妖
+_assets_model(":units\\creeps\\Harpy\\Harpy", "Harpy", "unit", { Art = "unit\\elf\\Harpy" })
+--鹰女妖女皇
+_assets_model(":units\\creeps\\HarpyQueen\\HarpyQueen", "HarpyQueen", "unit", { Art = "unit\\elf\\HarpyQueen" })
+
+--海元素
+_assets_model(":Units\\Creeps\\SeaElemental\\SeaElemental", "SeaElemental", "unit", { Art = "unit\\water\\SeaElemental" })
+--丛林漫步者
+_assets_model(":units\\creeps\\JungleBeast\\JungleBeast", "JungleBeast", "unit", { Art = "unit\\ancient\\JungleBeast" })
+--虚空假面(红)
+_assets_model(":Units\\Creeps\\Unbroken\\Unbroken", "UnbrokenRed", "unit", { Art = "unit\\demon\\Unbroken" })
+--虚空假面(紫)
+_assets_model(":units\\creeps\\VoidWalker\\VoidWalker", "UnbrokenPurple", "unit", { Art = "unit\\demon\\Unbroken2" })
+--地狱火
+_assets_model(":units\\demon\\Infernal\\Infernal", "", "unit", { Art = "unit\\demon\\NMagusDeathStare" })
+--毁灭守卫
+_assets_model(":units\\demon\\DoomGuard\\DoomGuard", "DoomGuard", "unit", { Art = "unit\\demon\\DoomGuard" })
+
 --【 物品模型 】
 
 --物品宝箱
