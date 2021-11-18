@@ -137,13 +137,16 @@ _assets_model(":units\\human\\HeroBloodElf\\HeroBloodElf", "HeroBloodElf", "unit
 _assets_model(":units\\human\\Arthas\\Arthas", "Arthas", "unit", { Art = "unit\\hero\\Arthas" })
 --阿尔塞斯(剑)
 _assets_model(":units\\human\\ArthaswithSword\\ArthaswithSword", "ArthaswithSword", "unit", { Art = "unit\\hero\\Arthas" })
-_assets_model(":units\\other\\Proudmoore\\Proudmoore", "Proudmoore", "unit", { Art = "unit\\hero\\Captain" })--海军上将普洛德摩尔
+--海军上将普洛德摩尔
+_assets_model(":units\\other\\Proudmoore\\Proudmoore", "Proudmoore", "unit", { Art = "unit\\hero\\Captain" })
 --吉安娜
 _assets_model(":units\\human\\Jaina\\Jaina", "Jaina", "unit", { Art = "unit\\hero\\Jaina" })
 --加理瑟斯
 _assets_model(":units\\creeps\\LordGarithos\\LordGarithos", "LordGarithos", "unit", { Art = "unit\\hero\\Garithos" })
 --追风之西尔瓦娜斯
 _assets_model(":units\\creeps\\SylvanusWindrunner\\SylvanusWindrunner", "SylvanusWindrunner", "unit", { Art = "unit\\hero\\SylvanusWindrunner" })
+--火凤凰
+_assets_model(":units\\human\\phoenix\\phoenix", "Phoenix", "unit", { Art = "unit\\hero\\Phoenix" })
 --剑圣绿
 _assets_model(":units\\orc\\HeroBladeMaster\\HeroBladeMaster", "HeroBladeMaster", "unit", { Art = "unit\\hero\\HeroBladeMaster" })
 --剑圣红
@@ -250,9 +253,57 @@ _assets_model(":units\\human\\BloodElfDragonHawk\\BloodElfDragonHawk", "BloodElf
 _assets_model(":units\\human\\Militia\\Militia", "Militia", "unit", { Art = "unit\\human\\Militia" })
 --水元素
 _assets_model(":units\\human\\WaterElemental\\WaterElemental", "WaterElemental", "unit", { Art = "unit\\water\\WaterElemental" })
---火凤凰
-_assets_model(":units\\human\\phoenix\\phoenix", "Phoenix", "unit", { Art = "unit\\hero\\Phoenix" })
 
+--苦工
+_assets_model(":units\\orc\\Peon\\Peon", "Peon", "unit", { Art = "unit\\beast\\Peon" })
+--苦工(邪恶)
+_assets_model(":units\\orc\\ChaosPeon\\ChaosPeon", "PeonChaos", "unit", { Art = "unit\\beast\\ChaosPeon" })
+--兽族步兵
+_assets_model(":units\\orc\\Grunt\\Grunt", "Grunt", "unit", { Art = "unit\\beast\\Grunt" })
+--兽族步兵(邪恶)
+_assets_model(":units\\orc\\ChaosGrunt\\ChaosGrunt", "GruntChaos", "unit", { Art = "unit\\beast\\ChaosGrunt" })
+--掠夺者
+_assets_model(":units\\orc\\WolfRider\\WolfRider", "WolfRider", "unit", { Art = "unit\\beast\\Raider" })
+--掠夺者(邪恶)
+_assets_model(":units\\orc\\ChaosWolfRider\\ChaosWolfRider", "WolfRiderChaos", "unit", { Art = "unit\\beast\\ChaosWolfRider" })
+--牛头人
+_assets_model(":units\\orc\\Tauren\\Tauren", "Tauren", "unit", { Art = "unit\\beast\\Tauren" })
+--巨魔猎头者
+_assets_model(":units\\orc\\HeadHunter\\HeadHunter", "HeadHunter", "unit", { Art = "unit\\beast\\Headhunter" })
+--粉碎者
+_assets_model(":units\\orc\\catapult\\catapult", "Catapult", "unit", { Art = "unit\\machine\\Demolisher" })
+--科多兽
+_assets_model(":units\\orc\\KotoBeast\\KotoBeast", "KotoBeast", "unit", { Art = "unit\\beast\\KotoBeast" })
+--科多兽(邪恶)
+_assets_model(":units\\orc\\ChaosKotoBeast\\ChaosKotoBeast", "KotoBeastChaos", "unit", { Art = "unit\\beast\\ChaosKotoBeast" })
+--科多兽(无驾驶员)
+_assets_model(":units\\orc\\KotoBeastNoRider\\KotoBeastNoRider", "KotoBeastNoRider", "unit", { Art = "unit\\beast\\KotoBeast" })
+--风骑士
+_assets_model(":units\\orc\\WyvernRider\\WyvernRider", "WyvernRider", "unit", { Art = "unit\\beast\\WyvernRider" })
+--风骑士(灵魂)
+_assets_model(":units\\orc\\SpiritWyvern\\SpiritWyvern", "WyvernSpirit", "unit", { Art = "unit\\ancient\\SpiritWyvern" })
+--风骑士(无驾驶员)
+_assets_model(":units\\orc\\RiderlessWyvern\\RiderlessWyvern", "WyvernNoRider", "unit", { Art = "unit\\beast\\WyvernRider" })
+--巨魔蝙蝠骑士
+_assets_model(":units\\orc\\BatTroll\\BatTroll", "BatTroll", "unit", { Art = "unit\\beast\\TrollBatRider" })
+--巨魔萨满
+_assets_model(":units\\orc\\WitchDoctor\\WitchDoctor", "WitchDoctor", "unit", { Art = "unit\\beast\\WitchDoctor" })
+--萨满祭司
+_assets_model(":units\\orc\\Shaman\\Shaman", "Shaman", "unit", { Art = "unit\\beast\\Shaman" })
+--灵魂行者
+_assets_model(":units\\orc\\spiritwalker\\spiritwalker", "SpiritWalker", "unit", { Art = "unit\\beast\\SpiritWalker" })
+--幽魂之狼
+_assets_model(":units\\orc\\Spiritwolf\\Spiritwolf", "SpiritWolf", "unit", { Art = "unit\\beast\\SpiritWolf" })
+--毒蛇守卫
+_assets_model(":units\\orc\\SerpentWard\\SerpentWard", "SerpentWard", "unit", { Art = "unit\\beast\\SerpentWard" })
+--兽族战争首领
+_assets_model(":units\\demon\\ChaosWarlord\\ChaosWarlord", "ChaosWarlord", "unit", { Art = "unit\\beast\\WaterElemental" })
+--德拉克苏尔
+_assets_model(":units\\creeps\\OrcWarlockRed\\OrcWarlockRed", "OrcWarlockRed", "unit", { Art = "unit\\beast\\OrcWarlock" })
+--巫师
+_assets_model(":units\\creeps\\ChaosWarlockGreen\\ChaosWarlockGreen", "ChaosWarlockGreen", "unit", { Art = "unit\\beast\\ChaosWarlockGreen" })
+--巫师(邪恶)
+_assets_model(":units\\demon\\ChaosWarlock\\ChaosWarlock", "ChaosWarlock", "unit", { Art = "unit\\beast\\ChaosWarlock" })
 
 --【 物品模型 】
 
@@ -286,3 +337,9 @@ _assets_model(":Objects\\InventoryItems\\QuestionMark\\QuestionMark.mdl", "Quest
 _assets_model(":Units\\Human\\Phoenix\\PhoenixEgg.mdl", "PhoenixEgg", "item")
 --物品蜥蜴蛋
 _assets_model(":Objects\\InventoryItems\\ThunderLizardEgg\\ThunderLizardEgg.mdl", "ThunderLizardEgg", "item")
+--岗哨守卫
+_assets_model(":units\\orc\\SentryWard\\SentryWard", "SentryWard", "item")
+--静止陷阱
+_assets_model(":units\\orc\\StasisTotem\\StasisTotem", "StasisTotem", "item")
+--治疗守卫
+_assets_model(":units\\orc\\HealingWard\\HealingWard", "HealingWard", "item")
