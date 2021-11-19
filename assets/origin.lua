@@ -277,6 +277,8 @@ _assets_model(":units\\orc\\ChaosPeon\\ChaosPeon", "PeonChaos", "unit", { Art = 
 _assets_model(":units\\orc\\Grunt\\Grunt", "Grunt", "unit", { Art = "unit\\beast\\Grunt" })
 --兽族步兵(邪恶)
 _assets_model(":units\\orc\\ChaosGrunt\\ChaosGrunt", "GruntChaos", "unit", { Art = "unit\\beast\\ChaosGrunt" })
+--兽族步兵(骷髅)
+_assets_model(":units\\creeps\\SkeletonOrc\\SkeletonOrc", "GruntSkeleton", "unit", { Art = "unit\\demon\\SkeletalOrc" })
 --掠夺者
 _assets_model(":units\\orc\\WolfRider\\WolfRider", "WolfRider", "unit", { Art = "unit\\beast\\Raider" })
 --掠夺者(邪恶)
@@ -358,6 +360,8 @@ _assets_model(":units\\undead\\PlagueCloud\\PlagueCloud", "PlagueCloud", "unit",
 _assets_model(":units\\undead\\Skeleton\\Skeleton", "Skeleton", "unit", { Art = "unit\\demon\\SkeletonWarrior" })
 --骷髅魔法师
 _assets_model(":units\\undead\\SkeletonMage\\SkeletonMage", "SkeletonMage", "unit", { Art = "unit\\demon\\SkeletonMage" })
+--骷髅弓箭手
+_assets_model(":units\\creeps\\SkeletonArcher\\SkeletonArcher", "SkeletonArcher", "unit", { Art = "unit\\demon\\SkeletonArcher" })
 --腐尸甲虫
 _assets_model(":units\\undead\\scarab\\scarab", "Scarab", "unit", { Art = "ability\\purple\\CarrionScarabs" })
 --僵尸
@@ -391,6 +395,8 @@ _assets_model(":units\\nightelf\\FaerieDragon\\FaerieDragon", "FaerieDragon", "u
 _assets_model(":units\\nightelf\\OwlSCOUT\\OwlSCOUT", "OwlScout", "unit", { Art = "unit\\animal\\Scout" })
 --树人
 _assets_model(":units\\nightelf\\Ent\\Ent", "Ent", "unit", { Art = "unit\\elf\\Ent" })
+--树人(堕落)
+_assets_model(":units\\creeps\\CorruptedEnt\\CorruptedEnt", "CorruptedEnt", "unit", { Art = "unit\\elf\\EntCorrupted" })
 --复仇天神
 _assets_model(":units\\nightelf\\SpiritOfVengeance\\SpiritOfVengeance", "AvengingAssassin", "unit", { Art = "unit\\elf\\AvengingAssassin" })
 --复仇之魂
@@ -410,6 +416,19 @@ _assets_model(":Units\\Naga\\NagaMyrmidon\\NagaMyrmidon", "NagaMyrmidon", "unit"
 _assets_model(":Units\\Naga\\NagaRoyalGuard\\NagaRoyalGuard", "NagaRoyalGuard", "unit", { Art = "unit\\water\\NagaMyrmidonRoyalGuard" })
 --娜迦召唤者
 _assets_model(":Units\\Naga\\NagaSummoner\\NagaSummoner", "NagaSummoner", "unit", { Art = "unit\\water\\NagaSummoner" })
+
+--口袋工厂
+_assets_model(":Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactory", "TinkerFactory", "unit", { Art = "unit\\machine\\PocketFactory" })
+--口袋工厂(人工地精)
+_assets_model(":Units\\Creeps\\HeroTinkerRobot\\HeroTinkerRobot", "TinkerRobot", "unit", { Art = "unit\\machine\\ClockWerkGoblin" })
+--炎魔
+_assets_model(":Units\\Creeps\\LavaSpawn\\LavaSpawn", "LavaSpawn", "unit", { Art = "unit\\elf\\LavaSpawn" })
+--米纱熊
+_assets_model(":units\\creeps\\GrizzlyBear\\GrizzlyBear", "GrizzlyBear", "unit", { Art = "unit\\animal\\GrizzlyBear" })
+--战鹰
+_assets_model(":units\\creeps\\WarEagle\\WarEagle", "WarEagle", "unit", { Art = "unit\\animal\\WarEagle" })
+--狂暴豪猪
+_assets_model(":Units\\Creeps\\QuillBeast\\QuillBeast", "QuillBeast", "unit", { Art = "unit\\animal\\QuillBeastGod" })
 
 --钢灰海龟
 _assets_model(":Units\\Creeps\\SeaTurtle\\SeaTurtle", "SeaTurtle", "unit", { Art = "unit\\water\\SeaTurtleGreen" })
@@ -484,8 +503,6 @@ _assets_model(":units\\creeps\\HarpyQueen\\HarpyQueen", "HarpyQueen", "unit", { 
 
 --海元素
 _assets_model(":Units\\Creeps\\SeaElemental\\SeaElemental", "SeaElemental", "unit", { Art = "unit\\water\\SeaElemental" })
---丛林漫步者
-_assets_model(":units\\creeps\\JungleBeast\\JungleBeast", "JungleBeast", "unit", { Art = "unit\\ancient\\JungleBeast" })
 --虚空假面(红)
 _assets_model(":Units\\Creeps\\Unbroken\\Unbroken", "UnbrokenRed", "unit", { Art = "unit\\demon\\Unbroken" })
 --虚空假面(紫)
@@ -496,6 +513,138 @@ _assets_model(":units\\demon\\Infernal\\Infernal", "Infernal", "unit", { Art = "
 _assets_model(":units\\demon\\DoomGuard\\DoomGuard", "DoomGuard", "unit", { Art = "unit\\demon\\DoomGuard" })
 --刺蛇
 _assets_model(":Units\\Critters\\Hydralisk\\Hydralisk", "Hydralisk", "unit", { Art = "unit\\demon\\Hydralisk" })
+--灵兽
+_assets_model(":units\\creeps\\FelstalkerPurple\\FelstalkerPurple", "Felstalker", "unit", { Art = "unit\\demon\\FelHound" })
+--淤泥怪(绿)
+_assets_model(":units\\other\\DalaranReject\\DalaranReject", "DalaranReject", "unit", { Art = "unit\\demon\\DalaranReject" })
+--淤泥怪(黑)
+_assets_model(":units\\creeps\\SludgeMonster\\SludgeMonster", "SludgeMonster", "unit", { Art = "unit\\demon\\SludgeCreature" })
+--岩石傀儡
+_assets_model(":units\\creeps\\RockGolem\\RockGolem", "RockGolem", "unit", { Art = "unit\\ancient\\RockGolem" })
+--灵肉傀儡
+_assets_model(":units\\other\\FleshGolem\\FleshGolem", "FleshGolem", "unit", { Art = "unit\\ancient\\FleshGolem" })
+--战争傀儡
+_assets_model(":units\\creeps\\GolemStatue\\GolemStatue", "ArmorGolem", "unit", { Art = "unit\\ancient\\ArmorGolem" })
+--阿卡那瑟德
+_assets_model(":Units\\Creeps\\Archnathid\\Archnathid", "Arachnathid", "unit", { Art = "unit\\insect\\Arachnathid" })
+--阿卡那瑟德(绿)
+_assets_model(":Units\\Creeps\\ArchnathidGreen\\ArchnathidGreen", "ArachnathidGreen", "unit", { Art = "unit\\insect\\ArachnathidGreen" })
+--阿卡那瑟德(紫)
+_assets_model(":Units\\Creeps\\Archnathidpurple\\Archnathidpurple", "ArachnathidPurple", "unit", { Art = "unit\\insect\\Arachnathidpurple" })
+--强盗
+_assets_model(":units\\creeps\\Bandit\\Bandit", "Bandit", "unit", { Art = "unit\\human\\Bandit" })
+--土匪
+_assets_model(":units\\creeps\\BanditSpearThrower\\BanditSpearThrower", "BanditSpearThrower", "unit", { Art = "unit\\human\\BanditSpearThrower" })
+--龙卵战士(紫)
+_assets_model(":Units\\Creeps\\DragonSpawnPurple\\DragonSpawnPurple", "DragonSpawnPurple", "unit", { Art = "unit\\ancient\\purpleDragonSpawn" })
+--龙卵战士(绿)
+_assets_model(":Units\\Creeps\\DragonSpawnGreen\\DragonSpawnGreen", "DragonSpawnGreen", "unit", { Art = "unit\\ancient\\GreenDragonSpawn" })
+--龙卵战士(蓝)
+_assets_model(":Units\\Creeps\\DragonSpawnBlue\\DragonSpawnBlue", "DragonSpawnBlue", "unit", { Art = "unit\\ancient\\BlueDragonSpawn" })
+--半人马战士
+_assets_model(":units\\creeps\\Centaur\\Centaur", "Centaur", "unit", { Art = "unit\\beast\\Centaur" })
+--半人马弓箭手
+_assets_model(":units\\creeps\\CentaurArcher\\CentaurArcher", "CentaurArcher", "unit", { Art = "unit\\beast\\CentaurArcher" })
+--半人马可汗
+_assets_model(":units\\creeps\\CentaurKhan\\CentaurKhan", "CentaurKhan", "unit", { Art = "unit\\beast\\CentaurKhan" })
+--狂暴守卫(红)
+_assets_model(":units\\demon\\Felgaurd\\Felgaurd", "FelGuard", "unit", { Art = "unit\\demon\\FelGuard" })
+--狂暴守卫(蓝)
+_assets_model(":units\\demon\\FelgaurdBlue\\FelgaurdBlue", "FelGuardBlue", "unit", { Art = "unit\\demon\\FelGuardBlue" })
+--森林巨魔战士
+_assets_model(":units\\creeps\\ForestTroll\\ForestTroll", "ForestTroll", "unit", { Art = "unit\\beast\\ForestTroll" })
+--森林巨魔猎手
+_assets_model(":units\\creeps\\ForestTrollTrapper\\ForestTrollTrapper", "ForestTrollTrapper", "unit", { Art = "unit\\beast\\ForestTrollTrapper" })
+--森林巨魔牧师
+_assets_model(":units\\creeps\\ForestTrollShadowPriest\\ForestTrollShadowPriest", "ForestTrollShadowPriest", "unit", { Art = "unit\\beast\\ForestTrollShadowPriest" })
+--暗黑巨魔战士
+_assets_model(":units\\creeps\\DarkTroll\\DarkTroll", "DarkTroll", "unit", { Art = "unit\\beast\\DarkTroll" })
+--暗黑巨魔猎手
+_assets_model(":units\\creeps\\DarkTrollTrapper\\DarkTrollTrapper", "DarkTrollTrapper", "unit", { Art = "unit\\beast\\DarkTrollTrapper" })
+--暗黑巨魔牧师
+_assets_model(":units\\creeps\\DarkTrollShadowPriest\\DarkTrollShadowPriest", "DarkTrollShadowPriest", "unit", { Art = "unit\\beast\\DarkTrollShadowPriest" })
+--冰原巨魔战士
+_assets_model(":units\\creeps\\IceTroll\\IceTroll", "IceTroll", "unit", { Art = "unit\\beast\\IceTroll" })
+--冰原巨魔牧师
+_assets_model(":units\\creeps\\IceTrollShadowPriest\\IceTrollShadowPriest", "IceTrollShadowPriest", "unit", { Art = "unit\\beast\\IceTrollShadowPriest" })
+--熊怪
+_assets_model(":units\\creeps\\Furbolg\\Furbolg", "Furbolg", "unit", { Art = "unit\\beast\\Furbolg" })
+--熊猫
+_assets_model(":units\\creeps\\FurbolgPanda\\FurbolgPanda", "FurbolgPanda", "unit", { Art = "unit\\beast\\FurbolgPanda" })
+--熊战
+_assets_model(":units\\creeps\\FurbolgElder\\FurbolgElder", "FurbolgElder", "unit", { Art = "unit\\beast\\FurbolgElder" })
+--深海巨猎人
+_assets_model(":Units\\Creeps\\SeaGiantGreen\\SeaGiantGreen", "SeaGiant", "unit", { Art = "unit\\water\\SeaGiant" })
+--豺狼
+_assets_model(":units\\creeps\\Gnoll\\Gnoll", "Gnoll", "unit", { Art = "unit\\beast\\Gnoll" })
+--豺狼猎手
+_assets_model(":units\\creeps\\GnollArcher\\GnollArcher", "GnollArcher", "unit", { Art = "unit\\beast\\GnollArcher" })
+--狗头人
+_assets_model(":units\\creeps\\Kobold\\Kobold", "Kobold", "unit", { Art = "unit\\beast\\Kobold" })
+--狗头人占卜师
+_assets_model(":units\\creeps\\KoboldGeomancer\\KoboldGeomancer", "KoboldGeomancer", "unit", { Art = "unit\\beast\\KoboldGeomancer" })
+--闪电蜥蜴(绿)
+_assets_model(":units\\creeps\\ThunderLizard\\ThunderLizard", "ThunderLizard", "unit", { Art = "unit\\beast\\ThunderLizard" })
+--闪电蜥蜴(红)
+_assets_model(":units\\creeps\\ThunderLizardSalamander\\ThunderLizardSalamander", "ThunderLizardSalamander", "unit", { Art = "unit\\beast\\ThunderLizardSalamander" })
+--闪电蜥蜴(紫)
+_assets_model(":units\\creeps\\ThunderLizardVizier\\ThunderLizardVizier", "ThunderLizardVizier", "unit", { Art = "unit\\beast\\ThunderLizardVizier" })
+--巨虾(红)
+_assets_model(":units\\creeps\\Lobstrokkred\\Lobstrokkred", "LobstrokkRed", "unit", { Art = "unit\\water\\LobstrokkRed" })
+--巨虾(绿)
+_assets_model(":units\\creeps\\Lobstrokkgreen\\Lobstrokkgreen", "LobstrokkGreen", "unit", { Art = "unit\\water\\LobstrokkGreen" })
+--巨虾(蓝)
+_assets_model(":units\\creeps\\Lobstrokkblue\\Lobstrokkblue", "LobstrokkBlue", "unit", { Art = "unit\\water\\LobstrokkBlue" })
+--猛犸
+_assets_model(":Units\\Creeps\\Mammoth\\Mammoth", "Mammoth", "unit", { Art = "unit\\ancient\\Mammoth" })
+--玛格战士
+_assets_model(":Units\\Creeps\\Magnataur\\Magnataur", "Magnataur", "unit", { Art = "unit\\ancient\\Magnataur" })
+--玛格娜托破坏者
+_assets_model(":Units\\Creeps\\MagnataurBlue\\MagnataurBlue", "MagnataurBlue", "unit", { Art = "unit\\ancient\\BlueMagnataur" })
+--食人鬼战士
+_assets_model(":units\\creeps\\Ogre\\Ogre", "Ogre", "unit", { Art = "unit\\beast\\Ogre" })
+--食人鬼魔法师
+_assets_model(":units\\creeps\\OgreMagi\\OgreMagi", "OgreMagi", "unit", { Art = "unit\\beast\\OgreMagi" })
+--食人鬼首领
+_assets_model(":units\\creeps\\OgreLord\\OgreLord", "OgreLord", "unit", { Art = "unit\\beast\\OgreLord" })
+--鹰嘴野兽
+_assets_model(":units\\creeps\\Owlbear\\Owlbear", "OwlBear", "unit", { Art = "unit\\beast\\OwlBear" })
+--北极熊
+_assets_model(":units\\creeps\\PolarBear\\PolarBear", "PolarBear", "unit", { Art = "unit\\beast\\FrostBear" })
+--豪猪战士
+_assets_model(":units\\creeps\\Bristleback\\Bristleback", "Bristleback", "unit", { Art = "unit\\animal\\Razorback" })
+--豪猪医生
+_assets_model(":units\\creeps\\RazorManeChief\\RazorManeChief", "RazorManeChief", "unit", { Art = "unit\\beast\\RazormaneChief" })
+--死亡幽魂
+_assets_model(":units\\creeps\\Revenant\\Revenant", "Revenant", "unit", { Art = "unit\\demon\\Revenant" })
+--赛特斯刺客
+_assets_model(":units\\creeps\\Satyr\\Satyr", "Satyr", "unit", { Art = "unit\\beast\\Satyr" })
+--赛特斯影法师
+_assets_model(":units\\creeps\\SatyrTrickster\\SatyrTrickster", "SatyrTrickster", "unit", { Art = "unit\\beast\\SatyrTrickster" })
+--赛特斯地狱使者
+_assets_model(":units\\creeps\\satyrhellcaller\\satyrhellcaller", "SatyrHellCaller", "unit", { Art = "unit\\beast\\Satyr" })
+--女妖精(红)
+_assets_model(":units\\demon\\Demoness\\Demoness", "Demoness", "unit", { Art = "unit\\demon\\Demoness" })
+--女妖精(蓝)
+_assets_model(":units\\demon\\DemonessBlue\\DemonessBlue", "DemonessBlue", "unit", { Art = "unit\\demon\\BlueDemoness" })
+--图斯卡
+_assets_model(":units\\demon\\tuskar\\tuskar", "Tuskaar", "unit", { Art = "unit\\beast\\TuskaarNomad" })
+--图斯卡枪兵
+_assets_model(":units\\demon\\tuskarRanged\\tuskarRanged", "TuskaarRanged", "unit", { Art = "unit\\beast\\TuskaarGold" })
+--图斯卡法师
+_assets_model(":units\\demon\\tuskarLord\\tuskarLord", "TuskaarLord", "unit", { Art = "unit\\beast\\TuskaarBlack" })
+--野人
+_assets_model(":units\\creeps\\Sasquatch\\Sasquatch", "", "unit", { Art = "unit\\ancient\\Sasquatch" })
+--丛林漫步者
+_assets_model(":units\\creeps\\JungleBeast\\JungleBeast", "JungleBeast", "unit", { Art = "unit\\ancient\\JungleBeast" })
+--雪怪
+_assets_model(":units\\demon\\Wendigo\\Wendigo", "Wendigo", "unit", { Art = "unit\\ancient\\Wendigo" })
+--灰狼
+_assets_model(":units\\creeps\\TimberWolf\\TimberWolf", "TimberWolf", "unit", { Art = "unit\\beast\\TimberWolf" })
+--白狼
+_assets_model(":units\\creeps\\WhiteWolf\\WhiteWolf", "WhiteWolf", "unit", { Art = "unit\\beast\\TimberWolf" })
+--夜狼
+_assets_model(":units\\creeps\\DireWolf\\DireWolf", "DireWolf", "unit", { Art = "unit\\beast\\TimberWolf" })
 
 --海豹
 _assets_model(":units\\critters\\Seal\\Seal", "Seal", "unit", { Art = "unit\\animal\\Seal" })
@@ -584,10 +733,6 @@ _assets_model(":units\\creeps\\GoblinZeppelin\\GoblinZeppelin", "GoblinZeppelin"
 _assets_model(":units\\creeps\\GoblinSapper\\GoblinSapper", "GoblinSapper", "unit", { Art = "unit\\machine\\GoblinSapper" })
 --地精撕裂者
 _assets_model(":units\\creeps\\IronGolem\\IronGolem", "GoblinIronGolem", "unit", { Art = "unit\\machine\\JunkGolem" })
---口袋工厂
-_assets_model(":Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactory", "TinkerFactory", "unit", { Art = "unit\\machine\\PocketFactory" })
---口袋工厂(人工地精)
-_assets_model(":Units\\Creeps\\HeroTinkerRobot\\HeroTinkerRobot", "TinkerRobot", "unit", { Art = "unit\\machine\\ClockWerkGoblin" })
 
 --马里恩(冲锋枪小哥)
 _assets_model(":Units\\Critters\\Marine\\Marine", "Marine", "unit", { Art = "unit\\human\\Marine" })
