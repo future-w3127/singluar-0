@@ -424,7 +424,7 @@ _assets_model(":units\\creeps\\MurlocMutant\\MurlocMutant", "MurlocGreen", "unit
 --小鱼人(青)
 _assets_model(":Units\\Creeps\\MurgulTideWarrior\\MurgulTideWarrior", "MurlocCyan", "unit", { Art = "unit\\water\\MurgulTideWarrior" })
 --小鱼人(天蓝)
-_assets_model(":units\\creeps\\MurgulSlave\\MurgulSlave", "MurlocBlue", "unit", { Art = "unit\\water\\MurgulSlave" })
+_assets_model(":units\\creeps\\MurgulSlave\\MurgulSlave", "MurlocBlue", "unit", { Art = "unit\\water\\MurgalSlave" })
 --小鱼人(海蓝)
 _assets_model(":units\\creeps\\MurlocFlesheater\\MurlocFlesheater", "MurlocDeepBlue", "unit", { Art = "unit\\water\\MurlocFleshEater" })
 --小鱼人(浅紫)
@@ -482,7 +482,7 @@ _assets_model(":Units\\Critters\\Hydralisk\\Hydralisk", "Hydralisk", "unit", { A
 -- 海豹
 _assets_model(":units\\critters\\Seal\\Seal", "Seal", "unit", { Art = "unit\\animal\\Seal" })
 -- 浣熊
-_assets_model(":units\\critters\\Raccoon\\Raccoon", "Raccoon", "unit", { Art = "unit\\animal\\Raccoon" })
+_assets_model(":units\\critters\\Raccoon\\Raccoon", "Racoon", "unit", { Art = "unit\\animal\\Racoon" })
 -- 老鼠
 _assets_model(":units\\critters\\Rat\\Rat", "Rat", "unit", { Art = "unit\\animal\\YouDirtyRat" })
 -- 绵羊
@@ -574,17 +574,17 @@ _assets_model(":Units\\Creeps\\HeroTinkerRobot\\HeroTinkerRobot", "TinkerRobot",
 -- 马里恩(冲锋枪小哥)
 _assets_model(":Units\\Critters\\Marine\\Marine", "Marine", "unit", { Art = "unit\\human\\Marine" })
 -- 邪恶空间兽人(冲锋枪兽人)
-_assets_model(":Units\\Critters\\ChaosSpaceOrc\\ChaosSpaceOrc", "ChaosSpaceOrc", "unit", { Art = "unit\\machine\\ChaosSpaceOrc" })
+_assets_model(":Units\\Critters\\ChaosSpaceOrc\\ChaosSpaceOrc", "ChaosSpaceOrc", "unit", { Art = "unit\\beast\\ChaosSpaceOrc" })
 -- 村民男1
-_assets_model(":units\\critters\\VillagerMan\\VillagerMan", "VillagerMan1", "unit", { Art = "unit\\machine\\VillagerMan" })
+_assets_model(":units\\critters\\VillagerMan\\VillagerMan", "VillagerMan1", "unit", { Art = "unit\\human\\VillagerMan" })
 -- 村民男2
-_assets_model(":units\\critters\\VillagerMan1\\VillagerMan1", "VillagerMan2", "unit", { Art = "unit\\machine\\VillagerMan1" })
+_assets_model(":units\\critters\\VillagerMan1\\VillagerMan1", "VillagerMan2", "unit", { Art = "unit\\human\\VillagerMan1" })
 -- 村民女1
-_assets_model(":units\\critters\\VillagerWoman\\VillagerWoman", "VillagerWoman1", "unit", { Art = "unit\\machine\\VillagerWoman" })
+_assets_model(":units\\critters\\VillagerWoman\\VillagerWoman", "VillagerWoman1", "unit", { Art = "unit\\human\\VillagerWoman" })
 -- 村民小孩1
-_assets_model(":units\\critters\\VillagerKid\\VillagerKid", "VillagerKid1", "unit", { Art = "unit\\machine\\VillagerKid" })
+_assets_model(":units\\critters\\VillagerKid\\VillagerKid", "VillagerKid1", "unit", { Art = "unit\\human\\VillagerKid" })
 -- 村民小孩2
-_assets_model(":units\\critters\\VillagerKid1\\VillagerKid1", "VillagerKid2", "unit", { Art = "unit\\machine\\VillagerKid2" })
+_assets_model(":units\\critters\\VillagerKid1\\VillagerKid1", "VillagerKid2", "unit", { Art = "unit\\human\\VillagerKid2" })
 
 --【 物品模型 】
 
