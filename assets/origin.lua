@@ -296,6 +296,12 @@ _assets_model(":units\\orc\\spiritwalker\\spiritwalker", "SpiritWalker", "unit",
 _assets_model(":units\\orc\\Spiritwolf\\Spiritwolf", "SpiritWolf", "unit", { Art = "unit\\beast\\SpiritWolf" })
 --毒蛇守卫
 _assets_model(":units\\orc\\SerpentWard\\SerpentWard", "SerpentWard", "unit", { Art = "unit\\beast\\SerpentWard" })
+--岗哨守卫
+_assets_model(":units\\orc\\SentryWard\\SentryWard", "SentryWard", "unit", { Art = "item\\mist\\SentryWard" })
+--静止陷阱
+_assets_model(":units\\orc\\StasisTotem\\StasisTotem", "StasisTotem", "unit", { Art = "ability\\red\\StasisTrap" })
+--治疗守卫
+_assets_model(":units\\orc\\HealingWard\\HealingWard", "HealingWard", "unit", { Art = "ability\\yellow\\HealingWard" })
 --兽族战争首领
 _assets_model(":units\\demon\\ChaosWarlord\\ChaosWarlord", "ChaosWarlord", "unit", { Art = "unit\\demon\\ChaosWarlord" })
 --德拉克苏尔
@@ -367,7 +373,7 @@ _assets_model(":units\\nightelf\\MountainGiant\\MountainGiant", "MountainGiant",
 --精灵龙
 _assets_model(":units\\nightelf\\FaerieDragon\\FaerieDragon", "FaerieDragon", "unit", { Art = "unit\\elf\\FaerieDragon" })
 --猫头鹰侦察者
-_assets_model(":units\\nightelf\\OwlSCOUT\\OwlSCOUT", "SnowOwl", "unit", { Art = "unit\\animal\\SnowOwl" })
+_assets_model(":units\\nightelf\\OwlSCOUT\\OwlSCOUT", "OwlScout", "unit", { Art = "unit\\animal\\Scout" })
 --树人
 _assets_model(":units\\nightelf\\Ent\\Ent", "Ent", "unit", { Art = "unit\\elf\\Ent" })
 --复仇天神
@@ -455,9 +461,48 @@ _assets_model(":Units\\Creeps\\Unbroken\\Unbroken", "UnbrokenRed", "unit", { Art
 --虚空假面(紫)
 _assets_model(":units\\creeps\\VoidWalker\\VoidWalker", "UnbrokenPurple", "unit", { Art = "unit\\demon\\Unbroken2" })
 --地狱火
-_assets_model(":units\\demon\\Infernal\\Infernal", "", "unit", { Art = "unit\\demon\\NMagusDeathStare" })
+_assets_model(":units\\demon\\Infernal\\Infernal", "Infernal", "unit", { Art = "unit\\demon\\NMagusDeathStare" })
 --毁灭守卫
 _assets_model(":units\\demon\\DoomGuard\\DoomGuard", "DoomGuard", "unit", { Art = "unit\\demon\\DoomGuard" })
+
+-- 海豹
+_assets_model(":units\\critters\\Seal\\Seal", "Seal", "unit", { Art = "unit\\animal\\Seal" })
+-- 浣熊
+_assets_model(":units\\critters\\Raccoon\\Raccoon", "Raccoon", "unit", { Art = "unit\\animal\\Raccoon" })
+-- 老鼠
+_assets_model(":units\\critters\\Rat\\Rat", "Rat", "unit", { Art = "unit\\animal\\YouDirtyRat" })
+-- 绵羊
+_assets_model(":units\\critters\\Sheep\\Sheep", "Sheep", "unit", { Art = "unit\\animal\\Sheep" })
+-- 螃蟹
+_assets_model(":units\\critters\\SpiderCrab\\SpiderCrab", "SpiderCrab", "unit", { Art = "unit\\animal\\SpiderCrab" })
+-- 螃蟹隐士
+_assets_model(":units\\critters\\HermitCrab\\HermitCrab", "HermitCrab", "unit", { Art = "unit\\animal\\HermitCrab" })
+-- 企鹅
+_assets_model(":units\\critters\\Penguin\\Penguin", "Penguin", "unit", { Art = "unit\\animal\\Penguin" })
+-- 青蛙
+_assets_model(":units\\critters\\Frog\\Frog", "Forg", "unit", { Art = "unit\\animal\\Forg" })
+-- 沙丘之虫
+_assets_model(":units\\critters\\DuneWorm\\DuneWorm", "DuneWorm", "unit", { Art = "unit\\animal\\DuneWorm" })
+-- 秃鹰
+_assets_model(":units\\critters\\Vulture\\Vulture", "Vulture", "unit", { Art = "unit\\animal\\Vulture" })
+-- 兔子
+_assets_model(":units\\critters\\EasterRabbit\\EasterRabbit", "EasterRabbit", "unit", { Art = "unit\\animal\\CritterRabbit" })
+-- 小鸡
+_assets_model(":units\\critters\\EasterChicken\\EasterChicken", "EasterChicken", "unit", { Art = "unit\\animal\\CritterChicken" })
+-- 小蜥蜴
+_assets_model(":units\\critters\\Skink\\Skink", "Skink", "unit", { Art = "unit\\animal\\Skink" })
+-- 信天翁
+_assets_model(":units\\critters\\Albatross\\Albatross", "Albatross", "unit", { Art = "unit\\animal\\Albatross" })
+-- 雄鹿
+_assets_model(":units\\critters\\BlackStagMale\\BlackStagMale", "BlackStagMale", "unit", { Art = "unit\\animal\\Stag" })
+-- 雪鹰
+_assets_model(":units\\critters\\SnowOwl\\SnowOwl", "SnowOwl", "unit", { Art = "unit\\animal\\SnowOwl" })
+-- 鬃狼
+_assets_model(":units\\critters\\BrownWolf\\BrownWolf", "BrownWolf", "unit", { Art = "unit\\animal\\Wolf" })
+-- 豪猪
+_assets_model(":units\\critters\\Felboar\\Felboar", "Felboar", "unit", { Art = "unit\\animal\\FelBoar" })
+-- 野猪
+_assets_model(":units\\critters\\Pig\\Pig", "Pig", "unit", { Art = "unit\\animal\\Pig" })
 
 --【 物品模型 】
 
@@ -491,9 +536,3 @@ _assets_model(":Objects\\InventoryItems\\QuestionMark\\QuestionMark.mdl", "Quest
 _assets_model(":Units\\Human\\Phoenix\\PhoenixEgg.mdl", "PhoenixEgg", "item")
 --物品蜥蜴蛋
 _assets_model(":Objects\\InventoryItems\\ThunderLizardEgg\\ThunderLizardEgg.mdl", "ThunderLizardEgg", "item")
---岗哨守卫
-_assets_model(":units\\orc\\SentryWard\\SentryWard", "SentryWard", "item")
---静止陷阱
-_assets_model(":units\\orc\\StasisTotem\\StasisTotem", "StasisTotem", "item")
---治疗守卫
-_assets_model(":units\\orc\\HealingWard\\HealingWard", "HealingWard", "item")
