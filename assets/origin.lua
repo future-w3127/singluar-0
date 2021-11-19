@@ -253,6 +253,18 @@ _assets_model(":units\\human\\BloodElfDragonHawk\\BloodElfDragonHawk", "BloodElf
 _assets_model(":units\\human\\Militia\\Militia", "Militia", "unit", { Art = "unit\\human\\Militia" })
 --水元素
 _assets_model(":units\\human\\WaterElemental\\WaterElemental", "WaterElemental", "unit", { Art = "unit\\water\\WaterElemental" })
+--剑士
+_assets_model(":units\\human\\TheCaptain\\TheCaptain", "TheCaptain", "unit", { Art = "unit\\human\\TheCaptain" })
+--牧师使者
+_assets_model(":units\\creeps\\HumanMage\\HumanMage", "HumanMage", "unit", { Art = "unit\\human\\BanditMage" })
+--高级精灵男
+_assets_model(":units\\critters\\HighElfPeasant\\HighElfPeasant", "HighElfPeasant", "unit", { Art = "unit\\elf\\ElfVillager" })
+--高级精灵女
+_assets_model(":units\\creeps\\ElfVillagerWoman\\ElfVillagerWoman", "HighElfVillagerWoman", "unit", { Art = "unit\\elf\\FemaleElfVillager" })
+--高级精灵弓箭手
+_assets_model(":units\\creeps\\HighElfArcher\\HighElfArcher", "HighElfArcher", "unit", { Art = "unit\\elf\\HighElvenArcher" })
+--麦迪文
+_assets_model(":units\\creeps\\Medivh\\Medivh", "Medivh", "unit", { Art = "unit\\human\\Medivh" })
 
 --苦工
 _assets_model(":units\\orc\\Peon\\Peon", "Peon", "unit", { Art = "unit\\beast\\Peon" })
@@ -297,7 +309,7 @@ _assets_model(":units\\orc\\Spiritwolf\\Spiritwolf", "SpiritWolf", "unit", { Art
 --毒蛇守卫
 _assets_model(":units\\orc\\SerpentWard\\SerpentWard", "SerpentWard", "unit", { Art = "unit\\beast\\SerpentWard" })
 --岗哨守卫
-_assets_model(":units\\orc\\SentryWard\\SentryWard", "SentryWard", "unit", { Art = "item\\mist\\SentryWard" })
+_assets_model(":units\\orc\\SentryWard\\SentryWard", "SentryWard", "unit", { Art = "item\\misc\\SentryWard" })
 --静止陷阱
 _assets_model(":units\\orc\\StasisTotem\\StasisTotem", "StasisTotem", "unit", { Art = "ability\\red\\StasisTrap" })
 --治疗守卫
@@ -464,6 +476,8 @@ _assets_model(":units\\creeps\\VoidWalker\\VoidWalker", "UnbrokenPurple", "unit"
 _assets_model(":units\\demon\\Infernal\\Infernal", "Infernal", "unit", { Art = "unit\\demon\\NMagusDeathStare" })
 --毁灭守卫
 _assets_model(":units\\demon\\DoomGuard\\DoomGuard", "DoomGuard", "unit", { Art = "unit\\demon\\DoomGuard" })
+--刺蛇
+_assets_model(":Units\\Critters\\Hydralisk\\Hydralisk", "Hydralisk", "unit", { Art = "unit\\demon\\Hydralisk" })
 
 -- 海豹
 _assets_model(":units\\critters\\Seal\\Seal", "Seal", "unit", { Art = "unit\\animal\\Seal" })
@@ -503,6 +517,74 @@ _assets_model(":units\\critters\\BrownWolf\\BrownWolf", "BrownWolf", "unit", { A
 _assets_model(":units\\critters\\Felboar\\Felboar", "Felboar", "unit", { Art = "unit\\animal\\FelBoar" })
 -- 野猪
 _assets_model(":units\\critters\\Pig\\Pig", "Pig", "unit", { Art = "unit\\animal\\Pig" })
+-- 虫族小狗
+_assets_model(":Units\\Critters\\zergling\\zergling", "Zergling", "unit", { Art = "unit\\animal\\Zergling" })
+
+-- 人族运输船
+_assets_model(":units\\creeps\\HumanTransportShip\\HumanTransportShip", "HumanTransportShip", "unit", { Art = "unit\\machine\\HumanTransport" })
+-- 人族护卫舰
+_assets_model(":units\\creeps\\HumanDestroyerShip\\HumanDestroyerShip", "HumanDestroyerShip", "unit", { Art = "unit\\machine\\HumanDestroyer" })
+-- 人族战舰
+_assets_model(":units\\creeps\\HumanBattleship\\HumanBattleship", "HumanBattleShip", "unit", { Art = "unit\\machine\\HumanBattleShip" })
+-- 兽族运输船
+_assets_model(":units\\creeps\\OrcishTransportShip\\OrcishTransportShip", "OrcTransportShip", "unit", { Art = "unit\\machine\\OrcishTransport" })
+-- 兽族护卫舰
+_assets_model(":units\\creeps\\OrcishDestroyerShip\\OrcishDestroyerShip", "OrcDestroyerShip", "unit", { Art = "unit\\machine\\OrcDestroyer" })
+-- 兽族魔力战舰
+_assets_model(":Units\\Critters\\OrcJuggernaught\\OrcJuggernaught", "OrcBattleShip", "unit", { Art = "unit\\machine\\Juggernaut" })
+-- 不死族运输船
+_assets_model(":units\\creeps\\UndeadTransportShip\\UndeadTransportShip", "UndeadTransportShip", "unit", { Art = "unit\\machine\\UndeadTransport" })
+-- 不死族护卫舰
+_assets_model(":units\\creeps\\UndeadDestroyerShip\\UndeadDestroyerShip", "OrcDestroyerShip", "unit", { Art = "unit\\machine\\UndeadDestroyer" })
+-- 不死族战舰
+_assets_model(":units\\creeps\\UndeadShipBattleShip\\UndeadShipBattleShip", "OrcBattleShip", "unit", { Art = "unit\\machine\\UndeadBattleShip" })
+-- 暗夜运输船
+_assets_model(":units\\creeps\\NightElfTransportShip\\NightElfTransportShip", "NightElfTransportShip", "unit", { Art = "unit\\machine\\NightElfTransport" })
+-- 暗夜护卫舰
+_assets_model(":units\\creeps\\NightElfDestroyerShip\\NightElfDestroyerShip", "NightElfDestroyerShip", "unit", { Art = "unit\\machine\\NightElfDestroyer" })
+-- 暗夜战舰
+_assets_model(":units\\creeps\\NightElfBattleship\\NightElfBattleship", "NightElfBattleShip", "unit", { Art = "unit\\machine\\NightElfFishingBoat" })
+-- 战船
+_assets_model(":doodads\\northrend\\water\\Battleship\\Battleship", "BattleShip", "unit", { Art = "unit\\machine\\BattleShip" })
+-- 不死族飞艇
+_assets_model(":units\\undead\\UndeadAirBarge\\UndeadAirBarge", "UndeadAirBarge", "unit", { Art = "unit\\machine\\UndeadAirBarge" })
+-- 精灵车
+_assets_model(":units\\other\\BloodElfWagon\\BloodElfWagon", "ElfPrisonWagon", "unit", { Art = "unit\\machine\\IllidanPrisonWagon" })
+-- 囚车
+_assets_model(":units\\other\\IllidanEvilCaged\\IllidanEvilCaged", "IllidanPrisonWagon", "unit", { Art = "unit\\machine\\CagedIllidan" })
+-- 达拉内尔粉碎者
+_assets_model(":units\\orc\\catapult\\catapult", "CatapultDraenei", "unit", { Art = "unit\\machine\\Catapult" })
+-- 地狱机关人
+_assets_model(":units\\creeps\\InfernalCannonCannon\\InfernalCannonCannon", "InfernalCannonCannon", "unit", { Art = "unit\\machine\\InfernalCannon" })
+-- 地狱战舰
+_assets_model(":units\\creeps\\InfernalCannonFlame\\InfernalCannonFlame", "InfernalCannonFlame", "unit", { Art = "unit\\machine\\InfernalFlameCannon" })
+-- 地精地雷
+_assets_model(":units\\creeps\\GoblinLandMine\\GoblinLandMine", "GoblinLandMine", "unit", { Art = "item\\misc\\GoblinLandMine" })
+-- 地精飞艇
+_assets_model(":units\\creeps\\GoblinZeppelin\\GoblinZeppelin", "GoblinZeppelin", "unit", { Art = "unit\\machine\\GoblinZeppelin" })
+-- 地精工兵
+_assets_model(":units\\creeps\\GoblinSapper\\GoblinSapper", "GoblinSapper", "unit", { Art = "unit\\machine\\GoblinSapper" })
+-- 地精撕裂者
+_assets_model(":units\\creeps\\IronGolem\\IronGolem", "GoblinIronGolem", "unit", { Art = "unit\\machine\\JunkGolem" })
+-- 口袋工厂
+_assets_model(":Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactory", "TinkerFactory", "unit", { Art = "unit\\machine\\PocketFactory" })
+-- 口袋工厂(人工地精)
+_assets_model(":Units\\Creeps\\HeroTinkerRobot\\HeroTinkerRobot", "TinkerRobot", "unit", { Art = "unit\\machine\\ClockWerkGoblin" })
+
+-- 马里恩(冲锋枪小哥)
+_assets_model(":Units\\Critters\\Marine\\Marine", "Marine", "unit", { Art = "unit\\human\\Marine" })
+-- 邪恶空间兽人(冲锋枪兽人)
+_assets_model(":Units\\Critters\\ChaosSpaceOrc\\ChaosSpaceOrc", "ChaosSpaceOrc", "unit", { Art = "unit\\machine\\ChaosSpaceOrc" })
+-- 村民男1
+_assets_model(":units\\critters\\VillagerMan\\VillagerMan", "VillagerMan1", "unit", { Art = "unit\\machine\\VillagerMan" })
+-- 村民男2
+_assets_model(":units\\critters\\VillagerMan1\\VillagerMan1", "VillagerMan2", "unit", { Art = "unit\\machine\\VillagerMan1" })
+-- 村民女1
+_assets_model(":units\\critters\\VillagerWoman\\VillagerWoman", "VillagerWoman1", "unit", { Art = "unit\\machine\\VillagerWoman" })
+-- 村民小孩1
+_assets_model(":units\\critters\\VillagerKid\\VillagerKid", "VillagerKid1", "unit", { Art = "unit\\machine\\VillagerKid" })
+-- 村民小孩2
+_assets_model(":units\\critters\\VillagerKid1\\VillagerKid1", "VillagerKid2", "unit", { Art = "unit\\machine\\VillagerKid2" })
 
 --【 物品模型 】
 
