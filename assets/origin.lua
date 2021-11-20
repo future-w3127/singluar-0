@@ -126,14 +126,22 @@ _assets_model(":Abilities\\Spells\\Human\\StormBolt\\StormBoltMissile.mdl", "Sto
 
 --【 技能特效 】
 
---变羊 云雾
+--变羊 羊坠落
 _assets_model(":Abilities\\Spells\\Human\\Polymorph\\PolyMorphFallingSheepArt.mdl", "PolyMorphFallingSheepArt")
+--变羊 云雾
+_assets_model(":Abilities\\Spells\\Human\\Polymorph\\PolyMorphDoneGround.mdl", "PolyMorphDoneGround")
 --防御 开盾
 _assets_model(":Abilities\\Spells\\Human\\Defend\\DefendCaster.mdl", "DefendCaster")
---减速 黄
+--减速 黄下降
 _assets_model(":Abilities\\Spells\\Human\\Slow\\SlowCaster", "SlowCaster")
+--减速 黄内聚
+_assets_model(":Abilities\\Spells\\Human\\slow\\slowtarget.mdl", "SlowTarget")
+--空中枷锁 网
+_assets_model(":Abilities\\Spells\\Human\\AerialShackles\\AerialShacklesTarget.mdl", "AerialShacklesTarget")
 --控制魔法 蓝眼
 _assets_model(":Abilities\\Spells\\Human\\ControlMagic\\ControlMagicTarget.mdl", "ControlMagicTarget")
+--控制魔法 红烟
+_assets_model(":Abilities\\Spells\\Orc\\FeralSpirit\\feralspiritdone.mdl", "FeralSpiritDone")
 --魔法盗取 幻色
 _assets_model(":Abilities\\Spells\\Human\\SpellSteal\\SpellStealTarget.mdl", "SpellStealTarget")
 --魔法岗哨 蓝眼
@@ -154,10 +162,16 @@ _assets_model(":Abilities\\Weapons\\FlyingMachine\\FlyingMachineImpact.mdl", "Fl
 _assets_model(":Abilities\\Spells\\Items\\AIta\\CrystalBallCaster.mdl", "CrystalBallCaster")
 --医疗 闪光
 _assets_model(":Abilities\\Spells\\Human\\Heal\\HealTarget.mdl", "HealTarget")
+--心灵之火 王冠
+_assets_model(":Abilities\\Spells\\Human\\InnerFire\\InnerFireTarget.mdl", "InnerFireTarget")
 --隐身 白
 _assets_model(":Abilities\\Spells\\Human\\Invisibility\\InvisibilityTarget.mdl", "InvisibilityTarget")
+--乌云 蓝色
+_assets_model(":Abilities\\Spells\\Human\\CloudOfFog\\CloudOfFog.mdl", "CloudOfFog")
 --照明弹 上天
 _assets_model(":Abilities\\Spells\\Human\\Flare\\FlareCaster.mdl", "FlareCaster")
+--照明弹 烟花
+_assets_model(":Abilities\\Spells\\Human\\Flare\\FlareTarget.mdl", "FlareTarget")
 --暴风雪 霜冻
 _assets_model(":Abilities\\Spells\\Other\\FrostDamage\\FrostDamage.mdl", "FrostDamage")
 --暴风雪 天降冰块
@@ -168,6 +182,8 @@ _assets_model(":Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl", "Resu
 _assets_model(":Abilities\\Spells\\Human\\Resurrect\\ResurrectCaster.mdl", "ResurrectCaster")
 --火凤凰 天降火焰冲击
 _assets_model(":Abilities\\Spells\\Human\\MarkOfChaos\\MarkOfChaosTarget.mdl", "MarkOfChaosTarget")
+--火凤凰 灼烧
+_assets_model(":Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl", "BreathOfFireDamage")
 --雷霆一击 震地
 _assets_model(":Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl", "ThunderClapCaster")
 --雷霆一击 眩晕 红
@@ -198,6 +214,8 @@ _assets_model(":Abilities\\Spells\\Human\\MassTeleport\\MassTeleportCaster.mdl",
 _assets_model(":Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTo.mdl", "MassTeleportTo")
 --神圣护甲
 _assets_model(":Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "DivineShieldTarget")
+--神圣之光
+_assets_model(":Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", "HolyBoltSpecialArt")
 --沉默 叹号
 _assets_model(":Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "SilenceTarget")
 
@@ -209,6 +227,20 @@ _assets_model(":Abilities\\Spells\\Other\\GeneralAuraTarget\\GeneralAuraTarget.m
 _assets_model(":Abilities\\Spells\\Human\\Brilliance\\Brilliance.mdl", "Brilliance")
 --专注光环 十字守护
 _assets_model(":Abilities\\Spells\\Human\\DevotionAura\\DevotionAura.mdl", "DevotionAura")
+--耐久光环 兽齿图腾
+_assets_model(":Abilities\\Spells\\Orc\\CommandAura\\CommandAura.mdl", "OmMandAura")
+--荒芜光环 紫六芒星
+_assets_model(":Abilities\\Spells\\Undead\\RegenerationAura\\ObsidianRegenAura.mdl", "ObsidianRegenAura")
+--吸血光环 不死阵
+_assets_model(":Abilities\\Spells\\Undead\\VampiricAura\\VampiricAura.mdl", "VampiricAura")
+--邪恶光环 黄绿符文
+_assets_model(":Abilities\\Spells\\Undead\\UnholyAura\\UnholyAura.mdl", "UnholyAura")
+--荆棘光环 刺
+_assets_model(":Abilities\\Spells\\NightElf\\ThornsAura\\ThornsAura.mdl", "ThornsAura")
+--强击光环 四绿箭
+_assets_model(":Abilities\\Spells\\NightElf\\TrueshotAura\\TrueshotAura.mdl", "TrueShotAura")
+--命令光环 红色鼓音波
+_assets_model(":Abilities\\Spells\\Orc\\WarDrums\\DrumsCasterHeal.mdl", "DrumsCasterHeal")
 
 --【 英雄模型 】
 
