@@ -30,6 +30,8 @@ _assets_model(":Abilities\\Weapons\\DragonHawkMissile\\DragonHawkMissile.mdl", "
 _assets_model(":Abilities\\Weapons\\WaterElementalMissile\\WaterElementalMissile.mdl", "WaterElementalMissile")
 --凤凰火焰
 _assets_model(":Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile.mdl", "PhoenixMissile")
+--凤凰火焰(小)
+_assets_model(":Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile_mini.mdl", "PhoenixMissileMini")
 --箭塔
 _assets_model(":Abilities\\Weapons\\GuardTowerMissile\\GuardTowerMissile.mdl", "GuardTowerMissile")
 --炮塔
@@ -116,13 +118,97 @@ _assets_model(":Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl", "Avenge
 _assets_model(":Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl", "LordofFlameMissile")
 --酒仙炼金酒瓶
 _assets_model(":Abilities\\Weapons\\BrewmasterMissile\\BrewmasterMissile.mdl", "BrewmasterMissile")
+--魔法盗取
+_assets_model(":Abilities\\Spells\\Human\\SpellSteal\\SpellStealMissile.mdl", "SpellStealMissile")
+--风暴之锤
+_assets_model(":Abilities\\Spells\\Human\\StormBolt\\StormBoltMissile.mdl", "StormBoltMissile")
 
 
 --【 技能特效 】
 
---沉默叹号
+--变羊 云雾
+_assets_model(":Abilities\\Spells\\Human\\Polymorph\\PolyMorphFallingSheepArt.mdl", "PolyMorphFallingSheepArt")
+--防御 开盾
+_assets_model(":Abilities\\Spells\\Human\\Defend\\DefendCaster.mdl", "DefendCaster")
+--减速 黄
+_assets_model(":Abilities\\Spells\\Human\\Slow\\SlowCaster", "SlowCaster")
+--控制魔法 蓝眼
+_assets_model(":Abilities\\Spells\\Human\\ControlMagic\\ControlMagicTarget.mdl", "ControlMagicTarget")
+--魔法盗取 幻色
+_assets_model(":Abilities\\Spells\\Human\\SpellSteal\\SpellStealTarget.mdl", "SpellStealTarget")
+--魔法岗哨 蓝眼
+_assets_model(":Abilities\\Spells\\Human\\MagicSentry\\MagicSentryCaster.mdl", "MagicSentryCaster")
+--魔法回应 红
+_assets_model(":Abilities\\Spells\\Human\\Feedback\\SpellBreakerAttack.mdl", "SpellBreakerAttack")
+--魔法回应 紫
+_assets_model(":Abilities\\Spells\\Human\\Feedback\\ArcaneTowerAttack.mdl", "ArcaneTowerAttack")
+--血法球体
+_assets_model(":Units\\Human\\HeroBloodElf\\BloodElfBall.mdl", "BloodElfBall")
+--驱逐魔法 白
+_assets_model(":Abilities\\Spells\\Human\\DispelMagic\\DispelMagicTarget.mdl", "DispelMagicTarget")
+--驱逐魔法 绿火
+_assets_model(":Abilities\\Spells\\Human\\Banish\\BanishTarget.mdl", "BanishTarget")
+--碎片攻击 爆破
+_assets_model(":Abilities\\Weapons\\FlyingMachine\\FlyingMachineImpact.mdl", "FlyingMachineImpact")
+--显示 光球
+_assets_model(":Abilities\\Spells\\Items\\AIta\\CrystalBallCaster.mdl", "CrystalBallCaster")
+--医疗 闪光
+_assets_model(":Abilities\\Spells\\Human\\Heal\\HealTarget.mdl", "HealTarget")
+--隐身 白
+_assets_model(":Abilities\\Spells\\Human\\Invisibility\\InvisibilityTarget.mdl", "InvisibilityTarget")
+--照明弹 上天
+_assets_model(":Abilities\\Spells\\Human\\Flare\\FlareCaster.mdl", "FlareCaster")
+--暴风雪 霜冻
+_assets_model(":Abilities\\Spells\\Other\\FrostDamage\\FrostDamage.mdl", "FrostDamage")
+--暴风雪 天降冰块
+_assets_model(":Abilities\\Spells\\Human\\Blizzard\\BlizzardTarget.mdl", "BlizzardTarget")
+--复活 光柱
+_assets_model(":Abilities\\Spells\\Human\\Resurrect\\ResurrectTarget.mdl", "ResurrectTarget")
+--复活 天使
+_assets_model(":Abilities\\Spells\\Human\\Resurrect\\ResurrectCaster.mdl", "ResurrectCaster")
+--火凤凰 天降火焰冲击
+_assets_model(":Abilities\\Spells\\Human\\MarkOfChaos\\MarkOfChaosTarget.mdl", "MarkOfChaosTarget")
+--雷霆一击 震地
+_assets_model(":Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl", "ThunderClapCaster")
+--雷霆一击 眩晕 红
+_assets_model(":Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl", "StasisTotemTarget")
+--烈焰风暴 地面
+_assets_model(":Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeTarget.mdl", "FlameStrikeTarget")
+--烈焰风暴 灼烧
+_assets_model(":Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeDamageTarget.mdl", "FlameStrikeDamageTarget")
+--烈焰风暴 灼烧红
+_assets_model(":Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeEmbers.mdl", "FlameStrikeEmbers")
+--烈焰风暴 火柱0|1|2
+_assets_model(":Abilities\\Spells\\Human\\FlameStrike\\FlameStrike.mdl", "FlameStrike")
+_assets_model(":Abilities\\Spells\\Human\\FlameStrike\\FlameStrike1.mdl", "FlameStrike1")
+_assets_model(":Abilities\\Spells\\Human\\FlameStrike\\FlameStrike2.mdl", "FlameStrike2")
+--魔法汲取 收敛
+_assets_model(":Abilities\\Spells\\Other\\Drain\\ManaDrainTarget.mdl", "ManaDrainTarget")
+--魔法汲取 发散
+_assets_model(":Abilities\\Spells\\Other\\Drain\\ManaDrainCaster.mdl", "ManaDrainCaster")
+--生命汲取 收敛
+_assets_model(":Abilities\\Spells\\Other\\Drain\\DrainTarget.mdl", "DrainTarget")
+--生命汲取 发散
+_assets_model(":Abilities\\Spells\\Other\\Drain\\DrainCaster.mdl", "DrainCaster")
+--群体传送 上天
+_assets_model(":Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTarget.mdl", "MassTeleportTarget")
+--群体传送 下来
+_assets_model(":Abilities\\Spells\\Human\\MassTeleport\\MassTeleportCaster.mdl", "MassTeleportCaster")
+--群体传送 目标传送阵
+_assets_model(":Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTo.mdl", "MassTeleportTo")
+--神圣护甲
+_assets_model(":Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "DivineShieldTarget")
+--沉默 叹号
 _assets_model(":Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "SilenceTarget")
 
+--【 光环特效 】
+
+--通用目标淡蓝光圈
+_assets_model(":Abilities\\Spells\\Other\\GeneralAuraTarget\\GeneralAuraTarget.mdl", "GeneralAuraTarget")
+--辉煌光环 两个蓝圈
+_assets_model(":Abilities\\Spells\\Human\\Brilliance\\Brilliance.mdl", "Brilliance")
+--专注光环 十字守护
+_assets_model(":Abilities\\Spells\\Human\\DevotionAura\\DevotionAura.mdl", "DevotionAura")
 
 --【 英雄模型 】
 
@@ -131,7 +217,7 @@ _assets_model(":units\\human\\HeroPaladin\\HeroPaladin", "HeroPaladin", "unit", 
 --大魔法师
 _assets_model(":units\\human\\HeroArchMage\\HeroArchMage", "HeroArchMage", "unit", { Art = "unit\\hero\\HeroArchMage" })
 --大魔法师(魂)
-_assets_model(":units\\ther\\HeroArchMageGhost\\HeroArchMageGhost", "HeroArchMageGhost", "unit", { Art = "unit\\hero\\GhostMage" })
+_assets_model(":units\\other\\HeroArchMageGhost\\HeroArchMageGhost", "HeroArchMageGhost", "unit", { Art = "unit\\hero\\GhostMage" })
 --山丘之王
 _assets_model(":units\\human\\HeroMountainKing\\HeroMountainKing", "HeroMountainKing", "unit", { Art = "unit\\hero\\HeroMountainKing" })
 --血魔法师
@@ -263,7 +349,7 @@ _assets_model(":units\\creeps\\HumanMage\\HumanMage", "HumanMage", "unit", { Art
 --高级精灵男
 _assets_model(":units\\critters\\HighElfPeasant\\HighElfPeasant", "HighElfPeasant", "unit", { Art = "unit\\elf\\ElfVillager" })
 --高级精灵女
-_assets_model(":units\\creeps\\ElfVillagerWoman\\ElfVillagerWoman", "HighElfVillagerWoman", "unit", { Art = "unit\\elf\\FemaleElfVillager" })
+_assets_model(":units\\critters\\ElfVillagerWoman\\ElfVillagerWoman", "HighElfVillagerWoman", "unit", { Art = "unit\\elf\\FemaleElfVillager" })
 --高级精灵弓箭手
 _assets_model(":units\\creeps\\HighElfArcher\\HighElfArcher", "HighElfArcher", "unit", { Art = "unit\\elf\\HighElvenArcher" })
 --麦迪文
@@ -272,17 +358,17 @@ _assets_model(":units\\creeps\\Medivh\\Medivh", "Medivh", "unit", { Art = "unit\
 --苦工
 _assets_model(":units\\orc\\Peon\\Peon", "Peon", "unit", { Art = "unit\\beast\\Peon" })
 --苦工(邪恶)
-_assets_model(":units\\orc\\ChaosPeon\\ChaosPeon", "PeonChaos", "unit", { Art = "unit\\beast\\ChaosPeon" })
+_assets_model(":units\\demon\\ChaosPeon\\ChaosPeon", "PeonChaos", "unit", { Art = "unit\\beast\\ChaosPeon" })
 --兽族步兵
 _assets_model(":units\\orc\\Grunt\\Grunt", "Grunt", "unit", { Art = "unit\\beast\\Grunt" })
 --兽族步兵(邪恶)
-_assets_model(":units\\orc\\ChaosGrunt\\ChaosGrunt", "GruntChaos", "unit", { Art = "unit\\beast\\ChaosGrunt" })
+_assets_model(":units\\demon\\ChaosGrunt\\ChaosGrunt", "GruntChaos", "unit", { Art = "unit\\beast\\ChaosGrunt" })
 --兽族步兵(骷髅)
 _assets_model(":units\\creeps\\SkeletonOrc\\SkeletonOrc", "GruntSkeleton", "unit", { Art = "unit\\demon\\SkeletalOrc" })
 --掠夺者
 _assets_model(":units\\orc\\WolfRider\\WolfRider", "WolfRider", "unit", { Art = "unit\\beast\\Raider" })
 --掠夺者(邪恶)
-_assets_model(":units\\orc\\ChaosWolfRider\\ChaosWolfRider", "WolfRiderChaos", "unit", { Art = "unit\\beast\\ChaosWolfRider" })
+_assets_model(":units\\demon\\ChaosWolfRider\\ChaosWolfRider", "WolfRiderChaos", "unit", { Art = "unit\\beast\\ChaosWolfRider" })
 --牛头人
 _assets_model(":units\\orc\\Tauren\\Tauren", "Tauren", "unit", { Art = "unit\\beast\\Tauren" })
 --巨魔猎头者
@@ -292,7 +378,7 @@ _assets_model(":units\\orc\\catapult\\catapult", "Catapult", "unit", { Art = "un
 --科多兽
 _assets_model(":units\\orc\\KotoBeast\\KotoBeast", "KotoBeast", "unit", { Art = "unit\\beast\\KotoBeast" })
 --科多兽(邪恶)
-_assets_model(":units\\orc\\ChaosKotoBeast\\ChaosKotoBeast", "KotoBeastChaos", "unit", { Art = "unit\\beast\\ChaosKotoBeast" })
+_assets_model(":units\\demon\\ChaosKotoBeast\\ChaosKotoBeast", "KotoBeastChaos", "unit", { Art = "unit\\beast\\ChaosKotoBeast" })
 --科多兽(无驾驶员)
 _assets_model(":units\\orc\\KotoBeastNoRider\\KotoBeastNoRider", "KotoBeastNoRider", "unit", { Art = "unit\\beast\\KotoBeast" })
 --风骑士
@@ -435,7 +521,7 @@ _assets_model(":Units\\Creeps\\SeaTurtle\\SeaTurtle", "SeaTurtle", "unit", { Art
 --黄绿海龟
 _assets_model(":Units\\Creeps\\GiantSeaTurtle\\GiantSeaTurtle", "SeaTurtleYG", "unit", { Art = "unit\\water\\SeaTurtleGreen" })
 --龙龟
-_assets_model(":Units\\Naga\\DragonSeaTurtleRange\\DragonSeaTurtleRange", "SeaTurtleRed", "unit", { Art = "unit\\water\\SeaTurtleRed" })
+_assets_model(":Units\\Creeps\\DragonSeaTurtleRange\\DragonSeaTurtleRange", "SeaTurtleRed", "unit", { Art = "unit\\water\\SeaTurtleRed" })
 
 --小鱼人(黄)
 _assets_model(":units\\creeps\\Murloc\\Murloc", "MurlocYellow", "unit", { Art = "unit\\water\\Murloc" })
@@ -628,17 +714,17 @@ _assets_model(":units\\demon\\Demoness\\Demoness", "Demoness", "unit", { Art = "
 --女妖精(蓝)
 _assets_model(":units\\demon\\DemonessBlue\\DemonessBlue", "DemonessBlue", "unit", { Art = "unit\\demon\\BlueDemoness" })
 --图斯卡
-_assets_model(":units\\demon\\tuskar\\tuskar", "Tuskaar", "unit", { Art = "unit\\beast\\TuskaarNomad" })
+_assets_model(":units\\creeps\\tuskar\\tuskar", "Tuskaar", "unit", { Art = "unit\\beast\\TuskaarNomad" })
 --图斯卡枪兵
-_assets_model(":units\\demon\\tuskarRanged\\tuskarRanged", "TuskaarRanged", "unit", { Art = "unit\\beast\\TuskaarGold" })
+_assets_model(":units\\creeps\\tuskarRanged\\tuskarRanged", "TuskaarRanged", "unit", { Art = "unit\\beast\\TuskaarGold" })
 --图斯卡法师
-_assets_model(":units\\demon\\tuskarLord\\tuskarLord", "TuskaarLord", "unit", { Art = "unit\\beast\\TuskaarBlack" })
+_assets_model(":units\\creeps\\tuskarLord\\tuskarLord", "TuskaarLord", "unit", { Art = "unit\\beast\\TuskaarBlack" })
 --野人
 _assets_model(":units\\creeps\\Sasquatch\\Sasquatch", "", "unit", { Art = "unit\\ancient\\Sasquatch" })
 --丛林漫步者
 _assets_model(":units\\creeps\\JungleBeast\\JungleBeast", "JungleBeast", "unit", { Art = "unit\\ancient\\JungleBeast" })
 --雪怪
-_assets_model(":units\\demon\\Wendigo\\Wendigo", "Wendigo", "unit", { Art = "unit\\ancient\\Wendigo" })
+_assets_model(":units\\creeps\\Wendigo\\Wendigo", "Wendigo", "unit", { Art = "unit\\ancient\\Wendigo" })
 --灰狼
 _assets_model(":units\\creeps\\TimberWolf\\TimberWolf", "TimberWolf", "unit", { Art = "unit\\beast\\TimberWolf" })
 --白狼
@@ -706,9 +792,9 @@ _assets_model(":units\\creeps\\UndeadDestroyerShip\\UndeadDestroyerShip", "OrcDe
 --不死族战舰
 _assets_model(":units\\creeps\\UndeadShipBattleShip\\UndeadShipBattleShip", "OrcBattleShip", "unit", { Art = "unit\\machine\\UndeadBattleShip" })
 --暗夜运输船
-_assets_model(":units\\creeps\\NightElfTransportShip\\NightElfTransportShip", "NightElfTransportShip", "unit", { Art = "unit\\machine\\NightElfTransport" })
+_assets_model(":units\\nightelf\\NightElfTransportShip\\NightElfTransportShip", "NightElfTransportShip", "unit", { Art = "unit\\machine\\NightElfTransport" })
 --暗夜护卫舰
-_assets_model(":units\\creeps\\NightElfDestroyerShip\\NightElfDestroyerShip", "NightElfDestroyerShip", "unit", { Art = "unit\\machine\\NightElfDestroyer" })
+_assets_model(":units\\nightelf\\NightElfDestroyerShip\\NightElfDestroyerShip", "NightElfDestroyerShip", "unit", { Art = "unit\\machine\\NightElfDestroyer" })
 --暗夜战舰
 _assets_model(":units\\creeps\\NightElfBattleship\\NightElfBattleship", "NightElfBattleShip", "unit", { Art = "unit\\machine\\NightElfFishingBoat" })
 --战船
