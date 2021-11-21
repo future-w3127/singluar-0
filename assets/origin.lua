@@ -132,6 +132,20 @@ _assets_model(":Abilities\\Spells\\Orc\\MirrorImage\\MirrorImageMissile.mdl", "M
 _assets_model(":Abilities\\Spells\\Orc\\Shockwave\\ShockwaveMissile.mdl", "ShockwaveMissile")
 --冰冻喷吐
 _assets_model(":Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathMissile.mdl", "FreezingBreathMissile")
+--毁灭之球
+_assets_model(":Abilities\\Spells\\Undead\\OrbOfDeath\\AnnihilationMissile.mdl", "AnnihilationMissile")
+--霜冻攻击
+_assets_model(":Abilities\\Weapons\\ZigguratFrostMissile\\ZigguratFrostMissile.mdl", "ZigguratFrostMissile")
+--吸收魔法
+_assets_model(":Abilities\\Spells\\Undead\\AbsorbMana\\AbsorbManaBirthMissile.mdl", "AbsorbManaBirthMissile")
+--占据
+_assets_model(":Abilities\\Spells\\Undead\\Possession\\PossessionMissile.mdl", "PossessionMissile")
+--蛛网
+_assets_model(":Abilities\\Spells\\Undead\\Web\\Webmissile.mdl", "WebMissile")
+--穴居恶魔蜘蛛
+_assets_model(":Abilities\\Weapons\\CryptFiendMissile\\CryptFiendMissileTarget.mdl", "CryptFiendMissileTarget")
+--穿刺 各种刺
+_assets_model(":Abilities\\Spells\\Undead\\Impale\\ImpaleMissTarget.mdl", "ImpaleMissTarget")
 
 --【 技能特效 】
 
@@ -285,6 +299,50 @@ _assets_model(":Abilities\\Spells\\Orc\\LiquidFire\\Liquidfire.mdl", "LiquidFire
 _assets_model(":Abilities\\Spells\\Orc\\Ensnare\\ensnareTarget.mdl", "ensnareTarget")
 --诱捕 空中网
 _assets_model(":Abilities\\Spells\\Orc\\Ensnare\\ensnare_AirTarget.mdl", "ensnareTargetAir")
+--回复生命 黄裂缝扩散
+_assets_model(":Abilities\\Spells\\Undead\\ReplenishHealth\\ReplenishHealthCaster.mdl", "ReplenishHealthCaster")
+--回复魔法 蓝圈扩散
+_assets_model(":Abilities\\Spells\\Undead\\ReplenishMana\\ReplenishManaCaster.mdl", "ReplenishManaCaster")
+--创建尸体 墓碑出土
+_assets_model(":Abilities\\Spells\\Undead\\Graveyard\\GraveMarker.mdl", "GraveMarker")
+--复活死尸 骸骨出土
+_assets_model(":Abilities\\Spells\\Undead\\RaiseSkeletonWarrior\\RaiseSkeleton.mdl", "RaiseSkeleton")
+--吞噬魔法 小小紫光
+_assets_model(":Abilities\\Spells\\Undead\\DevourMagic\\DevourMagicBirthMissile.mdl", "DevourMagicBirthMissile")
+--穿刺 插上天
+_assets_model(":Abilities\\Spells\\Undead\\Impale\\ImpaleHitTarget.mdl", "ImpaleHitTarget")
+--霜冻护甲 冰雾球甲
+_assets_model(":Abilities\\Spells\\Undead\\FrostArmor\\FrostArmorTarget.mdl", "FrostArmorTarget")
+--睡眠 zzZ
+_assets_model(":Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl", "SleepTarget")
+--死亡凋零 紫鬼火
+_assets_model(":Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayDamage.mdl", "DeathandDecayDamage")
+--死亡凋零 黑紫侵蚀
+_assets_model(":Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayTarget.mdl", "DeathandDecayTarget")
+--冰冻喷吐 结冰
+_assets_model(":Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl", "FreezingBreathTargetArt")
+--残废 虹色幻光
+_assets_model(":Abilities\\Spells\\Undead\\Cripple\\CrippleTarget.mdl", "CrippleTarget")
+--反魔法护盾 绿
+_assets_model(":Abilities\\Spells\\Undead\\AntiMagicShell\\AntiMagicShell.mdl", "AntiMagicShell")
+--反召唤
+_assets_model(":Abilities\\Spells\\Undead\\Unsummon\\UnsummonTarget.mdl", "UnSummonTarget")
+--疾病云雾 黄绿烟
+_assets_model(":Units\\Undead\\PlagueCloud\\PlagueCloudtarget.mdl", "PlagueCloudTarget")
+--邪恶狂热 发光白云
+_assets_model(":Abilities\\Spells\\Undead\\UnholyFrenzy\\UnholyFrenzyTarget.mdl", "UnholyFrenzyTarget")
+--占据 虚空紫小型漩涡
+_assets_model(":Abilities\\Spells\\Undead\\Possession\\PossessionTarget.mdl", "PossessionTarget")
+--占据 虚空紫擎天漩涡
+_assets_model(":Abilities\\Spells\\Undead\\Possession\\PossessionCaster.mdl", "PossessionCaster")
+--蛛网 网地面
+_assets_model(":Abilities\\Spells\\Undead\\Web\\WebTarget.mdl", "WebTarget")
+--蛛网 网空中
+_assets_model(":Abilities\\Spells\\Undead\\Web\\Web_AirTarget.mdl", "WebTargetAir")
+--诅咒 紫色X骷髅头
+_assets_model(":Abilities\\Spells\\Undead\\Curse\\CurseTarget.mdl", "CurseTarget")
+--操纵死尸 绿色柱体上升
+_assets_model(":Abilities\\Spells\\Undead\\AnimateDead\\AnimateDeadTarget.mdl", "AnimateDeadTarget")
 
 --【 光环特效 】
 
