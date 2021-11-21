@@ -36,8 +36,6 @@ _assets_model(":Abilities\\Weapons\\PriestMissile\\PriestMissile.mdl", "PriestMi
 _assets_model(":Abilities\\Weapons\\SorceressMissile\\SorceressMissile.mdl", "SorceressMissile")
 --龙鹰
 _assets_model(":Abilities\\Weapons\\DragonHawkMissile\\DragonHawkMissile.mdl", "DragonHawkMissile")
---水元素
-_assets_model(":Abilities\\Weapons\\WaterElementalMissile\\WaterElementalMissile.mdl", "WaterElementalMissile")
 --凤凰火焰
 _assets_model(":Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile.mdl", "PhoenixMissile")
 --凤凰火焰(小)
@@ -140,8 +138,6 @@ _assets_model(":Abilities\\Spells\\Orc\\Shockwave\\ShockwaveMissile.mdl", "Shock
 _assets_model(":Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathMissile.mdl", "FreezingBreathMissile")
 --毁灭之球
 _assets_model(":Abilities\\Spells\\Undead\\OrbOfDeath\\AnnihilationMissile.mdl", "AnnihilationMissile")
---霜冻攻击
-_assets_model(":Abilities\\Weapons\\ZigguratFrostMissile\\ZigguratFrostMissile.mdl", "ZigguratFrostMissile")
 --吸收魔法
 _assets_model(":Abilities\\Spells\\Undead\\AbsorbMana\\AbsorbManaBirthMissile.mdl", "AbsorbManaBirthMissile")
 --占据
@@ -156,8 +152,6 @@ _assets_model(":Abilities\\Spells\\Undead\\Impale\\ImpaleMissTarget.mdl", "Impal
 _assets_model(":Abilities\\Spells\\Undead\\CarrionSwarm\\CarrionSwarmMissile.mdl", "CarrionSwarmMissile")
 --死亡缠绕
 _assets_model(":Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilMissile.mdl", "DeathCoilMissile")
---腐蚀喷吐
-_assets_model(":Abilities\\Weapons\\ChimaeraAcidMissile\\ChimaeraAcidMissile.mdl", "ChimaeraAcidMissile")
 --暗影突袭
 _assets_model(":Abilities\\Spells\\NightElf\\shadowstrike\\ShadowStrikeMissile.mdl", "ShadowStrikeMissile")
 --刀阵旋风
@@ -267,7 +261,7 @@ _assets_model(":Abilities\\Spells\\Items\\AIsm\\AIsmTarget.mdl", "AIsmTarget")
 _assets_model(":Abilities\\Spells\\Items\\AIam\\AIamTarget.mdl", "AIamTarget")
 --状态提升 黄紫色
 _assets_model(":Abilities\\Spells\\Items\\AIim\\AIimTarget.mdl", "AIimTarget")
---无敌 金色球盾
+--神圣护甲 无敌 金色球盾
 _assets_model(":Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "DivineShieldTarget")
 
 --变羊 羊坠落
@@ -356,8 +350,6 @@ _assets_model(":Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTarget.mdl",
 _assets_model(":Abilities\\Spells\\Human\\MassTeleport\\MassTeleportCaster.mdl", "MassTeleportCaster")
 --群体传送 目标传送阵
 _assets_model(":Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTo.mdl", "MassTeleportTo")
---神圣护甲
-_assets_model(":Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "DivineShieldTarget")
 --神圣之光
 _assets_model(":Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", "HolyBoltSpecialArt")
 --净化 紫色脉冲
@@ -460,8 +452,6 @@ _assets_model(":Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl", "Fro
 _assets_model(":Abilities\\Spells\\Undead\\DeathPact\\DeathPactTarget.mdl", "DeathPactTarget")
 --小精灵自爆 扩散
 _assets_model(":Units\\NightElf\\Wisp\\WispExplode.mdl", "WispExplode")
---小精灵自爆 白球上升
-_assets_model(":Abilities\\Spells\\Human\\DispelMagic\\DispelMagicTarget.mdl", "DispelMagicTarget")
 --变相移动 迷雾
 _assets_model(":Abilities\\Spells\\NightElf\\FaerieDragonInvis\\FaerieDragon_Invis.mdl", "FaerieDragonInvis")
 --小精灵采集 绿条绕圈
@@ -525,8 +515,6 @@ _assets_model(":Abilities\\Spells\\Human\\ManaFlare\\ManaFlareBase.mdl", "ManaFl
 _assets_model(":Abilities\\Spells\\Human\\ManaFlare\\ManaFlareBoltImpact.mdl", "ManaFlareBoltImpact")
 --符咒 蓝色光条飞舞聚集
 _assets_model(":Abilities\\Spells\\Other\\Charm\\CharmTarget.mdl", "CharmTarget")
---火焰呼吸 灼烧
-_assets_model(":Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl", "BreathOfFireDamage")
 --死亡之指 红电
 _assets_model(":Abilities\\Spells\\Demon\\DemonBoltImpact\\DemonBoltImpact.mdl", "DemonBoltImpact")
 --分裂 绿扩散
