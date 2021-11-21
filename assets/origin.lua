@@ -122,10 +122,37 @@ _assets_model(":Abilities\\Weapons\\BrewmasterMissile\\BrewmasterMissile.mdl", "
 _assets_model(":Abilities\\Spells\\Human\\SpellSteal\\SpellStealMissile.mdl", "SpellStealMissile")
 --风暴之锤
 _assets_model(":Abilities\\Spells\\Human\\StormBolt\\StormBoltMissile.mdl", "StormBoltMissile")
-
+--燃烧之油
+_assets_model(":Abilities\\Weapons\\DemolisherFireMissile\\DemolisherFireMissile.mdl", "DemolisherFireMissile")
+--诱捕网
+_assets_model(":Abilities\\Spells\\Orc\\Ensnare\\EnsnareMissile.mdl", "EnsnareMissile")
+--镜像
+_assets_model(":Abilities\\Spells\\Orc\\MirrorImage\\MirrorImageMissile.mdl", "MirrorImageMissile")
+--震荡波
+_assets_model(":Abilities\\Spells\\Orc\\Shockwave\\ShockwaveMissile.mdl", "ShockwaveMissile")
+--冰冻喷吐
+_assets_model(":Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathMissile.mdl", "FreezingBreathMissile")
 
 --【 技能特效 】
 
+--眩晕 蓝
+_assets_model(":Abilities\\Spells\\Human\\Thunderclap\\ThunderclapTarget.mdl", "ThunderclapTarget")
+--眩晕 红
+_assets_model(":Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl", "StasisTotemTarget")
+--沉默 叹号
+_assets_model(":Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "SilenceTarget")
+--建筑小火 0
+_assets_model(":Environment\\SmallBuildingFire\\SmallBuildingFire0.mdl", "SmallBuildingFire0")
+--建筑小火 1
+_assets_model(":Environment\\SmallBuildingFire\\SmallBuildingFire1.mdl", "SmallBuildingFire1")
+--建筑小火 2
+_assets_model(":Environment\\SmallBuildingFire\\SmallBuildingFire2.mdl", "SmallBuildingFire2")
+--建筑大火 0
+_assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire0.mdl", "LargeBuildingFire0")
+--建筑大火 1
+_assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire1.mdl", "LargeBuildingFire1")
+--建筑大火 2
+_assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire2.mdl", "LargeBuildingFire2")
 --变羊 羊坠落
 _assets_model(":Abilities\\Spells\\Human\\Polymorph\\PolyMorphFallingSheepArt.mdl", "PolyMorphFallingSheepArt")
 --变羊 云雾
@@ -186,8 +213,6 @@ _assets_model(":Abilities\\Spells\\Human\\MarkOfChaos\\MarkOfChaosTarget.mdl", "
 _assets_model(":Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl", "BreathOfFireDamage")
 --雷霆一击 震地
 _assets_model(":Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl", "ThunderClapCaster")
---雷霆一击 眩晕 红
-_assets_model(":Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl", "StasisTotemTarget")
 --烈焰风暴 地面
 _assets_model(":Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeTarget.mdl", "FlameStrikeTarget")
 --烈焰风暴 灼烧
@@ -216,8 +241,50 @@ _assets_model(":Abilities\\Spells\\Human\\MassTeleport\\MassTeleportTo.mdl", "Ma
 _assets_model(":Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "DivineShieldTarget")
 --神圣之光
 _assets_model(":Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl", "HolyBoltSpecialArt")
---沉默 叹号
-_assets_model(":Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "SilenceTarget")
+--净化 紫色脉冲
+_assets_model(":Abilities\\Spells\\Orc\\Purge\\PurgeBuffTarget.mdl", "PurgeBuffTarget")
+--灵魂锁链 橙色光斑
+_assets_model(":Abilities\\Spells\\Orc\\SpiritLink\\SpiritLinkZapTarget.mdl", "SpiritLinkZapTarget")
+--灵肉形态 黄色鬼魂
+_assets_model(":Abilities\\Spells\\Orc\\EtherealForm\\SpiritWalkerChange.mdl", "SpiritWalkerChange")
+--吞噬 黑墨溅射
+_assets_model(":Abilities\\Spells\\Orc\\Devour\\DevourEffectArt.mdl", "DevourEffectArt")
+--先祖灵魂 复活光柱带墓碑
+_assets_model(":Abilities\\Spells\\Orc\\Reincarnation\\ReincarnationTarget.mdl", "ReincarnationTarget")
+--消魔 黄色光刺散射
+_assets_model(":Abilities\\Spells\\Orc\\Disenchant\\DisenchantSpecialArt.mdl", "DisenchantSpecialArt")
+--镜像 剑圣抖动
+_assets_model(":Abilities\\Spells\\Orc\\MirrorImage\\MirrorImageCaster.mdl", "MirrorImageCaster")
+--升级 金色光芒
+_assets_model(":Abilities\\Spells\\Other\\Levelup\\LevelupCaster.mdl", "LevelupCaster")
+--闪电链 淡蓝紫电击
+_assets_model(":Abilities\\Weapons\\Bolt\\BoltImpact.mdl", "BoltImpact")
+--治疗波 金光
+_assets_model(":Abilities\\Spells\\Orc\\HealingWave\\HealingWaveTarget.mdl", "HealingWaveTarget")
+--战争践踏 震动
+_assets_model(":Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl", "WarStompCaster")
+--地震 地裂
+_assets_model(":Abilities\\Spells\\Orc\\EarthQuake\\EarthQuakeTarget.mdl", "EarthQuakeTarget")
+--巫毒 红圈球
+_assets_model(":Abilities\\Spells\\Orc\\Voodoo\\VoodooAuraTarget.mdl", "VoodooAuraTarget")
+--巫毒 十字阵法
+_assets_model(":Abilities\\Spells\\Orc\\Voodoo\\VoodooAura.mdl", "VoodooAura")
+--狂战士 狂热左手
+_assets_model(":Abilities\\Spells\\Orc\\TrollBerserk\\HeadhunterWEAPONSLeft.mdl", "HeadhunterWeaponsLeft")
+--狂战士 狂热右手
+_assets_model(":Abilities\\Spells\\Orc\\TrollBerserk\\HeadhunterWEAPONSRight.mdl", "HeadhunterWeaponsRight")
+--灵魂锁链 双旋橙圈
+_assets_model(":Abilities\\Spells\\Orc\\SpiritLink\\SpiritLinkTarget.mdl", "SpiritLinkTarget")
+--闪电护盾 三蓝色电球
+_assets_model(":Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl", "LightningShieldTarget")
+--嗜血术 血球
+_assets_model(":Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl", "BloodLustTarget")
+--液体炸弹 中空火圈
+_assets_model(":Abilities\\Spells\\Orc\\LiquidFire\\Liquidfire.mdl", "LiquidFire")
+--诱捕 地面网
+_assets_model(":Abilities\\Spells\\Orc\\Ensnare\\ensnareTarget.mdl", "ensnareTarget")
+--诱捕 空中网
+_assets_model(":Abilities\\Spells\\Orc\\Ensnare\\ensnare_AirTarget.mdl", "ensnareTargetAir")
 
 --【 光环特效 】
 
