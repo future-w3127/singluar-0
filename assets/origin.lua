@@ -144,8 +144,12 @@ _assets_model(":Abilities\\Spells\\Undead\\Possession\\PossessionMissile.mdl", "
 _assets_model(":Abilities\\Spells\\Undead\\Web\\Webmissile.mdl", "WebMissile")
 --穴居恶魔蜘蛛
 _assets_model(":Abilities\\Weapons\\CryptFiendMissile\\CryptFiendMissileTarget.mdl", "CryptFiendMissileTarget")
---穿刺 各种刺
+--穿刺
 _assets_model(":Abilities\\Spells\\Undead\\Impale\\ImpaleMissTarget.mdl", "ImpaleMissTarget")
+--腐臭蜂群
+_assets_model(":Abilities\\Spells\\Undead\\CarrionSwarm\\CarrionSwarmMissile.mdl", "CarrionSwarmMissile")
+--死亡缠绕
+_assets_model(":Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilMissile.mdl", "DeathCoilMissile")
 
 --【 技能特效 】
 
@@ -343,6 +347,16 @@ _assets_model(":Abilities\\Spells\\Undead\\Web\\Web_AirTarget.mdl", "WebTargetAi
 _assets_model(":Abilities\\Spells\\Undead\\Curse\\CurseTarget.mdl", "CurseTarget")
 --操纵死尸 绿色柱体上升
 _assets_model(":Abilities\\Spells\\Undead\\AnimateDead\\AnimateDeadTarget.mdl", "AnimateDeadTarget")
+--地狱火 砸
+_assets_model(":Units\\Demon\\Infernal\\InfernalBirth.mdl", "InfernalBirth")
+--腐臭蜂群 黑色
+_assets_model(":Abilities\\Spells\\Undead\\CarrionSwarm\\CarrionSwarmDamage.mdl", "CarrionSwarmDamage")
+--黑暗仪式 绿紫光
+_assets_model(":Abilities\\Spells\\Undead\\DarkRitual\\DarkRitualTarget.mdl", "DarkRitualTarget")
+--霜冻新星 爆
+_assets_model(":Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl", "FrostNovaTarget")
+--死亡契约 紫色上升螺旋
+_assets_model(":Abilities\\Spells\\Undead\\DeathPact\\DeathPactTarget.mdl", "DeathPactTarget")
 
 --【 光环特效 】
 
