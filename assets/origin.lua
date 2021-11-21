@@ -188,6 +188,8 @@ _assets_model(":Abilities\\Weapons\\RockBoltMissile\\RockBoltMissile.mdl", "Rock
 _assets_model(":Abilities\\Spells\\Other\\Transmute\\GoldBottleMissile.mdl", "GoldBottleMissile")
 --酸性炸弹 玻璃瓶子
 _assets_model(":Abilities\\Spells\\Other\\AcidBomb\\BottleMissile.mdl", "BottleMissile")
+--火焰瓶
+_assets_model(":Abilities\\Spells\\Orc\\LiquidFire\\BatRiderMissile.mdl", "BatRiderMissile")
 --医疗气雾 金色液体
 _assets_model(":Abilities\\Spells\\Other\\HealingSpray\\HealBottleMissile.mdl", "HealBottleMissile")
 --火箭群
@@ -200,6 +202,22 @@ _assets_model(":Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactoryMissle.mdl", 
 _assets_model(":Abilities\\Weapons\\LavaSpawnMissile\\LavaSpawnBirthMissile.mdl", "LavaSpawnBirthMissile")
 --火山爆发 岩石块
 _assets_model(":Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl", "VolcanoMissile")
+--巨箭
+_assets_model(":Abilities\\Weapons\\BallistaMissile\\BallistaMissile.mdl", "BallistaMissile")
+--燃烧之箭
+_assets_model(":Abilities\\Weapons\\flamingArrow\\flamingArrowMissile.mdl", "FlamingArrowMissile")
+--沙尘
+_assets_model(":Abilities\\Weapons\\TreantMissile\\TreantMissile.mdl", "TreantMissile")
+--圣光弹
+_assets_model(":Abilities\\Spells\\Human\\HolyBolt\\HolyBoltMissile.mdl", "HolyBoltMissile")
+--蒸汽弹
+_assets_model(":Abilities\\Weapons\\SteamMissile\\SteamMissile.mdl", "SteamMissile")
+--毒箭
+_assets_model(":Abilities\\Weapons\\PoisonArrow\\PoisonArrowMissile.mdl", "PoisonArrowMissile")
+--长枪
+_assets_model(":Abilities\\Weapons\\Banditmissile\\Banditmissile.mdl", "BanditMissile")
+--毒蛇守卫
+_assets_model(":Abilities\\Weapons\\SerpentWardMissile\\SerpentWardMissile.mdl", "SerpentWardMissile")
 
 --【 技能特效 】
 
@@ -207,6 +225,10 @@ _assets_model(":Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl", "Volcano
 _assets_model(":Abilities\\Spells\\Human\\Thunderclap\\ThunderclapTarget.mdl", "ThunderclapTarget")
 --眩晕 红
 _assets_model(":Abilities\\Spells\\Orc\\StasisTrap\\StasisTotemTarget.mdl", "StasisTotemTarget")
+--黄色大叹号
+_assets_model(":Abilities\\Spells\\Other\\TalkToMe\\TalkToMe.mdl", "TalkToMe")
+--白色问号
+_assets_model(":Objects\\RandomObject\\RandomObject.mdl", "RandomObject")
 --沉默 叹号
 _assets_model(":Abilities\\Spells\\Other\\Silence\\SilenceTarget.mdl", "SilenceTarget")
 --建筑小火 0
@@ -221,8 +243,12 @@ _assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire0.mdl", "LargeB
 _assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire1.mdl", "LargeBuildingFire1")
 --建筑大火 2
 _assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire2.mdl", "LargeBuildingFire2")
---生命恢复 黄
+--生命恢复 环环 黄
 _assets_model(":Abilities\\Spells\\NightElf\\Rejuvenation\\RejuvenationTarget.mdl", "RejuvenationTarget")
+--生命恢复 环环 绿紫
+_assets_model(":Abilities\\Spells\\Items\\ScrollOfRejuvenation\\ScrollManaHealth.mdl", "ScrollManaHealth")
+--生命恢复 环环 青蓝
+_assets_model(":Abilities\\Spells\\Items\\ClarityPotion\\ClarityTarget.mdl", "ClarityTarget")
 --回复魔法 金条金光
 _assets_model(":Abilities\\Spells\\Items\\AIhe\\AIheTarget.mdl", "AIheTarget")
 --回复魔法 蓝条蓝光
@@ -372,6 +398,8 @@ _assets_model(":Abilities\\Spells\\Orc\\SpiritLink\\SpiritLinkTarget.mdl", "Spir
 _assets_model(":Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl", "LightningShieldTarget")
 --嗜血术 血球
 _assets_model(":Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl", "BloodLustTarget")
+--嗜血术 血球2
+_assets_model(":Abilities\\Spells\\Orc\\Bloodlust\\BloodLustSpecial.mdl", "BloodLustSpecial")
 --液体炸弹 中空火圈
 _assets_model(":Abilities\\Spells\\Orc\\LiquidFire\\Liquidfire.mdl", "LiquidFire")
 --诱捕 地面网
@@ -555,6 +583,14 @@ _assets_model(":Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust
 _assets_model(":Objects\\Spawnmodels\\Other\\ToonBoom\\ToonBoom.mdl", "ToonBoom")
 --砍血
 _assets_model(":Objects\\Spawnmodels\\Critters\\Albatross\\CritterBloodAlbatross.mdl", "CritterBloodAlbatross")
+--浮生之焰 金光火焰
+_assets_model(":Abilities\\Spells\\Demon\\ReviveDemon\\ReviveDemon.mdl", "ReviveDemon")
+--金色闪光
+_assets_model(":Abilities\\Spells\\Items\\StaffOfPurification\\PurificationTarget.mdl", "PurificationTarget")
+--金色闪光 爆破
+_assets_model(":Abilities\\Spells\\Items\\StaffOfPurification\\PurificationCaster.mdl", "PurificationCaster")
+--炮弹 爆破
+_assets_model(":Abilities\\Weapons\\Mortar\\ScatterShotTarget.mdl", "ScatterShotTarget")
 
 --【 光环特效 】
 
@@ -576,8 +612,10 @@ _assets_model(":Abilities\\Spells\\Undead\\UnholyAura\\UnholyAura.mdl", "UnholyA
 _assets_model(":Abilities\\Spells\\NightElf\\ThornsAura\\ThornsAura.mdl", "ThornsAura")
 --强击光环 四绿箭
 _assets_model(":Abilities\\Spells\\NightElf\\TrueshotAura\\TrueshotAura.mdl", "TrueShotAura")
---命令光环 红色鼓音波
+--战鼓光环 红色鼓音波
 _assets_model(":Abilities\\Spells\\Orc\\WarDrums\\DrumsCasterHeal.mdl", "DrumsCasterHeal")
+--命令光环 红色准星纹
+_assets_model(":Abilities\\Spells\\Orc\\CommandAura\\CommandAuraTarget.mdl", "CommandAuraTarget")
 
 --【 英雄模型 】
 
@@ -824,6 +862,8 @@ _assets_model(":units\\creeps\\Zombie\\Zombie", "Zombie", "unit", { Art = "unit\
 
 --小精灵
 _assets_model(":units\\nightelf\\Wisp\\Wisp", "Wisp", "unit", { Art = "unit\\elf\\Wisp" })
+--小精灵(缠绕形态)
+_assets_model(":SharedModels\\EntangleWisp.mdl", "EntangleWisp", "unit", { Art = "unit\\elf\\Wisp" })
 --弓箭手
 _assets_model(":units\\nightelf\\Archer\\Archer", "Archer", "unit", { Art = "unit\\elf\\Archer" })
 --女猎手
@@ -1236,3 +1276,5 @@ _assets_model(":Objects\\InventoryItems\\QuestionMark\\QuestionMark.mdl", "Quest
 _assets_model(":Units\\Human\\Phoenix\\PhoenixEgg.mdl", "PhoenixEgg", "item")
 --物品蜥蜴蛋
 _assets_model(":Objects\\InventoryItems\\ThunderLizardEgg\\ThunderLizardEgg.mdl", "ThunderLizardEgg", "item")
+--礼物
+_assets_model(":Objects\\InventoryItems\\BundleofGifts\\BundleofGifts.mdl", "BundleOfGifts", "item")
