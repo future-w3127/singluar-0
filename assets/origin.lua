@@ -241,6 +241,8 @@ _assets_model(":Abilities\\Spells\\Items\\AIsm\\AIsmTarget.mdl", "AIsmTarget")
 _assets_model(":Abilities\\Spells\\Items\\AIam\\AIamTarget.mdl", "AIamTarget")
 --状态提升 黄紫色
 _assets_model(":Abilities\\Spells\\Items\\AIim\\AIimTarget.mdl", "AIimTarget")
+--无敌 金色球盾
+_assets_model(":Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "DivineShieldTarget")
 
 --变羊 羊坠落
 _assets_model(":Abilities\\Spells\\Human\\Polymorph\\PolyMorphFallingSheepArt.mdl", "PolyMorphFallingSheepArt")
@@ -531,6 +533,28 @@ _assets_model(":Abilities\\Spells\\Other\\Volcano\\VolcanoDeath.mdl", "VolcanoDe
 _assets_model(":Abilities\\Spells\\Demon\\RainOfFire\\RainOfFireTarget.mdl", "RainOfFireTarget")
 --显示 环环金光上升
 _assets_model(":Abilities\\Spells\\Other\\Andt\\Andt.mdl", "Andt")
+--魔鬼缠身 红火爆破
+_assets_model(":Abilities\\Spells\\Other\\Doom\\DoomDeath.mdl", "DoomDeath")
+--魔鬼缠身 红波纹聚集
+_assets_model(":Abilities\\Spells\\Other\\Doom\\DoomTarget.mdl", "DoomTarget")
+--水爆破
+_assets_model(":Objects\\Spawnmodels\\Naga\\NagaDeath\\NagaDeath.mdl", "NagaDeath")
+--鬼阵爆破
+_assets_model(":Objects\\Spawnmodels\\Undead\\UCancelDeath\\UCancelDeath.mdl", "UCancelDeath")
+--大爆炸
+_assets_model(":Objects\\Spawnmodels\\Human\\HCancelDeath\\HCancelDeath.mdl", "HCancelDeath")
+--白色混沌爆炸
+_assets_model(":Abilities\\Weapons\\GryphonRiderMissile\\GryphonRiderMissileTarget.mdl", "GryphonRiderMissileTarget")
+--鬼哭上天
+_assets_model(":Objects\\Spawnmodels\\Undead\\UndeadDissipate\\UndeadDissipate.mdl", "UndeadDissipate")
+--金币翻腾
+_assets_model(":UI\\Feedback\\GoldCredit\\GoldCredit.mdl", "GoldCredit")
+--沙尘爆破
+_assets_model(":Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl", "ImpaleTargetDust")
+--诡异爆破
+_assets_model(":Objects\\Spawnmodels\\Other\\ToonBoom\\ToonBoom.mdl", "ToonBoom")
+--砍血
+_assets_model(":Objects\\Spawnmodels\\Critters\\Albatross\\CritterBloodAlbatross.mdl", "CritterBloodAlbatross")
 
 --【 光环特效 】
 
