@@ -8,8 +8,18 @@ _assets_sound('voice/war3/Error', 'war3_error', 'vcm')
 
 --【 箭矢模型 】
 
---大法火球
+--毒球
+_assets_model(":Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl", "OrbVenomMissile")
+--腐球
+_assets_model(":Abilities\\Spells\\Items\\OrbCorruption\\OrbCorruptionMissile.mdl", "OrbCorruptionMissile")
+--冰球 巫妖
+_assets_model(":Abilities\\Weapons\\LichMissile\\LichMissile.mdl", "LichMissile")
+--减速之球
+_assets_model(":Abilities\\Weapons\\ProcMissile\\ProcMissile.mdl", "ProcMissile")
+--火球 大法
 _assets_model(":Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl", "FireBallMissile")
+--电球 先知
+_assets_model(":Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl", "FarseerMissile")
 --血法火球
 _assets_model(":Abilities\\Weapons\\BloodElfMissile\\BloodElfMissile.mdl", "BloodElfMissile")
 --迫击炮小队
@@ -38,8 +48,6 @@ _assets_model(":Abilities\\Weapons\\GuardTowerMissile\\GuardTowerMissile.mdl", "
 _assets_model(":Abilities\\Weapons\\CannonTowerMissile\\CannonTowerMissile.mdl", "CannonTowerMissile")
 --神秘之塔
 _assets_model(":Abilities\\Spells\\Undead\\OrbOfDeath\\OrbOfDeathMissile.mdl", "OrbOfDeathMissile")
---先知电球
-_assets_model(":Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl", "FarseerMissile")
 --暗影猎手
 _assets_model(":Abilities\\Weapons\\ShadowHunterMissile\\ShadowHunterMissile.mdl", "ShadowHunterMissile")
 --巨魔猎头
@@ -78,8 +86,6 @@ _assets_model(":Abilities\\Weapons\\AncientProtectorMissile\\AncientProtectorMis
 _assets_model(":Abilities\\Weapons\\SpiritOfVengeanceMissile\\SpiritOfVengeanceMissile.mdl", "SpiritOfVengeanceMissile")
 --复仇之魂
 _assets_model(":Abilities\\Weapons\\VengeanceMissile\\VengeanceMissile.mdl", "VengeanceMissile")
---巫妖
-_assets_model(":Abilities\\Weapons\\LichMissile\\LichMissile.mdl", "LichMissile")
 --幽魂之塔
 _assets_model(":Abilities\\Weapons\\ZigguratMissile\\ZigguratMissile.mdl", "ZigguratMissile")
 --蛛网之塔
@@ -170,6 +176,30 @@ _assets_model(":Abilities\\Spells\\Other\\CrushingWave\\CrushingWaveMissile.mdl"
 _assets_model(":Abilities\\Weapons\\QuillSprayMissile\\QuillSprayMissile.mdl", "QuillSprayMissile")
 --火焰呼吸
 _assets_model(":Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireMissile.mdl", "BreathOfFireMissile")
+--霜冻呼吸
+_assets_model(":Abilities\\Spells\\Other\\BreathOfFrost\\BreathOfFrostMissile.mdl", "BreathOfFrostMissile")
+--窃取生命 类似石像鬼但带白光
+_assets_model(":Abilities\\Spells\\Items\\WandOfNeutralization\\NeutralizationMissile.mdl", "NeutralizationMissile")
+--霜冻闪电 冰块
+_assets_model(":Abilities\\Spells\\Other\\FrostBolt\\FrostBoltMissile.mdl", "FrostBoltMissile")
+--投石 石块
+_assets_model(":Abilities\\Weapons\\RockBoltMissile\\RockBoltMissile.mdl", "RockBoltMissile")
+--点金术 金瓶子
+_assets_model(":Abilities\\Spells\\Other\\Transmute\\GoldBottleMissile.mdl", "GoldBottleMissile")
+--酸性炸弹 玻璃瓶子
+_assets_model(":Abilities\\Spells\\Other\\AcidBomb\\BottleMissile.mdl", "BottleMissile")
+--医疗气雾 金色液体
+_assets_model(":Abilities\\Spells\\Other\\HealingSpray\\HealBottleMissile.mdl", "HealBottleMissile")
+--火箭群
+_assets_model(":Abilities\\Spells\\Other\\TinkerRocket\\TinkerRocketMissile.mdl", "TinkerRocketMissile")
+--惊吓 犀牛
+_assets_model(":Abilities\\Spells\\Other\\Stampede\\StampedeMissile.mdl", "StampedeMissile")
+--口袋工厂 神奇箱子
+_assets_model(":Units\\Creeps\\HeroTinkerFactory\\HeroTinkerFactoryMissle.mdl", "HeroTinkerFactoryMissle")
+--炎魔 炎魔滚滚
+_assets_model(":Abilities\\Weapons\\LavaSpawnMissile\\LavaSpawnBirthMissile.mdl", "LavaSpawnBirthMissile")
+--火山爆发 岩石块
+_assets_model(":Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl", "VolcanoMissile")
 
 --【 技能特效 】
 
@@ -193,16 +223,33 @@ _assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire1.mdl", "LargeB
 _assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire2.mdl", "LargeBuildingFire2")
 --生命恢复 黄
 _assets_model(":Abilities\\Spells\\NightElf\\Rejuvenation\\RejuvenationTarget.mdl", "RejuvenationTarget")
+--回复魔法 金条金光
+_assets_model(":Abilities\\Spells\\Items\\AIhe\\AIheTarget.mdl", "AIheTarget")
+--回复魔法 蓝条蓝光
+_assets_model(":Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "AImaTarget")
+--回复状态 紫条紫光
+_assets_model(":Abilities\\Spells\\Items\\AIre\\AIreTarget.mdl", "AIreTarget")
 --回复生命 黄裂缝扩散
 _assets_model(":Abilities\\Spells\\Undead\\ReplenishHealth\\ReplenishHealthCaster.mdl", "ReplenishHealthCaster")
 --回复魔法 蓝圈扩散
 _assets_model(":Abilities\\Spells\\Undead\\ReplenishMana\\ReplenishManaCaster.mdl", "ReplenishManaCaster")
+--状态提升 金色
+_assets_model(":Abilities\\Spells\\Items\\AIlm\\AIlmTarget.mdl", "AIlmTarget")
+--状态提升 黄橙色
+_assets_model(":Abilities\\Spells\\Items\\AIsm\\AIsmTarget.mdl", "AIsmTarget")
+--状态提升 红色
+_assets_model(":Abilities\\Spells\\Items\\AIam\\AIamTarget.mdl", "AIamTarget")
+--状态提升 黄紫色
+_assets_model(":Abilities\\Spells\\Items\\AIim\\AIimTarget.mdl", "AIimTarget")
+
 --变羊 羊坠落
 _assets_model(":Abilities\\Spells\\Human\\Polymorph\\PolyMorphFallingSheepArt.mdl", "PolyMorphFallingSheepArt")
 --变羊 云雾
 _assets_model(":Abilities\\Spells\\Human\\Polymorph\\PolyMorphDoneGround.mdl", "PolyMorphDoneGround")
 --防御 开盾
 _assets_model(":Abilities\\Spells\\Human\\Defend\\DefendCaster.mdl", "DefendCaster")
+--魔法护盾 开盾 青
+_assets_model(":Abilities\\Spells\\Items\\SpellShieldAmulet\\SpellShieldCaster.mdl", "SpellShieldCaster")
 --减速 黄下降
 _assets_model(":Abilities\\Spells\\Human\\Slow\\SlowCaster", "SlowCaster")
 --减速 黄内聚
@@ -351,6 +398,8 @@ _assets_model(":Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetA
 _assets_model(":Abilities\\Spells\\Undead\\Cripple\\CrippleTarget.mdl", "CrippleTarget")
 --反魔法护盾 绿
 _assets_model(":Abilities\\Spells\\Undead\\AntiMagicShell\\AntiMagicShell.mdl", "AntiMagicShell")
+--魔法护盾 蓝绿
+_assets_model(":Abilities\\Spells\\Human\\ManaShield\\ManaShieldCaster.mdl", "ManaShieldCaster")
 --反召唤
 _assets_model(":Abilities\\Spells\\Undead\\Unsummon\\UnsummonTarget.mdl", "UnSummonTarget")
 --疾病云雾 黄绿烟
@@ -393,6 +442,8 @@ _assets_model(":Abilities\\Spells\\NightElf\\Taunt\\TauntCaster.mdl", "TauntCast
 _assets_model(":Abilities\\Spells\\NightElf\\BattleRoar\\RoarCaster.mdl", "RoarCaster")
 --咆哮 熊掌
 _assets_model(":Abilities\\Spells\\NightElf\\BattleRoar\\RoarTarget.mdl", "RoarTarget")
+--恐怖吼叫 紫色吼
+_assets_model(":Abilities\\Spells\\Other\\HowlOfTerror\\HowlCaster.mdl", "HowlCaster")
 --球体 白色条形紫色踪迹1-6
 _assets_model(":Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceOrbs1.mdl", "SpiritOfVengeanceOrbs1")
 _assets_model(":Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceOrbs2.mdl", "SpiritOfVengeanceOrbs2")
@@ -424,12 +475,18 @@ _assets_model(":Abilities\\Spells\\NightElf\\Starfall\\StarfallCaster.mdl", "Sta
 _assets_model(":Abilities\\Spells\\NightElf\\Immolation\\ImmolationDamage.mdl", "ImmolationDamage")
 --献祭 绿火圈
 _assets_model(":Abilities\\Spells\\NightElf\\Immolation\\ImmolationTarget.mdl", "ImmolationTarget")
+--献祭永久的 红火圈
+_assets_model(":Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl", "ImmolationRedTarget")
 --腐蚀喷吐 弧形溅射
 _assets_model(":Abilities\\Spells\\NightElf\\CorrosiveBreath\\ChimaeraAcidTargetArt.mdl", "ChimaeraAcidTargetArt")
 --精灵之火 几只金色精灵
 _assets_model(":Abilities\\Spells\\NightElf\\FaerieFire\\FaerieFireTarget.mdl", "FaerieFireTarget")
 --飓风 黑色龙卷
 _assets_model(":Abilities\\Spells\\NightElf\\Cyclone\\CycloneTarget.mdl", "CycloneTarget")
+--龙卷风 灰白色龙卷
+_assets_model(":Abilities\\Spells\\Other\\Tornado\\TornadoElementalSmall.mdl", "TornadoElementalSmall")
+--龙卷风 小小风圈
+_assets_model(":Abilities\\Spells\\Other\\Tornado\\Tornado_Target.mdl", "TornadoTarget")
 --慢性毒药 绿色小圈扩散
 _assets_model(":Abilities\\Weapons\\PoisonSting\\PoisonStingTarget.mdl", "PoisonStingTarget")
 --魔力之焰 草绿小球
@@ -440,6 +497,40 @@ _assets_model(":Abilities\\Spells\\Human\\ManaFlare\\ManaFlareBoltImpact.mdl", "
 _assets_model(":Abilities\\Spells\\Other\\Charm\\CharmTarget.mdl", "CharmTarget")
 --火焰呼吸 灼烧
 _assets_model(":Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl", "BreathOfFireDamage")
+--死亡之指 红电
+_assets_model(":Abilities\\Spells\\Demon\\DemonBoltImpact\\DemonBoltImpact.mdl", "DemonBoltImpact")
+--分裂 绿扩散
+_assets_model(":Abilities\\Spells\\Other\\Cleave\\CleaveDamageTarget.mdl", "CleaveDamageTarget")
+--点金术 金币散散散
+_assets_model(":Abilities\\Spells\\Other\\Transmute\\PileofGold.mdl", "PileOfGold")
+--季风 自上而下单条闪电
+_assets_model(":Abilities\\Spells\\Other\\Monsoon\\MonsoonBoltTarget.mdl", "MonsoonBoltTarget")
+--季风 雨
+_assets_model(":Abilities\\Spells\\Other\\Monsoon\\MonsoonRain.mdl", "MonsoonRain")
+--灵魂燃烧 火焰小鬼
+_assets_model(":Abilities\\Spells\\Other\\SoulBurn\\SoulBurnbuff.mdl", "SoulBurnBuff")
+--燃灰 火焰爆破
+_assets_model(":Abilities\\Spells\\Other\\Incinerate\\FireLordDeathExplode.mdl", "FireLordDeathExplode")
+--燃灰 针刺火焰
+_assets_model(":Abilities\\Spells\\Other\\Incinerate\\IncinerateBuff.mdl", "IncinerateBuff")
+--燃灰 雾状绿毒
+_assets_model(":Abilities\\Spells\\Other\\AcidBomb\\BottleImpact.mdl", "BottleImpact")
+--盗取灵魂 菱形水晶环绕
+_assets_model(":Abilities\\Spells\\Items\\AIso\\BIsvTarget.mdl", "BIsvTarget")
+--幻象物品 褐色迷烟
+_assets_model(":Abilities\\Spells\\Orc\\MirrorImage\\MirrorImageDeathCaster.mdl", "MirrorImageDeathCaster")
+--守护卷轴 白色盾牌
+_assets_model(":Abilities\\Spells\\Items\\AIda\\AIdaTarget.mdl", "AIdaTarget")
+--金箱子 黄色上升
+_assets_model(":Abilities\\Spells\\Items\\ResourceItems\\ResourceEffectTarget.mdl", "ResourceEffectTarget")
+--隐身药水 白光
+_assets_model(":Abilities\\Spells\\Items\\AIvi\\AIviTarget.mdl", "AIviTarget")
+--火山爆发 沙尘
+_assets_model(":Abilities\\Spells\\Other\\Volcano\\VolcanoDeath.mdl", "VolcanoDeath")
+--火焰雨 砸
+_assets_model(":Abilities\\Spells\\Demon\\RainOfFire\\RainOfFireTarget.mdl", "RainOfFireTarget")
+--显示 环环金光上升
+_assets_model(":Abilities\\Spells\\Other\\Andt\\Andt.mdl", "Andt")
 
 --【 光环特效 】
 
