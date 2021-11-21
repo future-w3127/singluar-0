@@ -150,6 +150,26 @@ _assets_model(":Abilities\\Spells\\Undead\\Impale\\ImpaleMissTarget.mdl", "Impal
 _assets_model(":Abilities\\Spells\\Undead\\CarrionSwarm\\CarrionSwarmMissile.mdl", "CarrionSwarmMissile")
 --死亡缠绕
 _assets_model(":Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilMissile.mdl", "DeathCoilMissile")
+--腐蚀喷吐
+_assets_model(":Abilities\\Weapons\\ChimaeraAcidMissile\\ChimaeraAcidMissile.mdl", "ChimaeraAcidMissile")
+--暗影突袭
+_assets_model(":Abilities\\Spells\\NightElf\\shadowstrike\\ShadowStrikeMissile.mdl", "ShadowStrikeMissile")
+--刀阵旋风
+_assets_model(":Abilities\\Spells\\NightElf\\FanOfKnives\\FanOfKnivesMissile.mdl", "FanOfKnivesMissile")
+--复仇之魂白球
+_assets_model(":Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceBirthMissile.mdl", "SpiritOfVengeanceBirthMissile")
+--灼热之箭
+_assets_model(":Abilities\\Weapons\\SearingArrow\\SearingArrowMissile.mdl", "SearingArrowMissile")
+--冰冻冷箭
+_assets_model(":Abilities\\Weapons\\ColdArrow\\ColdArrowMissile.mdl", "ColdArrowMissile")
+--黑暗之箭
+_assets_model(":Abilities\\Spells\\Other\\BlackArrow\\BlackArrowMissile.mdl", "BlackArrowMissile")
+--冲击波 水浪
+_assets_model(":Abilities\\Spells\\Other\\CrushingWave\\CrushingWaveMissile.mdl", "CrushingWaveMissile")
+--刚毛飞射
+_assets_model(":Abilities\\Weapons\\QuillSprayMissile\\QuillSprayMissile.mdl", "QuillSprayMissile")
+--火焰呼吸
+_assets_model(":Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireMissile.mdl", "BreathOfFireMissile")
 
 --【 技能特效 】
 
@@ -171,6 +191,12 @@ _assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire0.mdl", "LargeB
 _assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire1.mdl", "LargeBuildingFire1")
 --建筑大火 2
 _assets_model(":Environment\\LargeBuildingFire\\LargeBuildingFire2.mdl", "LargeBuildingFire2")
+--生命恢复 黄
+_assets_model(":Abilities\\Spells\\NightElf\\Rejuvenation\\RejuvenationTarget.mdl", "RejuvenationTarget")
+--回复生命 黄裂缝扩散
+_assets_model(":Abilities\\Spells\\Undead\\ReplenishHealth\\ReplenishHealthCaster.mdl", "ReplenishHealthCaster")
+--回复魔法 蓝圈扩散
+_assets_model(":Abilities\\Spells\\Undead\\ReplenishMana\\ReplenishManaCaster.mdl", "ReplenishManaCaster")
 --变羊 羊坠落
 _assets_model(":Abilities\\Spells\\Human\\Polymorph\\PolyMorphFallingSheepArt.mdl", "PolyMorphFallingSheepArt")
 --变羊 云雾
@@ -303,10 +329,6 @@ _assets_model(":Abilities\\Spells\\Orc\\LiquidFire\\Liquidfire.mdl", "LiquidFire
 _assets_model(":Abilities\\Spells\\Orc\\Ensnare\\ensnareTarget.mdl", "ensnareTarget")
 --诱捕 空中网
 _assets_model(":Abilities\\Spells\\Orc\\Ensnare\\ensnare_AirTarget.mdl", "ensnareTargetAir")
---回复生命 黄裂缝扩散
-_assets_model(":Abilities\\Spells\\Undead\\ReplenishHealth\\ReplenishHealthCaster.mdl", "ReplenishHealthCaster")
---回复魔法 蓝圈扩散
-_assets_model(":Abilities\\Spells\\Undead\\ReplenishMana\\ReplenishManaCaster.mdl", "ReplenishManaCaster")
 --创建尸体 墓碑出土
 _assets_model(":Abilities\\Spells\\Undead\\Graveyard\\GraveMarker.mdl", "GraveMarker")
 --复活死尸 骸骨出土
@@ -357,6 +379,67 @@ _assets_model(":Abilities\\Spells\\Undead\\DarkRitual\\DarkRitualTarget.mdl", "D
 _assets_model(":Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl", "FrostNovaTarget")
 --死亡契约 紫色上升螺旋
 _assets_model(":Abilities\\Spells\\Undead\\DeathPact\\DeathPactTarget.mdl", "DeathPactTarget")
+--小精灵自爆 扩散
+_assets_model(":Units\\NightElf\\Wisp\\WispExplode.mdl", "WispExplode")
+--小精灵自爆 白球上升
+_assets_model(":Abilities\\Spells\\Human\\DispelMagic\\DispelMagicTarget.mdl", "DispelMagicTarget")
+--变相移动 迷雾
+_assets_model(":Abilities\\Spells\\NightElf\\FaerieDragonInvis\\FaerieDragon_Invis.mdl", "FaerieDragonInvis")
+--小精灵采集 绿条绕圈
+_assets_model(":Abilities\\Spells\\NightElf\\TargetArtLumber\\TargetArtLumber.mdl", "TargetArtLumber")
+--嘲讽 浅蓝吼
+_assets_model(":Abilities\\Spells\\NightElf\\Taunt\\TauntCaster.mdl", "TauntCaster")
+--咆哮 赤红吼
+_assets_model(":Abilities\\Spells\\NightElf\\BattleRoar\\RoarCaster.mdl", "RoarCaster")
+--咆哮 熊掌
+_assets_model(":Abilities\\Spells\\NightElf\\BattleRoar\\RoarTarget.mdl", "RoarTarget")
+--球体 白色条形紫色踪迹1-6
+_assets_model(":Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceOrbs1.mdl", "SpiritOfVengeanceOrbs1")
+_assets_model(":Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceOrbs2.mdl", "SpiritOfVengeanceOrbs2")
+_assets_model(":Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceOrbs3.mdl", "SpiritOfVengeanceOrbs3")
+_assets_model(":Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceOrbs4.mdl", "SpiritOfVengeanceOrbs4")
+_assets_model(":Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceOrbs5.mdl", "SpiritOfVengeanceOrbs5")
+_assets_model(":Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceOrbs6.mdl", "SpiritOfVengeanceOrbs6")
+--暗影突袭 黑小鬼
+_assets_model(":Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdl", "ShadowStrike")
+--刀阵旋风 三方刀阵
+_assets_model(":Abilities\\Spells\\NightElf\\FanOfKnives\\FanOfKnivesCaster.mdl", "FanOfKnivesCaster")
+--法力燃烧 绿团
+_assets_model(":Abilities\\Spells\\NightElf\\ManaBurn\\ManaBurnTarget.mdl", "ManaBurnTarget")
+--闪烁 起
+_assets_model(":Abilities\\Spells\\NightElf\\Blink\\BlinkCaster.mdl", "BlinkCaster")
+--闪烁 达
+_assets_model(":Abilities\\Spells\\NightElf\\Blink\\BlinkTarget.mdl", "BlinkTarget")
+--纠缠根须
+_assets_model(":Abilities\\Spells\\NightElf\\EntanglingRoots\\EntanglingRootsTarget.mdl", "EntanglingRootsTarget")
+--宁静 绿气场
+_assets_model(":Abilities\\Spells\\NightElf\\Tranquility\\TranquilityTarget.mdl", "TranquilityTarget")
+--宁静 绿雨
+_assets_model(":Abilities\\Spells\\NightElf\\Tranquility\\Tranquility.mdl", "Tranquility")
+--群星坠落 砸
+_assets_model(":Abilities\\Spells\\NightElf\\Starfall\\StarfallTarget.mdl", "StarFallTarget")
+--群星坠落 月星法阵
+_assets_model(":Abilities\\Spells\\NightElf\\Starfall\\StarfallCaster.mdl", "StarFallCaster")
+--献祭 绿火
+_assets_model(":Abilities\\Spells\\NightElf\\Immolation\\ImmolationDamage.mdl", "ImmolationDamage")
+--献祭 绿火圈
+_assets_model(":Abilities\\Spells\\NightElf\\Immolation\\ImmolationTarget.mdl", "ImmolationTarget")
+--腐蚀喷吐 弧形溅射
+_assets_model(":Abilities\\Spells\\NightElf\\CorrosiveBreath\\ChimaeraAcidTargetArt.mdl", "ChimaeraAcidTargetArt")
+--精灵之火 几只金色精灵
+_assets_model(":Abilities\\Spells\\NightElf\\FaerieFire\\FaerieFireTarget.mdl", "FaerieFireTarget")
+--飓风 黑色龙卷
+_assets_model(":Abilities\\Spells\\NightElf\\Cyclone\\CycloneTarget.mdl", "CycloneTarget")
+--慢性毒药 绿色小圈扩散
+_assets_model(":Abilities\\Weapons\\PoisonSting\\PoisonStingTarget.mdl", "PoisonStingTarget")
+--魔力之焰 草绿小球
+_assets_model(":Abilities\\Spells\\Human\\ManaFlare\\ManaFlareBase.mdl", "ManaFlareBase")
+--魔力之焰 草绿闪电
+_assets_model(":Abilities\\Spells\\Human\\ManaFlare\\ManaFlareBoltImpact.mdl", "ManaFlareBoltImpact")
+--符咒 蓝色光条飞舞聚集
+_assets_model(":Abilities\\Spells\\Other\\Charm\\CharmTarget.mdl", "CharmTarget")
+--火焰呼吸 灼烧
+_assets_model(":Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl", "BreathOfFireDamage")
 
 --【 光环特效 】
 
