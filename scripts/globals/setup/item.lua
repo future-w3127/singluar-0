@@ -13,7 +13,11 @@ Game().warehouseSlot(18)
 Game().defineDescription("itemBase", function(this, _)
     local desc = {}
     if (this.level() > 0) then
-        table.insert(desc, this.name() .. ' - 等级 ' .. colour.gold(whichLevel) .. '/' .. colour.gold(this.levelMax()))
+        if (this.level() < this.levelMax()) then
+            table.insert(desc, this.name() .. ' - 等级 ' .. colour.white(this.level()) .. colour.gold(' / ' .. this.levelMax()))
+        else
+            table.insert(desc, this.name() .. ' - 等级 ' .. colour.white(this.level()))
+        end
     else
         table.insert(desc, this.name())
     end
