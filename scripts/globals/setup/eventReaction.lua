@@ -23,7 +23,7 @@ event.reaction(EVENT.avoid, function(evtData)
 end)
 ---@param evtData noteOnImmuneInvincibleData
 event.reaction(EVENT.immuneInvincible, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Human\\DivineShield\\DivineShieldTarget.mdl", "origin", 1)
+    evtData.triggerUnit.attach("DivineShieldTarget", "origin", 1)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\immuneInvincible.mdl",
         scale = 1.4,
@@ -72,19 +72,19 @@ event.reaction(EVENT.immuneDecrease, function(evtData)
 end)
 ---@param evtData noteOnHPSuckData
 event.reaction(EVENT.HPSuck, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 0.5)
+    evtData.triggerUnit.attach("HealTarget2", "origin", 0.5)
 end)
 ---@param evtData noteOnHPSuckSpellData
 event.reaction(EVENT.HPSuckSpell, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Other\\HealTarget2\\HealTarget2.mdl", "origin", 0.5)
+    evtData.triggerUnit.attach("HealTarget2", "origin", 0.5)
 end)
 ---@param evtData noteOnMPSuckData
 event.reaction(EVENT.MPSuck, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 0.5)
+    evtData.triggerUnit.attach("AImaTarget", "origin", 0.5)
 end)
 ---@param evtData noteOnMPSuckSpellData
 event.reaction(EVENT.MPSuckSpell, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl", "origin", 0.5)
+    evtData.triggerUnit.attach("AImaTarget", "origin", 0.5)
 end)
 ---@param evtData noteOnPunishData
 event.reaction(EVENT.punish, function(evtData)
@@ -93,15 +93,15 @@ event.reaction(EVENT.punish, function(evtData)
 end)
 ---@param evtData noteOnBeStunData
 event.reaction(EVENT.beStun, function(evtData)
-    evtData.triggerUnit.attach("Abilities\\Spells\\Human\\Thunderclap\\ThunderclapTarget.mdl", "overhead", evtData.duration)
+    evtData.triggerUnit.attach("ThunderclapTarget", "overhead", evtData.duration)
 end)
 ---@param evtData noteOnBeSplitData
 event.reaction(EVENT.beSplit, function(evtData)
-    evtData.triggerUnit.effect("Abilities\\Spells\\Human\\Feedback\\SpellBreakerAttack.mdl", 0)
+    evtData.triggerUnit.effect("SpellBreakerAttack", 0)
 end)
 ---@param evtData noteOnBeSplitSpreadData
 event.reaction(EVENT.beSplitSpread, function(evtData)
-    evtData.triggerUnit.effect("Abilities\\Spells\\Other\\Cleave\\CleaveDamageTarget.mdl", 0)
+    evtData.triggerUnit.effect("CleaveDamageTarget", 0)
 end)
 ---@param evtData noteOnHurtData
 event.reaction(EVENT.hurt, function(evtData)
