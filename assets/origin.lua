@@ -116,7 +116,7 @@ _assets_model(":Abilities\\Weapons\\SeaElementalMissile\\SeaElementalMissile.mdl
 _assets_model(":Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl", "RedDragonMissile")
 --绿龙
 _assets_model(":Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl", "GreenDragonMissile")
---耐瑟毒龙
+--耐瑟龙
 _assets_model(":Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl", "AvengerMissile")
 --火焰巨魔
 _assets_model(":Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl", "LordofFlameMissile")
