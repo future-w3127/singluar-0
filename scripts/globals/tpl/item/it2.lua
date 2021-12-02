@@ -1,0 +1,10 @@
+TPL_ITEM.IT2 = ItemTpl("TreasureChest")
+    .ability(TPL_ABILITY.King)
+    .icon("AB1")
+    .levelMax(9)
+    .gold(10)
+    .silver(5)
+    .copper(3)
+    .onGet(function(evtData)
+
+end)

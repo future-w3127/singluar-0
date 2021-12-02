@@ -2,8 +2,8 @@ local process = Process("item")
 
 process.onSetup(function(this)
 
-    local u1 = TPL_UNIT
-        .U1.create(Player(1), 0, 0, 66.6)
+    local u1 = Player(1)
+        .unit(TPL_UNIT.HeroFlameLord, 0, 0, 66.6)
         .level(1)
         .reborn(0.5)
         .hp(1500).hpRegen(10)

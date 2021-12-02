@@ -12,7 +12,7 @@ process.onSetup(function(this)
     Player(1).server().clear("hello")
 
     local t = time.setInterval(1.51, function()
-        print_r(japi.DzAPI_Map_GetServerValue(Player(1).__HANDLE__, "hello"))
+        print_r(japi.DzAPI_Map_GetServerValue(Player(1).handle(), "hello"))
     end)
     this.stage("t", t)
 end)

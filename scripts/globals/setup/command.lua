@@ -5,7 +5,7 @@ Game().command("^-gg$", function()
 end)
 --- -apm 查看玩家分钟操作数
 Game().command("^-apm$", function(evtData)
-    echo("您的apm为:" .. evtData.triggerPlayer.apm(), evtData.triggerPlayer.__HANDLE__)
+    echo("您的apm为:" .. evtData.triggerPlayer.apm(), evtData.triggerPlayer.handle())
 end)
 --- -d [+|-|=][NUMBER]减少/增加/设置视距
 Game().command("^-d [-+=]%d+$", function(evtData)
