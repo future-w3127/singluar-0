@@ -21,5 +21,8 @@ Game().defineDescription("itemBase", function(this, _)
     else
         table.insert(desc, this.name())
     end
+    if (instanceof(this.bindAbility(), "Ability")) then
+        desc = table.merge(desc, Game().combineDescription(this.bindAbility(), nil, "abilityBase", "<D>"))
+    end
     return desc
 end)

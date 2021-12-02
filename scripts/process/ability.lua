@@ -17,6 +17,8 @@ process.onSetup(function(this)
                        .punish(2000)
                        .weight("+=10")
 
+    u1.odds("hurtRebound", "+=100")
+
     u1.onDamage(function(evtData)
         u1.exp("+=10")
     end)

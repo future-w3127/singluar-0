@@ -26,20 +26,18 @@ process.onSetup(function(this)
 
     local x1 = os.clock()
     local its = {}
-    for _ = 1, 20 do
+    for _ = 1, 10 do
         local it = TPL_ITEM.IT1.create(0, -300)
+        table.insert(its, it)
+    end
+    for _ = 1, 10 do
+        local it = TPL_ITEM.IT2.create(0, -300)
         table.insert(its, it)
     end
     this.stage("its", its)
 
     local x2 = os.clock()
     print(string.format("run time: %.2f\n", x2 - x1))
-
-    u1.itemPick(its[25])
-
-    time.setInterval(3, function()
-        Player(1).alert(string.rand(10))
-    end)
 end)
 
 process.onDestroy(function(this)
