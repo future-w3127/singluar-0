@@ -12,13 +12,13 @@ Game().defineDescription("abilityBase", function(this, options)
     local desc = {}
     local whichLevel = math.floor(options.whichLevel or this.level())
     local tt = this.targetType()
-    if (tt ~= ABILITY_TARGET_TYPE.PAS or this.coolDownRemain() > 0) then
+    if (tt ~= ABILITY_TARGET_TYPE.PAS) then
         table.insert(desc, this.name() .. ' - 等级 ' .. colour.gold(whichLevel) .. '（' .. colour.gold(this.hotkey()) .. '）')
     else
         table.insert(desc, this.name() .. " - 等级 " .. colour.gold(whichLevel))
     end
     table.insert(desc, '类型：' .. colour.gold(tt.label))
-    if (tt ~= ABILITY_TARGET_TYPE.PAS or this.coolDownRemain() > 0) then
+    if (tt ~= ABILITY_TARGET_TYPE.PAS) then
         local chantCast = this.castChant(whichLevel)
         if (chantCast > 0) then
             table.insert(desc, '吟唱时间：' .. colour.skyLight(chantCast .. " 秒"))
