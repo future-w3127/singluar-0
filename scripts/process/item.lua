@@ -38,6 +38,10 @@ process.onSetup(function(this)
 
     local x2 = os.clock()
     print(string.format("run time: %.2f\n", x2 - x1))
+
+    u1.abilitySlot().push(TPL_ABILITY.AB1)
+    u1.abilitySlot().push(TPL_ABILITY.AB2)
+    u1.abilitySlot().push(TPL_ABILITY.King, 6)
 end)
 
 process.onDestroy(function(this)

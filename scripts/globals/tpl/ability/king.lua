@@ -1,7 +1,7 @@
 TPL_ABILITY.King = AbilityTpl()
     .name("唯我独尊")
     .targetType(ABILITY_TARGET_TYPE.PAS)
-    .icon("AB2")
+    .icon("AB3")
     .description({ "强击单人特效: +{50+this.level()*100}攻击" })
     .levelMax(5)
     .levelUpNeedPoint(101)

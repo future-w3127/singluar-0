@@ -5,6 +5,8 @@
 
 _assets_sound('voice/war3/MouseClick1', 'war3_click1', 'vcm')
 _assets_sound('voice/war3/Error', 'war3_error', 'vcm')
+_assets_sound('voice/war3/HeroDropItem1', 'war3_dropItem', 'vcm')
+_assets_sound('voice/war3/PickUpItem', 'war3_pickItem', 'vcm')
 
 --【 箭矢模型 】
 

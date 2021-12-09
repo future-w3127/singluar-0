@@ -12,8 +12,8 @@ _assets_model("buff/Echo")
 _assets_model("word/Rank_BaHuangLeiDong_AoShiQunXiong")
 _assets_model("word/Rank_AoShiTianXia")
 
-_assets_ui("singluar_debug")
 _assets_ui("singluar_set")
+_assets_ui("singluar_debug") --DEBUG次之
 _assets_ui("singluar_cursor") --指针置顶
 
 _assets_icon("ability\\red\\DeathKnightSpellDeflection", "AB1")
