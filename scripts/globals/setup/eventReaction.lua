@@ -58,18 +58,6 @@ event.reaction(EVENT.immuneReduction, function(evtData)
         duration = 1,
     })
 end)
----@param evtData noteOnImmuneDecreaseData
-event.reaction(EVENT.immuneDecrease, function(evtData)
-    ttg.mdx({
-        model = "Singluar\\ttg\\evt\\immune.mdl",
-        scale = 1.2,
-        x = evtData.triggerUnit.x(),
-        y = evtData.triggerUnit.y(),
-        z = _z(evtData.triggerUnit, -44),
-        height = 100,
-        duration = 1,
-    })
-end)
 ---@param evtData noteOnHPSuckData
 event.reaction(EVENT.HPSuck, function(evtData)
     evtData.triggerUnit.attach("HealTarget2", "origin", 0.5)
