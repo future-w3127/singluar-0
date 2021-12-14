@@ -55,9 +55,11 @@ Game().defineDescription("itemBase", function(this, _)
         table.insert(desc, name)
         desc = table.merge(desc, Game().combineDescription(this.bindAbility(), nil, "itemAbility", "<D>"))
     end
+    if (this.charges() > 0) then
+        table.insert(desc, colour.white("|n剩余次数：" .. this.charges()))
+    end
     if (this.level() < this.levelMax()) then
-        table.insert(desc, '')
-        table.insert(desc, colour.format('最大可升级到 %s 级', 'c0c0c0', { { "ffcc00", this.levelMax() } }))
+        table.insert(desc, colour.format('|n最大可升级到 %s 级', 'c0c0c0', { { "ffcc00", this.levelMax() } }))
     end
     return desc
 end)

@@ -4,6 +4,7 @@ TPL_ITEM.IT1 = ItemTpl("TreasureChest")
     .icon("AB4")
     .levelMax(9)
     .resource({ gold = 10, silver = 5, copper = 3 })
+    .charges(999)
     .onGet(function(evtData)
 
 end)
