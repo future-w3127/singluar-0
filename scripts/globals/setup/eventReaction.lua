@@ -9,7 +9,7 @@ event.reaction(EVENT.crit, function(evtData)
     evtData.targetUnit.attach("Singluar\\crit.mdl", "origin", 0.5, 1)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\crit.mdl",
-        scale = 1.2,
+        size = 1.2,
         x = evtData.targetUnit.x(),
         y = evtData.targetUnit.y(),
         z = _z(evtData.targetUnit, -24),
@@ -26,7 +26,7 @@ event.reaction(EVENT.immuneInvincible, function(evtData)
     evtData.triggerUnit.attach("DivineShieldTarget", "origin", 1)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\immuneInvincible.mdl",
-        scale = 1.4,
+        size = 1.4,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
         z = _z(evtData.triggerUnit, -44),
@@ -38,7 +38,7 @@ end)
 event.reaction(EVENT.immuneDefend, function(evtData)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\immune.mdl",
-        scale = 1.2,
+        size = 1.2,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
         z = _z(evtData.triggerUnit, -44),
@@ -50,7 +50,7 @@ end)
 event.reaction(EVENT.immuneReduction, function(evtData)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\immune.mdl",
-        scale = 1.2,
+        size = 1.2,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
         z = _z(evtData.triggerUnit, -44),
@@ -94,23 +94,27 @@ end)
 ---@param evtData noteOnHurtData
 event.reaction(EVENT.hurt, function(evtData)
     ttg.char({
-        int = math.floor(evtData.damage), 11, 0.26,
+        int = math.floor(evtData.damage),
+        width = 10,
+        size = 0.25,
+        scale = { 1, 0.9 },
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
         z = _z(evtData.triggerUnit, 0),
-        height = 150,
-        duration = 0.3,
+        height = 250,
+        duration = 0.5,
     })
 end)
 ---@param evtData noteOnEnchantData
 event.reaction(EVENT.enchant, function(evtData)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl",
-        scale = 0.8,
+        size = 0.8,
+        scale = { 1, 0.8 },
         x = evtData.targetUnit.x(),
         y = evtData.targetUnit.y(),
         z = _z(evtData.targetUnit, -24),
-        height = math.rand(700, 1200),
-        duration = 2,
+        height = 300,
+        duration = 0.5,
     })
 end)

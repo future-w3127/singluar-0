@@ -16,7 +16,7 @@ TPL_ABILITY.AB1 = AbilityTpl()
     .castTargetAllow(function(this, targetUnit)
     return targetUnit ~= nil and targetUnit.isEnemy(this.bindUnit().owner())
 end)
-    .onEffect(function(evtData)
+    .onEffective(function(evtData)
     local ftp = 1
     time.setInterval(ftp, function(curTimer)
         if (not evtData.triggerUnit.isAbilityKeepCasting()) then

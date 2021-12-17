@@ -17,7 +17,7 @@ process.onSetup(function(this)
         for _, d in ipairs(_ds) do
             d.portal(math.rand(0, 500), math.rand(0, 500), math.rand(0, 100))
              .facing(math.rand(0, 360))
-             .scale(math.rand(0.30, 2.00))
+             .scale(math.rand(30, 200) * 0.01)
             print(d.x(), d.y(), d.z(), d.facing(), d.scale())
         end
     end)

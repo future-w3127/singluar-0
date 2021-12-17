@@ -40,7 +40,7 @@ if (DEBUGGING) then
             proc = Processes.get(p)
         end
         if (instanceof(proc, "Process")) then
-            print_mb(p .. "流程已重置")
+            print(p .. "流程已重置")
             proc.start()
         end
     end)

@@ -3,7 +3,7 @@ TPL_ITEM.IT2 = ItemTpl("TreasureChest")
     .bindAbilityTpl(TPL_ABILITY.King)
     .icon("AB5")
     .levelMax(9)
-    .resource({ gold = 8, silver = 4 })
+    .worth({ gold = 8, silver = 4 })
     .onGet(function(evtData)
 
 end)
