@@ -47,7 +47,7 @@ Game().defineDescription("itemBase", function(this, _)
     else
         name = this.name()
     end
-    if (instanceof(this.bindAbility(), "Ability")) then
+    if (isObject(this.bindAbility(), "Ability")) then
         local tt = this.bindAbility().targetType()
         if (tt ~= ABILITY_TARGET_TYPE.PAS and this.hotkey() ~= nil) then
             name = name .. '（' .. colour.gold(this.hotkey()) .. '）'

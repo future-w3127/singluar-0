@@ -23,4 +23,4 @@ _assets_icon("ability\\green\\Banish", "AB4")
 _assets_icon("ability\\yellow\\Aftershock2", "AB5")
 
 -- 牢笼
-_assets_model(":Doodads\\LordaeronSummer\\Props\\Cage\\Cage", "Cage", "destructable")
+_assets_model(":Doodads\\LordaeronSummer\\Props\\Cage\\Cage", "Cage", "deco")

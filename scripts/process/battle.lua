@@ -33,6 +33,10 @@ process.onSetup(function(this)
                        .punish(1000)
     this.stage("u2", u2)
 
+    time.setInterval(1, function()
+        print("xxxx=", Game().xxxx)
+    end)
+
 end)
 
 process.onDestroy(function(this)

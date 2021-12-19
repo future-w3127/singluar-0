@@ -1,10 +1,10 @@
-local process = Process("destructable")
+local process = Process("deco")
 
 process.onSetup(function(this)
 
     local ds = {}
     for _ = 1, 3, 1 do
-        table.insert(ds, Destructable("Cage", 0, 0, 0, 0, nil, nil))
+        table.insert(ds, Deco("Cage", 0, 0, 0, 0, nil, nil))
     end
     this.stage("ds", ds)
 
