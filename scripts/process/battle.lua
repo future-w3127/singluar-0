@@ -28,14 +28,10 @@ process.onSetup(function(this)
                        .mp(1000).mpRegen(10)
                        .move(150)
                        .attackSpaceBase(1).attack(91).attackRange(1000).attackSpeed(100)
-                       .lightningPush(Lightning(LIGHTING_TYPE.thunderRed).focus(3))
+                       .lightningPush(Lightning(LIGHTNING_TYPE.thunderRed).focus(3))
                        .enchantWeapon("lightning", "+=1")
                        .punish(1000)
     this.stage("u2", u2)
-
-    time.setInterval(1, function()
-        print("xxxx=", Game().xxxx)
-    end)
 
 end)
 
