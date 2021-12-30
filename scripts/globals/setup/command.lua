@@ -17,14 +17,16 @@ Game().command("^-d [-+=]%d+$", function(evtData)
         v = math.abs(tonumber(v))
         if (v > 0) then
             local val = math.abs(v)
-            if (first == "+") then
-                evtData.triggerPlayer.camera().distance("+=" .. val)
-            elseif (first == "-") then
-                evtData.triggerPlayer.camera().distance("-=" .. val)
-            elseif (first == "=") then
-                evtData.triggerPlayer.camera().distance(val)
-            end
-            echo("视距已设置为：" .. evtData.triggerPlayer.camera().distance())
+            Async.call(evtData.triggerPlayer, function()
+                if (first == "+") then
+                    Camera().distance("+=" .. val)
+                elseif (first == "-") then
+                    Camera().distance("-=" .. val)
+                elseif (first == "=") then
+                    Camera().distance(val)
+                end
+                echo("视距已设置为：" .. Camera().distance(), evtData.triggerPlayer)
+            end)
         end
     end
 end)
