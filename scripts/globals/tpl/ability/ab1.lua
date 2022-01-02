@@ -13,7 +13,7 @@ TPL_ABILITY.AB1 = AbilityTpl()
     "基础消耗：" .. colour.purple("{this.mpCost()}"),
     "对目标造成伤害：" .. colour.gold("{math.floor(this.bindUnit().attack()*100)}") .. "(攻击x100)"
 })
-    .castTargetAllow(function(this, targetUnit)
+    .castTargetFilter(function(this, targetUnit)
     return targetUnit ~= nil and targetUnit.isEnemy(this.bindUnit().owner())
 end)
     .onEffective(function(evtData)

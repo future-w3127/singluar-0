@@ -110,7 +110,7 @@ event.reaction(EVENT.enchant, function(evtData)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl",
         size = 0.8,
-        scale = { 1, 0.8 },
+        scale = { 1, 0.9 },
         x = evtData.targetUnit.x(),
         y = evtData.targetUnit.y(),
         z = _z(evtData.targetUnit, -24),

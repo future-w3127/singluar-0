@@ -19,7 +19,7 @@ process.onSetup(function(this)
         .punish(2000)
         .weight("+=10")
 
-    u1.onDamage(function(evtData)
+    u1.onDamage(function(_)
         u1.exp("+=10")
     end)
     this.stage("u1", u1)
