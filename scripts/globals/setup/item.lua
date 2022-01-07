@@ -49,14 +49,18 @@ Game().defineDescription("itemBase", function(this, _)
     end
     if (isObject(this.ability(), "Ability")) then
         local tt = this.ability().targetType()
-        if (tt ~= ABILITY_TARGET_TYPE.PAS and this.hotkey() ~= nil) then
-            name = name .. '（' .. colour.gold(this.hotkey()) .. '）'
+        if (isObject(this, "Item")) then
+            if (tt ~= ABILITY_TARGET_TYPE.PAS and this.hotkey() ~= nil) then
+                name = name .. '（' .. colour.gold(this.hotkey()) .. '）'
+            end
+            table.insert(desc, name)
+        else
+            table.insert(desc, name)
         end
-        table.insert(desc, name)
         desc = table.merge(desc, Game().combineDescription(this.ability(), nil, "itemAbility", "<D>"))
-    end
-    if (this.charges() > 0) then
-        table.insert(desc, colour.white("|n剩余次数：" .. this.charges()))
+        if (this.charges() > 0) then
+            table.insert(desc, colour.white("|n剩余次数：" .. this.charges()))
+        end
     end
     if (this.level() < this.levelMax()) then
         table.insert(desc, colour.format('|n最大可升级到 %s 级', 'c0c0c0', { { "ffcc00", this.levelMax() } }))
