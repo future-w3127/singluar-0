@@ -27,21 +27,17 @@ process.onSetup(function(this)
     local x1 = os.clock()
     local its = {}
     for _ = 1, 10 do
-        local it = TPL_ITEM.IT1.create(0, -300)
+        local it = Item(TPL_ITEM.IT1).portal(0, -300)
         table.insert(its, it)
     end
     for _ = 1, 10 do
-        local it = TPL_ITEM.IT2.create(0, -300)
+        local it = Item(TPL_ITEM.IT2).portal(0, -300)
         table.insert(its, it)
     end
     this.stage("its", its)
 
     local x2 = os.clock()
     print(string.format("run time: %.2f\n", x2 - x1))
-
-    u1.abilitySlot().push(TPL_ABILITY.AB1)
-    u1.abilitySlot().push(TPL_ABILITY.AB2)
-    u1.abilitySlot().push(TPL_ABILITY.King, 6)
 end)
 
 process.onDestroy(function(this)

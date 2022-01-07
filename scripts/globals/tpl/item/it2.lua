@@ -1,6 +1,6 @@
 TPL_ITEM.IT2 = ItemTpl("TreasureChest")
     .name("物品2")
-    .bindAbilityTpl(TPL_ABILITY.King)
+    .ability(TPL_ABILITY.King)
     .icon("AB5")
     .levelMax(9)
     .worth({ gold = 8, silver = 4 })
