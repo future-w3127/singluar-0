@@ -9,6 +9,23 @@ TPL_ABILITY. AB2 = AbilityTpl()
     .castTargetFilter(function(this, targetUnit)
     return targetUnit ~= nil and targetUnit.isAlive() and targetUnit.isEnemy(this.bindUnit().owner())
 end)
-    .onEffective(function(evtData)
-    ability.silent(evtData.targetUnit, 3, "SilenceTarget", "overhead")
-end)
+    .onEffective(
+    function(evtData)
+        ability.silent(evtData.targetUnit, 3, "SilenceTarget", "overhead")
+        ability.unArm(evtData.targetUnit, 3, "SilenceTarget", "weapon")
+        ability.crackFly({
+            sourceUnit = evtData.triggerUnit,
+            targetUnit = evtData.targetUnit,
+            duration = 1,
+            speed = 500,
+            distance = 200,
+            height = 1000,
+            flyModel = "WarStompCaster",
+            onMove = function()
+                print("move")
+            end,
+            onEnd = function()
+                print("end")
+            end,
+        })
+    end)

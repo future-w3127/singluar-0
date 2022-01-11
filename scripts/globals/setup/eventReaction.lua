@@ -1,7 +1,7 @@
 -- 事件反应
 ---@param u Unit
 local function _z(u, offset)
-    return u.z() + u.flyHeight() + 130 + offset
+    return u.h() + 130 + offset
 end
 
 ---@param evtData noteOnCritData
@@ -111,8 +111,8 @@ event.reaction(EVENT.enchant, function(evtData)
         model = "Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl",
         size = 0.8,
         scale = { 1, 0.9 },
-        x = evtData.targetUnit.x(),
-        y = evtData.targetUnit.y(),
+        x = evtData.targetUnit.x() + math.rand(-50, 50),
+        y = evtData.targetUnit.y() + math.rand(-50, 50),
         z = _z(evtData.targetUnit, -24),
         height = 300,
         duration = 0.5,

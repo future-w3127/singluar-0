@@ -2,13 +2,15 @@ local process = Process("performance")
 
 process.onSetup(function(this)
 
+    collectgarbage("collect")
     local x1 = os.clock()
+    local r1 = collectgarbage("count")
 
-    for i = 1, 20 do
-        FrameTooltip("test" .. i)
+    for _ = 1, 1000 do
+        Ability(TPL_ABILITY.AB1).destroy()
     end
 
-    local x2 = os.clock()
-    print(string.format("Time: %.6f\n", x2 - x1))
+    print(string.format("Time: %.6f", os.clock() - x1))
+    print(string.format("Ram: %.6f MB", (collectgarbage("count") - r1) / 1024))
 
 end)
