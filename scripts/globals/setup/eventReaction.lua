@@ -4,7 +4,7 @@ local function _z(u, offset)
     return u.h() + 130 + offset
 end
 
----@param evtData noteOnCritData
+---@param evtData noteOnUnitCritData
 event.reaction(EVENT.crit, function(evtData)
     evtData.targetUnit.attach("Singluar\\crit.mdl", "origin", 0.5, 1)
     ttg.mdx({
@@ -17,11 +17,11 @@ event.reaction(EVENT.crit, function(evtData)
         duration = 0.3,
     })
 end)
----@param evtData noteOnAvoidData
+---@param evtData noteOnUnitAvoidData
 event.reaction(EVENT.avoid, function(evtData)
     evtData.triggerUnit.attach("Singluar\\ttg\\evt\\avoid.mdl", "overhead", 0.3, 0.2)
 end)
----@param evtData noteOnImmuneInvincibleData
+---@param evtData noteOnUnitImmuneInvincibleData
 event.reaction(EVENT.immuneInvincible, function(evtData)
     evtData.triggerUnit.attach("DivineShieldTarget", "origin", 1)
     ttg.mdx({
@@ -34,7 +34,7 @@ event.reaction(EVENT.immuneInvincible, function(evtData)
         duration = 1,
     })
 end)
----@param evtData noteOnImmuneDefendData
+---@param evtData noteOnUnitImmuneDefendData
 event.reaction(EVENT.immuneDefend, function(evtData)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\immune.mdl",
@@ -46,7 +46,7 @@ event.reaction(EVENT.immuneDefend, function(evtData)
         duration = 1,
     })
 end)
----@param evtData noteOnImmuneReductionData
+---@param evtData noteOnUnitImmuneReductionData
 event.reaction(EVENT.immuneReduction, function(evtData)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\immune.mdl",
@@ -58,40 +58,40 @@ event.reaction(EVENT.immuneReduction, function(evtData)
         duration = 1,
     })
 end)
----@param evtData noteOnHPSuckData
+---@param evtData noteOnUnitHPSuckAttackData
 event.reaction(EVENT.HPSuck, function(evtData)
     evtData.triggerUnit.attach("HealTarget2", "origin", 0.5)
 end)
----@param evtData noteOnHPSuckSpellData
+---@param evtData noteOnUnitHPSuckAbilityData
 event.reaction(EVENT.HPSuckSpell, function(evtData)
     evtData.triggerUnit.attach("HealTarget2", "origin", 0.5)
 end)
----@param evtData noteOnMPSuckData
+---@param evtData noteOnUnitMPSuckAttackData
 event.reaction(EVENT.MPSuck, function(evtData)
     evtData.triggerUnit.attach("AImaTarget", "origin", 0.5)
 end)
----@param evtData noteOnMPSuckSpellData
+---@param evtData noteOnUnitMPSuckAbilityData
 event.reaction(EVENT.MPSuckSpell, function(evtData)
     evtData.triggerUnit.attach("AImaTarget", "origin", 0.5)
 end)
----@param evtData noteOnPunishData
+---@param evtData noteOnUnitPunishData
 event.reaction(EVENT.punish, function(evtData)
     evtData.triggerUnit.rgba(140, 140, 140, 255, evtData.duration)
     evtData.triggerUnit.attach("Singluar\\ttg\\evt\\punish.mdl", "head", 4.9, 0.2)
 end)
----@param evtData noteOnBeStunData
+---@param evtData noteOnUnitBeStunData
 event.reaction(EVENT.beStun, function(evtData)
     evtData.triggerUnit.attach("ThunderclapTarget", "overhead", evtData.duration)
 end)
----@param evtData noteOnBeSplitData
+---@param evtData noteOnUnitBeSplitData
 event.reaction(EVENT.beSplit, function(evtData)
     evtData.triggerUnit.effect("SpellBreakerAttack", 0)
 end)
----@param evtData noteOnBeSplitSpreadData
+---@param evtData noteOnUnitBeSplitSpreadData
 event.reaction(EVENT.beSplitSpread, function(evtData)
     evtData.triggerUnit.effect("CleaveDamageTarget", 0)
 end)
----@param evtData noteOnHurtData
+---@param evtData noteOnUnitHurtData
 event.reaction(EVENT.hurt, function(evtData)
     ttg.char({
         int = math.floor(evtData.damage),
@@ -105,7 +105,7 @@ event.reaction(EVENT.hurt, function(evtData)
         duration = 0.5,
     })
 end)
----@param evtData noteOnEnchantData
+---@param evtData noteOnUnitEnchantData
 event.reaction(EVENT.enchant, function(evtData)
     ttg.mdx({
         model = "Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl",
