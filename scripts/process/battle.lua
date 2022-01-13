@@ -46,8 +46,7 @@ end)
 process.onDestroy(function(this)
     this.stage("u1").destroy()
     local u2s = this.stage("u2s")
-    print_r(u2s)
-    for _, v in u2s do
+    for _, v in ipairs(u2s) do
         v.destroy()
     end
 end)

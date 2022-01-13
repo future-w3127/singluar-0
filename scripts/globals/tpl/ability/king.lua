@@ -19,7 +19,7 @@ TPL_ABILITY.King = AbilityTpl()
             lvcData.triggerUnit.attack("-=" .. 100 * math.abs(lvcData.value))
         end
     end)
-    .onUnitEvent(EVENT.Unit.Attack,
+    .onUnitEvent(EVENT.Unit.Attack, "lightningChain",
     function(attackData)
         ability.lightningChain({
             qty = 3,
@@ -29,4 +29,26 @@ TPL_ABILITY.King = AbilityTpl()
             damageSrc = DAMAGE_SRC.ability,
             damageType = { DAMAGE_TYPE.thunder }
         })
+    end)
+    .prop("atk", 0)
+    .onUnitEvent(EVENT.Unit.Attack,
+    function(attackData)
+        local atk = attackData.triggerAbility.prop("atk")
+        local atkTarget = attackData.triggerAbility.prop("atkTarget")
+        local curAtk = 0
+        if (atkTarget == nil) then
+            curAtk = 1
+        elseif (isObject(atkTarget, "Unit") and attackData.targetUnit.id() == atkTarget.id()) then
+            curAtk = atk + 1
+        end
+        local diff = curAtk - atk
+        attackData.triggerAbility.prop("atk", curAtk)
+        attackData.triggerAbility.prop("atkTarget", atkTarget)
+        if (diff > 0) then
+            attackData.triggerUnit.crit("+=" .. (diff * 5))
+            attackData.triggerUnit.odds("crit", "+=" .. (diff * 2.5))
+        elseif (diff < 0) then
+            attackData.triggerUnit.crit("-=" .. (-diff * 5))
+            attackData.triggerUnit.odds("crit", "-=" .. (-diff * 2.5))
+        end
     end)
