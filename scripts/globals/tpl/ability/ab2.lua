@@ -1,3 +1,4 @@
+---@param effectiveData noteOnAbilityEffectiveData
 TPL_ABILITY. AB2 = AbilityTpl()
     .name("沉默一波")
     .targetType(ABILITY_TARGET_TYPE.TAG_U)
@@ -6,16 +7,17 @@ TPL_ABILITY. AB2 = AbilityTpl()
     .hpCostAdv(10, 5)
     .mpCostAdv(1, 7)
     .levelMax(9)
-    .castTargetFilter(function(this, targetUnit)
-    return targetUnit ~= nil and targetUnit.isAlive() and targetUnit.isEnemy(this.bindUnit().owner())
-end)
-    .onEffective(
-    function(evtData)
-        ability.silent(evtData.targetUnit, 3, "SilenceTarget", "overhead")
-        ability.unArm(evtData.targetUnit, 3, "SilenceTarget", "weapon")
+    .castTargetFilter(
+    function(this, targetUnit)
+        return targetUnit ~= nil and targetUnit.isAlive() and targetUnit.isEnemy(this.bindUnit().owner())
+    end)
+    .onEvent(EVENT.Ability.Effective,
+    function(effectiveData)
+        ability.silent(effectiveData.targetUnit, 3, "SilenceTarget", "overhead")
+        ability.unArm(effectiveData.targetUnit, 3, "SilenceTarget", "weapon")
         ability.crackFly({
-            sourceUnit = evtData.triggerUnit,
-            targetUnit = evtData.targetUnit,
+            sourceUnit = effectiveData.triggerUnit,
+            targetUnit = effectiveData.targetUnit,
             duration = 1,
             speed = 500,
             distance = 200,

@@ -1,3 +1,4 @@
+---@param effectiveData noteOnAbilityEffectiveData
 TPL_ABILITY.AB3 = AbilityTpl()
     .name("技能3")
     .targetType(ABILITY_TARGET_TYPE.TAG_L)
@@ -5,12 +6,12 @@ TPL_ABILITY.AB3 = AbilityTpl()
     .coolDownAdv(5, 0)
     .mpCostAdv(10, 5)
     .castDistanceAdv(1000, 0)
-    .onEffective(
-    function(evtData)
+    .onEvent(EVENT.Ability.Effective,
+    function(effectiveData)
         ability.leap({
-            sourceUnit = evtData.triggerUnit,
-            targetX = evtData.targetX,
-            targetY = evtData.targetY,
+            sourceUnit = effectiveData.triggerUnit,
+            targetX = effectiveData.targetX,
+            targetY = effectiveData.targetY,
             speed = 500,
             animate = "attack",
             acceleration = 0,
