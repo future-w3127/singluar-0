@@ -7,29 +7,29 @@ Game().abilityExp(99, 100, 1.00, 10000)
 -- 定义技能描述体
 -- [基础信息]
 ---@param this Ability
----@param options {whichLevel:number}
+---@param options {level:number}
 Game().defineDescription("abilityBase", function(this, options)
     local desc = {}
-    local whichLevel = math.floor(options.whichLevel or this.level())
+    local lv = math.floor(options.level or this.level())
     local tt = this.targetType()
     if (isObject(this, "Ability")) then
         if (tt ~= ABILITY_TARGET_TYPE.PAS) then
-            table.insert(desc, this.name() .. ' - 等级 ' .. colour.gold(whichLevel) .. '（' .. colour.gold(this.hotkey()) .. '）')
+            table.insert(desc, this.name() .. ' - 等级 ' .. colour.gold(lv) .. '（' .. colour.gold(this.hotkey()) .. '）')
         else
-            table.insert(desc, this.name() .. " - 等级 " .. colour.gold(whichLevel))
+            table.insert(desc, this.name() .. " - 等级 " .. colour.gold(lv))
         end
     else
         table.insert(desc, this.name())
     end
     table.insert(desc, '类型：' .. colour.gold(tt.label))
     if (tt ~= ABILITY_TARGET_TYPE.PAS) then
-        local chantCast = this.castChant(whichLevel)
+        local chantCast = this.castChant(lv)
         if (chantCast > 0) then
             table.insert(desc, '吟唱时间：' .. colour.skyLight(chantCast .. " 秒"))
         else
             table.insert(desc, '吟唱时间：' .. colour.skyLight("瞬间施法"))
         end
-        local keepCast = this.castKeep(whichLevel)
+        local keepCast = this.castKeep(lv)
         if (keepCast > 0) then
             table.insert(desc, '最大施法持续：' .. colour.skyLight(keepCast .. " 秒"))
         end

@@ -3,3 +3,8 @@ TPL_ITEM.IT2 = ItemTpl("TreasureChest")
     .icon("AB5")
     .levelMax(9)
     .worth({ gold = 8, silver = 4 })
+    .attributes(
+    {
+        { "defend", 3, 1 },
+        { "enchantWeapon", "water", 1, 0 },
+    })

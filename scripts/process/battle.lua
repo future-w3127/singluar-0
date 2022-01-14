@@ -15,8 +15,8 @@ process.onSetup(function(this)
         .odds("crit", 10)
         .hpSuckAttack("+=10")
         .mpSuckAttack("+=10")
-        .enchantWeapon("grass", "+=1")
-        .enchantWeapon("fire", "+=1")
+    --.enchantWeapon("grass", "+=1")
+    --.enchantWeapon("fire", "+=1")
         .punish(2000)
         .weight("+=10")
 
@@ -25,6 +25,11 @@ process.onSetup(function(this)
         damageData.triggerUnit.exp("+=10")
     end)
     this.stage("u1", u1)
+
+    u1.abilitySlot().push(TPL_ABILITY.King, 6)
+    time.setTimeout(100, function()
+        u1.abilitySlot().remove(6)
+    end)
 
     local u2s = {}
     for _ = 1, 4 do
