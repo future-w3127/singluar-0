@@ -102,7 +102,7 @@ process.onSetup(function(this)
                     })
                 elseif (type == "effect") then
                     --测试特效，成绩：100万 clear
-                    effect.xy("Abilities\\Spells\\Other\\Doom\\DoomDeath.mdl", x, y, 0, during)
+                    effect.xyz("Abilities\\Spells\\Other\\Doom\\DoomDeath.mdl", x, y, 0, during)
                 elseif (type == "timer") then
                     --测试计时器，成绩：150万 clear
                     --每个占用 0.1764KB 左右，上限不变则不再增加
