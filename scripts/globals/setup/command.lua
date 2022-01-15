@@ -41,7 +41,7 @@ if (DEBUGGING) then
         else
             proc = Processes.get(p)
         end
-        if (isObject(proc, "Process")) then
+        if (isProcess(proc)) then
             print(p .. "流程已重置")
             proc.start()
         end

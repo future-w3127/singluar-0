@@ -1,4 +1,4 @@
--- 方便伤害类型引用
+--- 方便伤害类型引用 {value:string,label:string}
 DAMAGE_TYPE.fire = nil
 DAMAGE_TYPE.rock = nil
 DAMAGE_TYPE.water = nil
@@ -39,7 +39,7 @@ attribute.enchant("poison", "毒")
 
 attribute.labelOpts = {
     attack = "攻击",
-    defend = "护甲",
+    defend = "防御",
     enchantWeapon_water = "水武装",
 }
 

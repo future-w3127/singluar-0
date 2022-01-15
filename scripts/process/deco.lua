@@ -10,7 +10,7 @@ process.onSetup(function(this)
 
     time.setInterval(0.05, function(curTimer)
         local _ds = this.stage("ds")
-        if (_ds[1].isDestroy()) then
+        if (_ds[1] == nil) then
             curTimer.destroy()
             return
         end
