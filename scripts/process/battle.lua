@@ -10,7 +10,6 @@ process.onSetup(function(this)
         .mpRegen(10)
         .move(522)
         .attackSpaceBase(1).attack(91).attackRange(800).attackSpeed(100)
-        .missilePush(Missile("PriestMissile").homing(true).height(300).speed(600))
         .crit(10)
         .odds("crit", 10)
         .hpSuckAttack("+=10")
@@ -31,6 +30,7 @@ process.onSetup(function(this)
         u1.abilitySlot().remove(6)
     end)
 
+    ---@type Unit[]
     local u2s = {}
     for _ = 1, 4 do
         table.insert(u2s, Unit(TPL_UNIT.BloodBeetle, Player(2), -500, 500, 0)
