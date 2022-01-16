@@ -6,9 +6,9 @@ end
 
 ---@param evtData noteOnUnitCritData
 event.reaction(EVENT.Unit.Crit, function(evtData)
-    evtData.targetUnit.attach("Singluar\\crit.mdl", "origin", 0.5, 1)
+    evtData.targetUnit.attach("singluar_crit", "origin", 0.5, 1)
     ttg.mdx({
-        model = "Singluar\\ttg\\evt\\crit.mdl",
+        model = "singluar_ttg_event_crit",
         size = 1.2,
         x = evtData.targetUnit.x(),
         y = evtData.targetUnit.y(),
@@ -19,13 +19,13 @@ event.reaction(EVENT.Unit.Crit, function(evtData)
 end)
 ---@param evtData noteOnUnitAvoidData
 event.reaction(EVENT.Unit.Avoid, function(evtData)
-    evtData.triggerUnit.attach("Singluar\\ttg\\evt\\avoid.mdl", "overhead", 0.3, 0.2)
+    evtData.triggerUnit.attach("singluar_ttg_event_avoid", "overhead", 0.3, 0.2)
 end)
 ---@param evtData noteOnUnitImmuneInvincibleData
 event.reaction(EVENT.Unit.ImmuneInvincible, function(evtData)
     evtData.triggerUnit.attach("DivineShieldTarget", "origin", 1)
     ttg.mdx({
-        model = "Singluar\\ttg\\evt\\immuneInvincible.mdl",
+        model = "singluar_ttg_event_immuneInvincible",
         size = 1.4,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
@@ -37,7 +37,7 @@ end)
 ---@param evtData noteOnUnitImmuneDefendData
 event.reaction(EVENT.Unit.ImmuneDefend, function(evtData)
     ttg.mdx({
-        model = "Singluar\\ttg\\evt\\immune.mdl",
+        model = "singluar_ttg_event_immune",
         size = 1.2,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
@@ -49,7 +49,7 @@ end)
 ---@param evtData noteOnUnitImmuneReductionData
 event.reaction(EVENT.Unit.ImmuneReduction, function(evtData)
     ttg.mdx({
-        model = "Singluar\\ttg\\evt\\immune.mdl",
+        model = "singluar_ttg_event_immune",
         size = 1.2,
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
@@ -77,7 +77,7 @@ end)
 ---@param evtData noteOnUnitPunishData
 event.reaction(EVENT.Unit.Punish, function(evtData)
     evtData.triggerUnit.rgba(140, 140, 140, 255, evtData.duration)
-    evtData.triggerUnit.attach("Singluar\\ttg\\evt\\punish.mdl", "head", 4.9, 0.2)
+    evtData.triggerUnit.attach("singluar_ttg_event_punish", "head", 4.9, 0.2)
 end)
 ---@param evtData noteOnUnitBeStunData
 event.reaction(EVENT.Unit.Be.Stun, function(evtData)
@@ -96,7 +96,7 @@ event.reaction(EVENT.Unit.Hurt, function(evtData)
     ttg.char({
         int = math.floor(evtData.damage),
         width = 10,
-        size = 0.25,
+        size = 0.5,
         scale = { 1, 0.9 },
         x = evtData.triggerUnit.x(),
         y = evtData.triggerUnit.y(),
@@ -108,7 +108,7 @@ end)
 ---@param evtData noteOnUnitEnchantData
 event.reaction(EVENT.Unit.Enchant, function(evtData)
     ttg.mdx({
-        model = "Singluar\\ttg\\evt\\e_" .. evtData.enchantType .. ".mdl",
+        model = "singluar_ttg_event_e_" .. evtData.enchantType,
         size = 0.8,
         scale = { 1, 0.9 },
         x = evtData.targetUnit.x() - math.rand(0, 50),

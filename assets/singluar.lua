@@ -1,7 +1,28 @@
-_assets_model("missile/Abstruse", "Abstruse") --紫光奥义
-_assets_model("missile/AbstruseArrow", "AbstruseArrow") --粉紫星芒
-
-_assets_model("hero/BEArcaneHuntress", "BEArcaneHuntress", "unit", { Art = "unit\\hero\\ArcaneHuntress" }) --刺客
-_assets_model("hero/Banshee_Queen_Sylvanas", "Banshee_Queen_Sylvanas", "unit", { Art = "unit\\hero\\DarkRangerGradient" }) --黑游（普通）
-_assets_model("hero/TheBansheeQueen", "TheBansheeQueen", "unit", { Art = "unit\\hero\\DarkRangerDegenerate" }) --黑游（魔化）
-_assets_model("hero/BloodBeetle", "BloodBeetle", "unit", { Art = "unit\\insect\\HunterPetSilithid" }) --血牙
+_assets_model("eff/Crit", "singluar_crit")
+_assets_model("ttg/txt/+", "singluar_ttg_txt_+")
+_assets_model("ttg/txt/-", "singluar_ttg_txt_-")
+_assets_model("ttg/txt/0", "singluar_ttg_txt_0")
+_assets_model("ttg/txt/1", "singluar_ttg_txt_1")
+_assets_model("ttg/txt/2", "singluar_ttg_txt_2")
+_assets_model("ttg/txt/3", "singluar_ttg_txt_3")
+_assets_model("ttg/txt/4", "singluar_ttg_txt_4")
+_assets_model("ttg/txt/5", "singluar_ttg_txt_5")
+_assets_model("ttg/txt/6", "singluar_ttg_txt_6")
+_assets_model("ttg/txt/7", "singluar_ttg_txt_7")
+_assets_model("ttg/txt/8", "singluar_ttg_txt_8")
+_assets_model("ttg/txt/9", "singluar_ttg_txt_9")
+_assets_model("ttg/event/avoid", "singluar_ttg_event_avoid")
+_assets_model("ttg/event/crit", "singluar_ttg_event_crit")
+_assets_model("ttg/event/immune", "singluar_ttg_event_immune")
+_assets_model("ttg/event/immuneInvincible", "singluar_ttg_event_immuneInvincible")
+_assets_model("ttg/event/punish", "singluar_ttg_event_punish")
+_assets_model("ttg/event/e_dark", "singluar_ttg_event_e_dark")
+_assets_model("ttg/event/e_fire", "singluar_ttg_event_e_fire")
+_assets_model("ttg/event/e_grass", "singluar_ttg_event_e_grass")
+_assets_model("ttg/event/e_ice", "singluar_ttg_event_e_ice")
+_assets_model("ttg/event/e_light", "singluar_ttg_event_e_light")
+_assets_model("ttg/event/e_poison", "singluar_ttg_event_e_poison")
+_assets_model("ttg/event/e_rock", "singluar_ttg_event_e_rock")
+_assets_model("ttg/event/e_thunder", "singluar_ttg_event_e_thunder")
+_assets_model("ttg/event/e_water", "singluar_ttg_event_e_water")
+_assets_model("ttg/event/e_wind", "singluar_ttg_event_e_wind")
