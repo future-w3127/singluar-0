@@ -19,16 +19,14 @@ process.onSetup(function(this)
         .punish(2000)
         .weight("+=10")
 
+    ability.silent(u1, 30, "SilenceTarget", "overhead")
+    ability.unArm(u1, 30, "SilenceTarget", "weapon")
+
     ---@param damageData noteOnUnitDamageData
     u1.onEvent(EVENT.Unit.Damage, function(damageData)
         damageData.triggerUnit.exp("+=10")
     end)
     this.stage("u1", u1)
-
-    u1.abilitySlot().push(TPL_ABILITY.King, 6)
-    time.setTimeout(100, function()
-        u1.abilitySlot().remove(6)
-    end)
 
     ---@type Unit[]
     local u2s = {}
@@ -39,7 +37,7 @@ process.onSetup(function(this)
             .mp(1000).mpRegen(10)
             .move(0)
             .attackSpaceBase(1).attack(91).attackRange(1000)
-            .lightningPush(Lightning(LIGHTNING_TYPE.thunderRed).focus(3))
+            .lightningPush(Lightning(LIGHTNING_TYPE.suckBlue).focus(3))
             .enchantWeapon("lightning", "+=1")
             .punish(1000)
         )

@@ -257,6 +257,8 @@ _assets_model(":Abilities\\Spells\\Items\\AIre\\AIreTarget.mdl", "AIreTarget")
 _assets_model(":Abilities\\Spells\\Undead\\ReplenishHealth\\ReplenishHealthCaster.mdl", "ReplenishHealthCaster")
 --回复魔法 蓝圈扩散
 _assets_model(":Abilities\\Spells\\Undead\\ReplenishMana\\ReplenishManaCaster.mdl", "ReplenishManaCaster")
+--状态提升 黄色
+_assets_model(":Abilities\\Spells\\Items\\AIem\\AIemTarget.mdl", "AIemTarget")
 --状态提升 金色
 _assets_model(":Abilities\\Spells\\Items\\AIlm\\AIlmTarget.mdl", "AIlmTarget")
 --状态提升 黄橙色

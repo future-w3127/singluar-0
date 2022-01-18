@@ -15,10 +15,10 @@ attribute.enchant("fire", "火", {
     strengthen = 0,
     resistance = 0,
     append = {
-        { attach = 'origin', effect = 'Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl' },
-        { attach = 'left hand', effect = 'Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl' },
-        { attach = 'right hand', effect = 'Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl' },
-        { attach = 'head', effect = 'Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl' },
+        { attach = 'origin', effect = 'BreathOfFireDamage' },
+        { attach = 'left hand', effect = 'BreathOfFireDamage' },
+        { attach = 'right hand', effect = 'BreathOfFireDamage' },
+        { attach = 'head', effect = 'BreathOfFireDamage' },
     },
     reaction = {
         grass = attribute.enchantReaction(function(evtData)
