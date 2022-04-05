@@ -7,8 +7,11 @@ _assets_sound("voice/action/打鼓", "drum", "v3d")
 _assets_sound("bgm/Dungeon and Fighter - GBL女神殿 - goddess temple", "gbl", "bgm")
 
 _assets_model("buff/ApaceGrowth")
+_assets_model("buff/Echo", "Echo")
+_assets_model("buff/InvinciblePurpleBall", "InvinciblePurpleBall")
+_assets_model("buff/IonCentrifugalCircle", "IonCentrifugalCircle")
+_assets_model("buff/Liberty", "Liberty")
 _assets_model("slash/Red_swing")
-_assets_model("buff/Echo")
 _assets_model("word/Rank_BaHuangLeiDong_AoShiQunXiong")
 _assets_model("word/Rank_AoShiTianXia")
 

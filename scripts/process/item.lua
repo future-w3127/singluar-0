@@ -19,10 +19,18 @@ process.onSetup(function(this)
         .punish(2000)
         .weight("+=10")
 
-    u1.onDamage(function(_)
-        u1.exp("+=10")
+    u1.onEvent(EVENT.Unit.Damage, function(evtData)
+        evtData.triggerUnit.exp("+=10")
     end)
     this.stage("u1", u1)
+
+    local u3 = Player(3)
+        .unit(TPL_UNIT.HeroFlameLord, 300, 0, 180)
+        .level(1)
+        .reborn(3)
+        .hp(1500)
+        .mp(100)
+        .move(0)
 
     local x1 = os.clock()
     local its = {}
@@ -38,6 +46,17 @@ process.onSetup(function(this)
 
     local x2 = os.clock()
     print(string.format("run time: %.2f\n", x2 - x1))
+
+    mouse.onMove(function(_)
+        local under = japi.DzGetUnitUnderMouse()
+        if (type(under) == "number" and under > 0) then
+            local it = h2i(under)
+            if (instanceof(it, "Item")) then
+                print(japi.MouseRX(), japi.MouseRY())
+            end
+        end
+    end, "ItemUnderMouse")
+
 end)
 
 process.onDestroy(function(this)

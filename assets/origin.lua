@@ -1123,7 +1123,7 @@ _assets_model(":units\\creeps\\tuskarRanged\\tuskarRanged", "TuskaarRanged", "un
 --图斯卡法师
 _assets_model(":units\\creeps\\tuskarLord\\tuskarLord", "TuskaarLord", "unit", { Art = "unit\\beast\\TuskaarBlack" })
 --野人
-_assets_model(":units\\creeps\\Sasquatch\\Sasquatch", "", "unit", { Art = "unit\\ancient\\Sasquatch" })
+_assets_model(":units\\creeps\\Sasquatch\\Sasquatch", "Sasquatch", "unit", { Art = "unit\\ancient\\Sasquatch" })
 --丛林漫步者
 _assets_model(":units\\creeps\\JungleBeast\\JungleBeast", "JungleBeast", "unit", { Art = "unit\\ancient\\JungleBeast" })
 --雪怪

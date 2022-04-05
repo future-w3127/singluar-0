@@ -41,7 +41,14 @@ TPL_ABILITY.XX = AbilityTpl()
                     sourceUnit = effectiveData.triggerUnit, --[必须]伤害来源
                     targetUnit = u,
                     onEnd = function(sou, tar)
-                        ability.damage(sou, tar, dam, DAMAGE_SRC.ability, { DAMAGE_TYPE.fire }, { BREAK_ARMOR.defend })
+                        ability.damage({
+                            sourceUnit = sou,
+                            targetUnit = tar,
+                            damage = dam,
+                            damageSrc = DAMAGE_SRC.ability,
+                            damageType = { DAMAGE_TYPE.fire },
+                            breakArmor = { BREAK_ARMOR.defend },
+                        })
                         return true
                     end,
                 })
