@@ -27,6 +27,7 @@ _assets_icon("ability\\yellow\\Aftershock2", "AB5")
 
 -- 牢笼
 _assets_model(":Doodads\\LordaeronSummer\\Props\\Cage\\Cage", "Cage", "deco")
+_assets_model("env/PalmTree1", "一棵树", "deco")
 
 _assets_model("missile/Abstruse", "Abstruse") --紫光奥义
 _assets_model("missile/AbstruseArrow", "AbstruseArrow") --粉紫星芒

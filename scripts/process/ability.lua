@@ -1,6 +1,6 @@
 local process = Process("ability")
 
-process.onSetup(function(this)
+process.onStart(function(this)
     local u1 = Unit(TPL_UNIT.HeroFlameLord, Player(1), 500, -500, 66.6)
         .level(1)
         .reborn(0.5)
@@ -27,6 +27,6 @@ process.onSetup(function(this)
     u1.abilitySlot().push(TPL_ABILITY.King, 6)
 end)
 
-process.onDestroy(function(this)
+process.onOver(function(this)
     this.stage("u1").destroy()
 end)

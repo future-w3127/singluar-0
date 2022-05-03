@@ -1,23 +1,24 @@
 local process = Process("server")
 
-process.onSetup(function(this)
+process.onStart(function(this)
 
+    Server(Player(1))["save"]("hello", 1)
+    time.setTimeout(3, function()
+        dump(Server(Player(1))["load"]("hello"))
 
-    Player(1).server().save("hello", 1)
+        Server(Player(1))["save"]("hello", "you")
+        time.setTimeout(3, function()
+            dump(Server(Player(1))["load"]("hello"))
 
-    Player(1).server().save("hello", "you")
-
-    Player(1).server().save("hello", true)
-
-    Player(1).server().clear("hello")
-
-    local t = time.setInterval(1.51, function()
-        dump(japi.DzAPI_Map_GetServerValue(Player(1).handle(), "hello"))
+            Server(Player(1))["save"]("hello", true)
+            time.setTimeout(3, function()
+                dump(Server(Player(1))["load"]("hello"))
+                Server(Player(1))["clear"]("hello")
+                time.setTimeout(3, function()
+                    dump(Server(Player(1))["load"]("hello"))
+                end)
+            end)
+        end)
     end)
-    this.stage("t", t)
-end)
 
-process.onDestroy(function(this)
-    this.stage("t").destroy()
 end)
-

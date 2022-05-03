@@ -1,6 +1,6 @@
 local process = Process("item")
 
-process.onSetup(function(this)
+process.onStart(function(this)
 
     local u1 = Player(1)
         .unit(TPL_UNIT.HeroFlameLord, 0, 0, 66.6)
@@ -59,7 +59,7 @@ process.onSetup(function(this)
 
 end)
 
-process.onDestroy(function(this)
+process.onOver(function(this)
     this.stage("u1").destroy()
     for _, it in ipairs(this.stage("its")) do
         it.destroy()

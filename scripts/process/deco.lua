@@ -1,10 +1,10 @@
 local process = Process("deco")
 
-process.onSetup(function(this)
+process.onStart(function(this)
 
     local ds = {}
     for _ = 1, 3, 1 do
-        table.insert(ds, Deco("Cage", 0, 0, 0, 0, nil, nil))
+        table.insert(ds, Deco("一棵树", 0, 0, 0, 0, nil, nil))
     end
     this.stage("ds", ds)
 
@@ -24,7 +24,7 @@ process.onSetup(function(this)
 
 end)
 
-process.onDestroy(function(this)
+process.onOver(function(this)
     for d in ipairs(this.stage("ds")) do
         d.destroy()
     end
