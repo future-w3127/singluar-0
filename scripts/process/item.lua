@@ -35,11 +35,11 @@ process.onStart(function(this)
     local x1 = os.clock()
     local its = {}
     for _ = 1, 10 do
-        local it = Item(TPL_ITEM.IT1).portal(0, -300)
+        local it = Item(TPL_ITEM.IT1).position(0, -300)
         table.insert(its, it)
     end
     for _ = 1, 10 do
-        local it = Item(TPL_ITEM.IT2).portal(0, -300)
+        local it = Item(TPL_ITEM.IT2).position(0, -300)
         table.insert(its, it)
     end
     this.stage("its", its)
@@ -47,7 +47,7 @@ process.onStart(function(this)
     local x2 = os.clock()
     print(string.format("run time: %.2f\n", x2 - x1))
 
-    mouse.onMove(function(_)
+    mouse.onMove("ItemUnderMouse", function(_)
         local under = japi.DzGetUnitUnderMouse()
         if (type(under) == "number" and under > 0) then
             local it = h2i(under)
@@ -55,7 +55,7 @@ process.onStart(function(this)
                 print(japi.MouseRX(), japi.MouseRY())
             end
         end
-    end, "ItemUnderMouse")
+    end)
 
 end)
 

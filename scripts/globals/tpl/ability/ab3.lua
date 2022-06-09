@@ -10,15 +10,12 @@ TPL_ABILITY.AB3 = AbilityTpl()
     function(effectiveData)
         ability.leap({
             sourceUnit = effectiveData.triggerUnit,
-            targetX = effectiveData.targetX,
-            targetY = effectiveData.targetY,
+            targetPoint = { effectiveData.targetX, effectiveData.targetY },
+            modelAlias = "WarStompCaster",
             speed = 500,
             animate = "attack",
             acceleration = 0,
             height = 100,
-            shake = nil,
-            reflex = nil,
-            leapModel = "WarStompCaster",
             onMove = function()
                 print("move")
             end,

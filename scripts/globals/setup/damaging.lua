@@ -108,7 +108,7 @@ damaging.defined("hurtRebound", function(options)
         local hurtRebound = options.targetUnit.hurtRebound()
         local odds = options.targetUnit.odds("hurtRebound")
         if (hurtRebound > 0 and odds > math.rand(1, 100)) then
-            local dmgRebound = math.round(options.damage * hurtRebound * 0.01, 3)
+            local dmgRebound = math.trunc(options.damage * hurtRebound * 0.01, 3)
             if (dmgRebound >= 1.000) then
                 local damagedArrived = function()
                     --- 触发反伤事件
@@ -138,7 +138,6 @@ damaging.defined("hurtRebound", function(options)
                             if (isObject(m, "Missile")) then
                                 ability.missile({
                                     modelAlias = m.modelAlias(),
-                                    hover = math.rand(m.hover() - 5, m.hover() + 5),
                                     sourceUnit = options.targetUnit,
                                     targetUnit = options.sourceUnit,
                                     speed = m.speed(),

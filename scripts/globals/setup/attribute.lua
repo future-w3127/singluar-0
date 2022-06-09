@@ -1,7 +1,7 @@
 attribute.labelOpts = {
     attack = "攻击",
     defend = "防御",
-    enchantWeapon_water = "水武装",
+    ["<WEAPON>e_water"] = "水武装",
 }
 
 -- 定义智能属性描述体

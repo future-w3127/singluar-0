@@ -29,6 +29,6 @@ TPL_ABILITY.AB1 = AbilityTpl()
             end
             effectiveData.triggerAbility.exp("+=10")
             effectiveData.triggerUnit.abilityPoint("+=1")
-            effect.xyz("slash/Red_swing", effectiveData.targetX, effectiveData.targetY, effectiveData.targetZ, 0)
+            effect.xyz("Abilities\\Spells\\Human\\Flare\\FlareCaster.mdl", effectiveData.targetX, effectiveData.targetY, effectiveData.targetZ, 0)
         end)
     end)

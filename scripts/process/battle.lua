@@ -1,20 +1,7 @@
 local process = Process("battle")
 
 process.onStart(function(this)
-    local u1 = Unit(TPL_UNIT.HeroFlameLord, Player(1), 400, -1000, 66.6)
-        .primary(UNIT_PRIMARY.agi)
-        .level(1)
-        .reborn(0.5)
-        .move(522)
-        .attackSpaceBase(1).attack("+=100").attackRange(800).attackSpeed(100)
-        .crit(10)
-        .odds("crit", 10)
-        .hpSuckAttack("+=10")
-        .mpSuckAttack("+=10")
-    --.enchantWeapon("grass", "+=1")
-    --.enchantWeapon("fire", "+=1")
-        .punish(2000)
-        .weight("+=10")
+    local u1 = Unit(TPL_UNIT.HeroFlameLord, Player(1), 0, -1300, 66.6).attackSpaceBase(1)
 
     --time.setTimeout(5, function(curTimer)
     --    u1.cost(-10)
@@ -36,16 +23,8 @@ process.onStart(function(this)
 
     ---@type Unit[]
     local u2s = {}
-    for _ = 1, 4 do
-        table.insert(u2s, Unit(TPL_UNIT.BloodBeetle, Player(2), -500, 500, 0)
-            .primary(UNIT_PRIMARY.int)
-            .reborn(0.5)
-            .move(0)
-            .attackSpaceBase(1).attack(30).attackRange(1000)
-            .lightningPush(Lightning(LIGHTNING_TYPE.suckBlue))
-            .enchantWeapon("lightning", "+=1")
-            .punish(1000)
-        )
+    for _ = 1, 5 do
+        table.insert(u2s, Unit(TPL_UNIT.HeroPitLord, Player(2), math.rand(-200, 200), math.rand(-200, 200), 0).move(0))
     end
     this.stage("u2s", u2s)
 

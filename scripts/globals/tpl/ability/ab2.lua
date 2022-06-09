@@ -22,12 +22,7 @@ TPL_ABILITY. AB2 = AbilityTpl()
             speed = 500,
             distance = 200,
             height = 1000,
+            bounce = { qty = 3 },
             flyModel = "WarStompCaster",
-            onMove = function()
-                print("move")
-            end,
-            onEnd = function()
-                print("end")
-            end,
         })
     end)
