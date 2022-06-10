@@ -39,10 +39,10 @@ TPL_ABILITY.XX = AbilityTpl()
                     shake = "rand", --摇摆振幅程度度[0.00~1.00|rand]（可选的，默认0)
                     sourceUnit = effectiveData.triggerUnit, --[必须]伤害来源
                     targetUnit = u,
-                    onEnd = function(sou, tar)
+                    onEnd = function(options, _)
                         ability.damage({
-                            sourceUnit = sou,
-                            targetUnit = tar,
+                            sourceUnit = options.sourceUnit,
+                            targetUnit = options.targetUnit,
                             damage = dam,
                             damageSrc = DAMAGE_SRC.ability,
                             damageType = { DAMAGE_TYPE.fire },
