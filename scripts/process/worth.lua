@@ -28,6 +28,7 @@ process.onStart(function(this)
     print('Compare1 ', Game().worthCompare({ silver = 1, gold = 1 }, { silver = 98, copper = 22 }))
     print('Compare2 ', Game().worthCompare({ silver = 10, copper = 1000 }, { copper = 2000 }))
     print('Compare3 ', Game().worthCompare({ gold = 2 }, { copper = 1001, silver = 190 }))
+    print('Compare4 ', Game().worthCompare(Player(1).worth(), { gold = 2 }))
 
     print("子对比测试")
     print('Equal1 ', Game().worthEqual({ silver = 1, gold = 1 }, { silver = 1, gold = 1 }))
