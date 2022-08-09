@@ -12,14 +12,16 @@ TPL_ABILITY.King = AbilityTpl()
     })
     .onUnitEvent(EVENT.Unit.Attack, "lightningChain",
     function(attackData)
-        ability.lightningChain({
-            qty = 3,
-            sourceUnit = attackData.triggerUnit,
-            targetUnit = attackData.targetUnit,
-            damage = 100,
-            damageSrc = DAMAGE_SRC.ability,
-            damageType = { DAMAGE_TYPE.thunder }
-        })
+        if (math.rand(1, 100) < 20) then
+            ability.lightningChain({
+                qty = 3,
+                sourceUnit = attackData.triggerUnit,
+                targetUnit = attackData.targetUnit,
+                damage = 100,
+                damageSrc = DAMAGE_SRC.ability,
+                damageType = { DAMAGE_TYPE.thunder }
+            })
+        end
     end)
     .prop("atk", 0)
     .onUnitEvent(EVENT.Unit.Attack,

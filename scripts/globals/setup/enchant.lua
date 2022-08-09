@@ -23,6 +23,9 @@ enchant.defined("fire", "火", {
     reaction = {
         grass = enchant.reaction(function(evtData)
             evtData.triggerUnit.hpRegen("-=20;3")
+        end),
+        thunder = enchant.reaction(function(evtData)
+            evtData.triggerUnit.mpRegen("-=1;3")
         end)
     },
 })
