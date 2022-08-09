@@ -3,7 +3,7 @@
 TPL_ABILITY.Rebound = AbilityTpl()
     .name("自在极意被动")
     .targetType(ABILITY_TARGET_TYPE.PAS)
-    .icon("ChaosBody")
+    .icon("fireRocketIcon")
     .coolDownAdv(5, 0)
     .mpCostAdv(50, 0)
     .levelMax(10)

@@ -24,6 +24,7 @@ TPL_ABILITY.King = AbilityTpl()
     .prop("atk", 0)
     .onUnitEvent(EVENT.Unit.Attack,
     function(attackData)
+        local triggerUnit = attackData.triggerUnit
         local atk = attackData.triggerAbility.prop("atk")
         local atkTarget = attackData.triggerAbility.prop("atkTarget")
         local atkTimer = attackData.triggerAbility.prop("atkTimer")
@@ -41,18 +42,18 @@ TPL_ABILITY.King = AbilityTpl()
         attackData.triggerAbility.prop("atkTarget", attackData.targetUnit.id())
         if (diff ~= 0) then
             if (diff > 0) then
-                attackData.triggerUnit.crit("+=" .. (diff * 5))
-                attackData.triggerUnit.odds("crit", "+=" .. (diff * 2.5))
+                triggerUnit.crit("+=" .. (diff * 5))
+                triggerUnit.odds("crit", "+=" .. (diff * 2.5))
             elseif (diff < 0) then
-                attackData.triggerUnit.crit("-=" .. (-diff * 5))
-                attackData.triggerUnit.odds("crit", "-=" .. (-diff * 2.5))
+                triggerUnit.crit("-=" .. (-diff * 5))
+                triggerUnit.odds("crit", "-=" .. (-diff * 2.5))
             end
             attackData.triggerAbility.prop("atkTimer", time.setTimeout(3, function()
                 if (attackData.triggerAbility.isDestroy() == false) then
                     local a = attackData.triggerAbility.prop("atk")
                     if (a > 0) then
-                        attackData.triggerUnit.crit("-=" .. (a * 5))
-                        attackData.triggerUnit.odds("crit", "-=" .. (a * 2.5))
+                        triggerUnit.crit("-=" .. (a * 5))
+                        triggerUnit.odds("crit", "-=" .. (a * 2.5))
                     end
                     attackData.triggerAbility.prop("atkTimer", NIL)
                     attackData.triggerAbility.prop("atkTarget", NIL)

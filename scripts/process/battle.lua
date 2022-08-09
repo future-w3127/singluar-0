@@ -1,7 +1,7 @@
 local process = Process("battle")
 
 process.onStart(function(this)
-    local u1 = Unit(TPL_UNIT.HeroFlameLord, Player(1), 0, -1300, 66.6).attackSpaceBase(1)
+    local u1 = Unit(TPL_UNIT.HeroFlameLord, Player(1), 0, -1300, 66.6)
 
     --time.setTimeout(5, function(curTimer)
     --    u1.cost(-10)
@@ -23,8 +23,8 @@ process.onStart(function(this)
 
     ---@type Unit[]
     local u2s = {}
-    for _ = 1, 5 do
-        table.insert(u2s, Unit(TPL_UNIT.HeroPitLord, Player(2), math.rand(-200, 200), math.rand(-200, 200), 0).move(0))
+    for _ = 1, 1 do
+        table.insert(u2s, Unit(TPL_UNIT.HeroPitLord, Player(2), 0, -200, 0))
     end
     this.stage("u2s", u2s)
 

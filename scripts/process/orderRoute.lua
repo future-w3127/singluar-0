@@ -2,12 +2,9 @@ local process = Process("orderRoute")
 
 process.onStart(function(this)
 
-    local u1 = Unit(TPL_UNIT.HeroFlameLord, Player(1), 0, 0, 0)
-    this.stage("u1", u1)
-
-    u1.orderRoute(true, {
+    local lineMap = {
         {
-            -500, -500,
+            -500, -1000,
             ---@param orderUnit Unit
             function(orderUnit)
                 orderUnit.effect("HCancelDeath")
@@ -15,7 +12,7 @@ process.onStart(function(this)
             end
         },
         {
-            500, -500,
+            500, -1000,
             ---@param orderUnit Unit
             function(orderUnit)
                 ability.leap({
@@ -31,7 +28,7 @@ process.onStart(function(this)
             end
         },
         {
-            500, -1000,
+            500, -2000,
             ---@param orderUnit Unit
             function(orderUnit)
                 ability.crackFly({
@@ -43,13 +40,29 @@ process.onStart(function(this)
                         options.targetUnit.orderRouteResume()
                     end
                 })
-            end
-        },
-        { -500, -1000 },
-    })
+            end },
+        { -500, -2000 },
+    }
+    local routes = {}
+    for i = 1, #lineMap do
+        routes[i] = table.wheel(lineMap, 1 * (i - 1))
+    end
+
+    local us = {}
+    this.stage("us", us)
+    for i = 1, #routes do
+        local r = routes[i]
+        local u = Unit(TPL_UNIT.HeroFlameLord, Player(i), r[1][1], r[1][2], 0)
+        us[i] = u
+        u.orderRoute(true, r)
+        u.period(3)
+    end
 
 end)
 
 process.onOver(function(this)
-    this:stage("u1").destroy()
+    local us = this.stage("us")
+    for _, u in ipairs(us) do
+        u.destroy()
+    end
 end)

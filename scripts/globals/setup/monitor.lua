@@ -15,6 +15,6 @@ monitor.create("monitor-mana_back", 0.1,
 --- 硬直监听器
 ---@param obj Unit
 monitor.create("monitor-punish_back", 1,
-    function(obj) obj.punishCur("+=" .. obj.mpRegen()) end,
+    function(obj) obj.punishCur("+=" .. obj.punishRegen()) end,
     function(obj) return obj.isDead() or obj.punishRegen() == nil or obj.punishRegen() == 0 end
 )

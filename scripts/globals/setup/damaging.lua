@@ -141,7 +141,7 @@ damaging.defined("hurtRebound", function(options)
                                     sourceUnit = options.targetUnit,
                                     targetUnit = options.sourceUnit,
                                     speed = m.speed(),
-                                    height = 0,
+                                    height = m.height() / 2,
                                     acceleration = m.acceleration(),
                                     onEnd = function() damagedArrived() end,
                                 })
