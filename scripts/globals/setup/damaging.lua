@@ -129,7 +129,9 @@ damaging.defined("hurtRebound", function(options)
                         if (isObject(lt, "Lightning")) then
                             local lDur = 0.3
                             local lDelay = lDur * 0.6
-                            ability.lightning(lt.lightningType(), options.targetUnit.x(), options.targetUnit.y(), targetUnit.h(), sourceUnit.x(), sourceUnit.y(), sourceUnit.h(), lDur)
+                            ability.lightning(lt.lightningType(),
+                                options.targetUnit.x(), options.targetUnit.y(), options.targetUnit.h(),
+                                options.sourceUnit.x(), options.sourceUnit.y(), options.sourceUnit.h(), lDur)
                             time.setTimeout(lDelay, function()
                                 damagedArrived()
                             end)

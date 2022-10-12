@@ -1,5 +1,6 @@
 TPL_UNIT.Footman = UnitTpl("Footman")
     .superposition("attack", 1)
+    .attack(10).attackRange(1000).attackSpaceBase(1)
     .reborn(3)
     .hp(300)
     .mp(100).mpRegen(5)
