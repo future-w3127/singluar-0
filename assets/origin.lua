@@ -626,7 +626,7 @@ _assets_model(":units\\human\\HeroBloodElf\\HeroBloodElf", "HeroBloodElf", "unit
 --阿尔塞斯
 _assets_model(":units\\human\\Arthas\\Arthas", "Arthas", "unit", { Art = "unit\\hero\\Arthas" })
 --阿尔塞斯(剑)
-_assets_model(":units\\human\\ArthaswithSword\\ArthaswithSword", "ArthaswithSword", "unit", { ArtRef = "unit\\hero\\Arthas" })
+_assets_model(":units\\human\\ArthaswithSword\\ArthaswithSword", "ArthaswithSword", "unit", { Art = "unit\\hero\\Arthas" })
 --海军上将普洛德摩尔
 _assets_model(":units\\other\\Proudmoore\\Proudmoore", "Proudmoore", "unit", { Art = "unit\\hero\\Captain" })
 --吉安娜
@@ -688,9 +688,9 @@ _assets_model(":units\\nightelf\\EvilIllidan\\IllidanEvil", "EvilIllidan", "unit
 --法里奥
 _assets_model(":units\\nightelf\\Furion\\Furion", "Furion", "unit", { Art = "unit\\hero\\Furion" })
 --玛尔法里奥
-_assets_model(":units\\nightelf\\MalFurion\\MalFurion", "MalFurion", "unit", { ArtRef = "unit\\hero\\Furion" })
+_assets_model(":units\\nightelf\\MalFurion\\MalFurion", "MalFurion", "unit", { Art = "unit\\hero\\Furion" })
 --玛尔法里奥(无鹿角)
-_assets_model(":units\\nightelf\\MalFurion\\MalFurionNoStag", "MalFurionNoStag", "unit", { ArtRef = "unit\\hero\\Furion" })
+_assets_model(":units\\nightelf\\MalFurion\\MalFurionNoStag", "MalFurionNoStag", "unit", { Art = "unit\\hero\\Furion" })
 --黑暗游侠
 _assets_model(":Units\\Creeps\\BansheeRanger\\BansheeRanger", "BansheeRanger", "unit", { Art = "unit\\hero\\BansheeRanger" })
 --火焰巨魔
@@ -781,13 +781,13 @@ _assets_model(":units\\orc\\KotoBeast\\KotoBeast", "KotoBeast", "unit", { Art = 
 --科多兽(邪恶)
 _assets_model(":units\\demon\\ChaosKotoBeast\\ChaosKotoBeast", "KotoBeastChaos", "unit", { Art = "unit\\beast\\ChaosKotoBeast" })
 --科多兽(无驾驶员)
-_assets_model(":units\\orc\\KotoBeastNoRider\\KotoBeastNoRider", "KotoBeastNoRider", "unit", { ArtRef = "unit\\beast\\KotoBeast" })
+_assets_model(":units\\orc\\KotoBeastNoRider\\KotoBeastNoRider", "KotoBeastNoRider", "unit", { Art = "unit\\beast\\KotoBeast" })
 --风骑士
 _assets_model(":units\\orc\\WyvernRider\\WyvernRider", "WyvernRider", "unit", { Art = "unit\\beast\\WyvernRider" })
 --风骑士(灵魂)
 _assets_model(":units\\orc\\SpiritWyvern\\SpiritWyvern", "WyvernSpirit", "unit", { Art = "unit\\ancient\\SpiritWyvern" })
 --风骑士(无驾驶员)
-_assets_model(":units\\orc\\RiderlessWyvern\\RiderlessWyvern", "WyvernNoRider", "unit", { ArtRef = "unit\\beast\\WyvernRider" })
+_assets_model(":units\\orc\\RiderlessWyvern\\RiderlessWyvern", "WyvernNoRider", "unit", { Art = "unit\\beast\\WyvernRider" })
 --巨魔蝙蝠骑士
 _assets_model(":units\\orc\\BatTroll\\BatTroll", "BatTroll", "unit", { Art = "unit\\beast\\TrollBatRider" })
 --巨魔萨满
@@ -857,7 +857,7 @@ _assets_model(":units\\creeps\\Zombie\\Zombie", "Zombie", "unit", { Art = "unit\
 --小精灵
 _assets_model(":units\\nightelf\\Wisp\\Wisp", "Wisp", "unit", { Art = "unit\\elf\\Wisp" })
 --小精灵(缠绕形态)
-_assets_model(":SharedModels\\EntangleWisp.mdl", "EntangleWisp", "unit", { ArtRef = "unit\\elf\\Wisp" })
+_assets_model(":SharedModels\\EntangleWisp.mdl", "EntangleWisp", "unit", { Art = "unit\\elf\\Wisp" })
 --弓箭手
 _assets_model(":units\\nightelf\\Archer\\Archer", "Archer", "unit", { Art = "unit\\elf\\Archer" })
 --女猎手
@@ -922,7 +922,7 @@ _assets_model(":Units\\Creeps\\QuillBeast\\QuillBeast", "QuillBeast", "unit", { 
 --钢灰海龟
 _assets_model(":Units\\Creeps\\SeaTurtle\\SeaTurtle", "SeaTurtle", "unit", { Art = "unit\\water\\SeaTurtleGreen" })
 --黄绿海龟
-_assets_model(":Units\\Creeps\\GiantSeaTurtle\\GiantSeaTurtle", "SeaTurtleYG", "unit", { ArtRef = "unit\\water\\SeaTurtleGreen" })
+_assets_model(":Units\\Creeps\\GiantSeaTurtle\\GiantSeaTurtle", "SeaTurtleYG", "unit", { Art = "unit\\water\\SeaTurtleGreen" })
 --龙龟
 _assets_model(":Units\\Creeps\\DragonSeaTurtleRange\\DragonSeaTurtleRange", "SeaTurtleRed", "unit", { Art = "unit\\water\\SeaTurtleRed" })
 
@@ -943,28 +943,28 @@ _assets_model(":Units\\Creeps\\MurgulReaver\\MurgulReaver", "MurlocPurple", "uni
 --小鱼人(夜紫)
 _assets_model(":units\\creeps\\MurlocNightcrawler\\MurlocNightcrawler", "MurlocNight", "unit", { Art = "unit\\water\\MurlocNightCrawler" })
 --小鱼人(蓝紫)
-_assets_model(":Units\\Creeps\\MurgulShadowCaster\\MurgulShadowCaster", "MurlocShadow", "unit", { ArtRef = "unit\\water\\MurgulShadowCaster" })
+_assets_model(":Units\\Creeps\\MurgulShadowCaster\\MurgulShadowCaster", "MurlocShadow", "unit", { Art = "unit\\water\\MurgulShadowCaster" })
 
 --蓝幼龙
 _assets_model(":units\\creeps\\AzureDragonWelp\\AzureDragonWelp", "AzureDragonWelp", "unit", { Art = "unit\\ancient\\AzureDragon" })
 --蓝龙
-_assets_model(":units\\creeps\\AzureDragon\\AzureDragon", "AzureDragon", "unit", { ArtRef = "unit\\ancient\\AzureDragon" })
+_assets_model(":units\\creeps\\AzureDragon\\AzureDragon", "AzureDragon", "unit", { Art = "unit\\ancient\\AzureDragon" })
 --红幼龙
 _assets_model(":units\\creeps\\RedDragonWelp\\RedDragonWelp", "RedDragonWelp", "unit", { Art = "unit\\ancient\\RedDragon" })
 --红龙
-_assets_model(":units\\creeps\\RedDragon\\RedDragon", "RedDragon", "unit", { ArtRef = "unit\\ancient\\RedDragon" })
+_assets_model(":units\\creeps\\RedDragon\\RedDragon", "RedDragon", "unit", { Art = "unit\\ancient\\RedDragon" })
 --黑幼龙
 _assets_model(":units\\creeps\\BlackDragonWelp\\BlackDragonWelp", "BlackDragonWelp", "unit", { Art = "unit\\ancient\\BlackDragon" })
 --黑龙
-_assets_model(":units\\creeps\\BlackDragon\\BlackDragon", "BlackDragon", "unit", { ArtRef = "unit\\ancient\\BlackDragon" })
+_assets_model(":units\\creeps\\BlackDragon\\BlackDragon", "BlackDragon", "unit", { Art = "unit\\ancient\\BlackDragon" })
 --褐幼龙
 _assets_model(":units\\creeps\\BronzeDragonWelp\\BronzeDragonWelp", "BronzeDragonWelp", "unit", { Art = "unit\\ancient\\BronzeDragon" })
 --褐龙
-_assets_model(":units\\creeps\\BronzeDragon\\BronzeDragon", "BronzeDragon", "unit", { ArtRef = "unit\\ancient\\BronzeDragon" })
+_assets_model(":units\\creeps\\BronzeDragon\\BronzeDragon", "BronzeDragon", "unit", { Art = "unit\\ancient\\BronzeDragon" })
 --绿幼龙
 _assets_model(":units\\creeps\\GreenDragonWelp\\GreenDragonWelp", "GreenDragonWelp", "unit", { Art = "unit\\ancient\\GreenDragon" })
 --绿龙
-_assets_model(":units\\creeps\\GreenDragon\\GreenDragon", "GreenDragon", "unit", { ArtRef = "unit\\ancient\\GreenDragon" })
+_assets_model(":units\\creeps\\GreenDragon\\GreenDragon", "GreenDragon", "unit", { Art = "unit\\ancient\\GreenDragon" })
 --耐瑟龙
 _assets_model(":units\\creeps\\NetherDragon\\NetherDragon", "NetherDragon", "unit", { Art = "unit\\ancient\\NetherDragon" })
 --九头蛇怪
@@ -1131,9 +1131,9 @@ _assets_model(":units\\creeps\\Wendigo\\Wendigo", "Wendigo", "unit", { Art = "un
 --灰狼
 _assets_model(":units\\creeps\\TimberWolf\\TimberWolf", "TimberWolf", "unit", { Art = "unit\\beast\\TimberWolf" })
 --白狼
-_assets_model(":units\\creeps\\WhiteWolf\\WhiteWolf", "WhiteWolf", "unit", { ArtRef = "unit\\beast\\TimberWolf" })
+_assets_model(":units\\creeps\\WhiteWolf\\WhiteWolf", "WhiteWolf", "unit", { Art = "unit\\beast\\TimberWolf" })
 --夜狼
-_assets_model(":units\\creeps\\DireWolf\\DireWolf", "DireWolf", "unit", { ArtRef = "unit\\beast\\TimberWolf" })
+_assets_model(":units\\creeps\\DireWolf\\DireWolf", "DireWolf", "unit", { Art = "unit\\beast\\TimberWolf" })
 
 --海豹
 _assets_model(":units\\critters\\Seal\\Seal", "Seal", "unit", { Art = "unit\\animal\\Seal" })
