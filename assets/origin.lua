@@ -1,5 +1,5 @@
 --原生资源
---根据需要自行注释或补充
+--不建议修改或补充此文件，请创建新文件管理自定义资源
 
 --【 音效 】
 
@@ -690,7 +690,7 @@ _assets_model(":units\\nightelf\\Furion\\Furion", "Furion", "unit", { Art = "uni
 --玛尔法里奥
 _assets_model(":units\\nightelf\\MalFurion\\MalFurion", "MalFurion", "unit", { ArtRef = "unit\\hero\\Furion" })
 --玛尔法里奥(无鹿角)
-_assets_model(":units\\nightelf\\MalFurion\\MalFurionNoStag", "MalFurion", "unit", { ArtRef = "unit\\hero\\Furion" })
+_assets_model(":units\\nightelf\\MalFurion\\MalFurionNoStag", "MalFurionNoStag", "unit", { ArtRef = "unit\\hero\\Furion" })
 --黑暗游侠
 _assets_model(":Units\\Creeps\\BansheeRanger\\BansheeRanger", "BansheeRanger", "unit", { Art = "unit\\hero\\BansheeRanger" })
 --火焰巨魔
@@ -1183,17 +1183,17 @@ _assets_model(":units\\creeps\\HumanDestroyerShip\\HumanDestroyerShip", "HumanDe
 --人族战舰
 _assets_model(":units\\creeps\\HumanBattleship\\HumanBattleship", "HumanBattleShip", "unit", { Art = "unit\\machine\\HumanBattleShip" })
 --兽族运输船
-_assets_model(":units\\creeps\\OrcishTransportShip\\OrcishTransportShip", "OrcTransportShip", "unit", { Art = "unit\\machine\\OrcishTransport" })
+_assets_model(":units\\creeps\\OrcishTransportShip\\OrcishTransportShip", "OrcishTransportShip", "unit", { Art = "unit\\machine\\OrcishTransport" })
 --兽族护卫舰
-_assets_model(":units\\creeps\\OrcishDestroyerShip\\OrcishDestroyerShip", "OrcDestroyerShip", "unit", { Art = "unit\\machine\\OrcDestroyer" })
+_assets_model(":units\\creeps\\OrcishDestroyerShip\\OrcishDestroyerShip", "OrcishDestroyerShip", "unit", { Art = "unit\\machine\\OrcDestroyer" })
 --兽族魔力战舰
 _assets_model(":Units\\Critters\\OrcJuggernaught\\OrcJuggernaught", "OrcBattleShip", "unit", { Art = "unit\\machine\\Juggernaut" })
 --不死族运输船
 _assets_model(":units\\creeps\\UndeadTransportShip\\UndeadTransportShip", "UndeadTransportShip", "unit", { Art = "unit\\machine\\UndeadTransport" })
 --不死族护卫舰
-_assets_model(":units\\creeps\\UndeadDestroyerShip\\UndeadDestroyerShip", "OrcDestroyerShip", "unit", { Art = "unit\\machine\\UndeadDestroyer" })
+_assets_model(":units\\creeps\\UndeadDestroyerShip\\UndeadDestroyerShip", "UndeadDestroyerShip", "unit", { Art = "unit\\machine\\UndeadDestroyer" })
 --不死族战舰
-_assets_model(":units\\creeps\\UndeadShipBattleShip\\UndeadShipBattleShip", "OrcBattleShip", "unit", { Art = "unit\\machine\\UndeadBattleShip" })
+_assets_model(":units\\creeps\\UndeadShipBattleShip\\UndeadShipBattleShip", "UndeadShipBattleShip", "unit", { Art = "unit\\machine\\UndeadBattleShip" })
 --暗夜运输船
 _assets_model(":units\\nightelf\\NightElfTransportShip\\NightElfTransportShip", "NightElfTransportShip", "unit", { Art = "unit\\machine\\NightElfTransport" })
 --暗夜护卫舰
@@ -1208,8 +1208,6 @@ _assets_model(":units\\undead\\UndeadAirBarge\\UndeadAirBarge", "UndeadAirBarge"
 _assets_model(":units\\other\\BloodElfWagon\\BloodElfWagon", "ElfPrisonWagon", "unit", { Art = "unit\\machine\\IllidanPrisonWagon" })
 --囚车
 _assets_model(":units\\other\\IllidanEvilCaged\\IllidanEvilCaged", "IllidanPrisonWagon", "unit", { Art = "unit\\machine\\CagedIllidan" })
---达拉内尔粉碎者
-_assets_model(":units\\orc\\catapult\\catapult", "CatapultDraenei", "unit", { Art = "unit\\machine\\Catapult" })
 --地狱机关人
 _assets_model(":units\\creeps\\InfernalCannonCannon\\InfernalCannonCannon", "InfernalCannonCannon", "unit", { Art = "unit\\machine\\InfernalCannon" })
 --地狱战舰
