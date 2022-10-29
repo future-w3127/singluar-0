@@ -10,9 +10,9 @@ TPL_ABILITY.XX = AbilityTpl()
     .levelUpNeedPoint(10)
     .description(
     {
-        "发射火箭，对2000范围内敌人进行攻击造成：" .. colour.gold("{math.floor(this.bindUnit().attack()*this.level())}") .. "点" .. colour.yellowLight("火") .. "属性伤害(技能等级x攻击力)",
-        "火箭数量：" .. colour.gold("{math.floor(2+this.level())}") .. "枚" .. "(技能等级+2)",
-        colour.red("升级需要") .. "{math.floor(10*this.level())}" .. colour.red("技能点")
+        "发射火箭，对2000范围内敌人进行攻击造成：" .. colour.hex(colour.gold, "{math.floor(this.bindUnit().attack()*this.level())}") .. "点" .. colour.hex(colour.red, "火") .. "属性伤害(技能等级x攻击力)",
+        "火箭数量：" .. colour.hex(colour.gold, "{math.floor(2+this.level())}") .. "枚" .. "(技能等级+2)",
+        colour.hex(colour.indianred, "升级需要") .. "{math.floor(10*this.level())}" .. colour.hex(colour.indianred, "技能点")
     })
     .onEvent(EVENT.Ability.Effective,
     function(effectiveData)

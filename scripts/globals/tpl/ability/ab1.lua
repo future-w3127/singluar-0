@@ -11,10 +11,18 @@ TPL_ABILITY.AB1 = AbilityTpl()
     .castRadiusAdv(500, 50)
     .levelMax(9)
     .description(
-    {
-        "基础消耗：" .. colour.purple("{this.mpCost()}"),
-        "对目标造成伤害：" .. colour.gold("{math.floor(this.bindUnit().attack()*100)}") .. "[攻击x100]"
-    })
+    function(this)
+        local dmg = 0
+        if (this.bindUnit and this.bindUnit()) then
+            dmg = math.floor(this.bindUnit().attack() * 100)
+        else
+            dmg = "（基于攻击）"
+        end
+        return {
+            "基础消耗：" .. colour.hex(colour.violet, this.mpCost()),
+            "对目标造成伤害：" .. colour.hex(colour.gold, dmg) .. "[攻击x100]"
+        }
+    end)
     .castTargetFilter(
     function(this, targetUnit)
         return targetUnit ~= nil and targetUnit.isEnemy(this.bindUnit().owner())
@@ -23,6 +31,8 @@ TPL_ABILITY.AB1 = AbilityTpl()
     function(effectiveData)
         local ftp = 1
         time.setInterval(ftp, function(curTimer)
+            -- 只是一个持续施法技能，施法后使用isAbilityKeepCasting判定是否仍在施法
+            -- 从而可以实现各种周期的效果
             if (not effectiveData.triggerUnit.isAbilityKeepCasting()) then
                 curTimer.destroy()
                 return
