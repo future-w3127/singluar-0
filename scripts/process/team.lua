@@ -2,7 +2,8 @@ local process = Process("team")
 
 process.onStart(function(this)
 
-    local t1 = Team("小小吃饭队")
+    local t1 = Team("xxcfd")
+        .name("小小吃饭队")
         .nameSync(true)
         .colorSync(true)
         .members({ 2, 3, 4, 5, 6 })
@@ -10,8 +11,8 @@ process.onStart(function(this)
 
     this.stage("t1", t1)
 
-    time.setTimeout(3, function()
-        t1.name("小小吐饭队").color(PLAYER_COLOR_GREEN)
+    time.setTimeout(5, function()
+        t1.name("小小吐饭队").color(7)
     end)
 
     local us = {}
