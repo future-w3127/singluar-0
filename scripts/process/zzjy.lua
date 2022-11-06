@@ -4,7 +4,7 @@ process.onStart(function(this)
 
     local me = Unit(TPL_UNIT.Footman, Player(1), 0, 0, 270).abilityPoint(5)
     me.abilitySlot().push(TPL_ABILITY.Rebound, 1)
-    ability.invulnerable(me, 5)
+    ability.invulnerable(me, 2)
 
     me.onEvent(EVENT.Unit.Dead, function() print("meDead") end)
     me.onEvent(EVENT.Unit.FeignDead, function() print("meFeignDead") end)
