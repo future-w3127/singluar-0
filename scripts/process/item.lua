@@ -19,6 +19,10 @@ process.onStart(function(this)
         .punish(2000)
         .weight("+=10")
 
+    local u2 = Player(1)
+        .unit(TPL_UNIT.HeroFlameLord, 0, 0, 66.6)
+        .weight("+=10")
+
     u1.onEvent(EVENT.Unit.Damage, function(evtData)
         evtData.triggerUnit.exp("+=10")
     end)
