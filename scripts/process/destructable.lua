@@ -4,7 +4,7 @@ process.onStart(function(this)
 
     local ds = {}
     for _ = 1, 3, 1 do
-        table.insert(ds, Destructable("一棵树", 0, 0, 0, 0, nil, nil))
+        table.insert(ds, Destructable("Cage", 0, 0, 0, 0, nil, nil))
     end
     this.stage("ds", ds)
 
@@ -21,12 +21,13 @@ process.onStart(function(this)
             print(d.x(), d.y(), d.z(), d.facing(), d.scale())
         end
     end)
-
 end)
 
 process.onOver(function(this)
-    for d in ipairs(this.stage("ds")) do
+    local ds = this.stage("ds")
+    for i = #ds, 1, -1 do
+        local d = ds[i]
         d.destroy()
+        table.remove(ds, i)
     end
-
 end)
