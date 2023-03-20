@@ -10,7 +10,7 @@ process.onStart(function(this)
 
     time.setInterval(0.05, function(curTimer)
         local _ds = this.stage("ds")
-        if (_ds[1] == nil) then
+        if (_ds == nil) then
             curTimer.destroy()
             return
         end
@@ -25,9 +25,10 @@ end)
 
 process.onOver(function(this)
     local ds = this.stage("ds")
-    for i = #ds, 1, -1 do
-        local d = ds[i]
-        d.destroy()
-        table.remove(ds, i)
+    if (type(ds) == "table") then
+        for _, d in ipairs(ds) do
+            d.destroy()
+        end
     end
+    this.stage("ds", NIL)
 end)
