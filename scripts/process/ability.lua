@@ -16,7 +16,6 @@ process.onStart(function(this)
         .enchantWeapon("fire", "+=1")
         .punish(2000)
         .weight("+=10")
-    .bindItemTpl()
 
     u1.odds("hurtRebound", "+=100")
 
